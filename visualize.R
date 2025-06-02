@@ -140,6 +140,14 @@ covid_year <- mort %>%
   summarise(total_covid_deaths = round(sum(covid_deaths, na.rm = TRUE)),
             .groups = "drop")
 
+excess_year <- mort_excess %>% 
+  filter(year >= 2020 & year <= 2023) %>%       # or drop the filter if you want 2015-23
+  group_by(year) %>% 
+  summarise(
+    total_excess_deaths = round(sum(excess / 1e5 * population, na.rm = TRUE))
+  )
+
+
 excess_year <- excess_year %>% 
   left_join(covid_year, by = "year") %>% 
   mutate(
