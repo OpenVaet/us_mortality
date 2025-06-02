@@ -156,3 +156,75 @@ excess_year <- excess_year %>%
 
 print(excess_year)
 
+
+## ── 7b  All-cause ASMR with ESP2013 reference ─────────────────────────
+
+# 1.  ESP2013 weights (19 × 5-year bands; sum = 1.0)
+std_pop_esp2013 <- tribble(
+  ~age_group_5, ~weight,
+  "1",     0.010,   # <1 y   (1 000 / 100 000)
+  "1-4",   0.040,   # 1-4 y (4 000)
+  "5-9",   0.055,
+  "10-14", 0.055,
+  "15-19", 0.055,
+  "20-24", 0.060,
+  "25-29", 0.060,
+  "30-34", 0.065,
+  "35-39", 0.070,
+  "40-44", 0.070,
+  "45-49", 0.070,
+  "50-54", 0.070,
+  "55-59", 0.065,
+  "60-64", 0.060,
+  "65-69", 0.055,
+  "70-74", 0.050,
+  "75-79", 0.040,
+  "80-84", 0.025,
+  "85+",   0.025    # 85-89 + 90 + pooled (1 500 + 1 000)
+)
+
+# 2.  Re-compute monthly ASMR (all causes, ESP2013 standard)
+asmr_esp <- mort %>% 
+  left_join(std_pop_esp2013, by = "age_group_5") %>% 
+  filter(!is.na(weight)) %>% 
+  group_by(date) %>% 
+  summarise(ASMR = sum(rate * weight), .groups = "drop") %>% 
+  mutate(t_num = as.numeric(date - as_date("2015-01-01")))
+
+# 3.  Fit linear trend 2015-2019 and project to 2023
+trend_esp <- lm(ASMR ~ t_num, data = filter(asmr_esp, date <= as_date("2019-12-31")))
+asmr_esp <- asmr_esp %>% 
+  mutate(projected = predict(trend_esp, newdata = asmr_esp))
+
+# 4.  Year-average labels (2020-2023)
+label_df <- asmr_esp %>% 
+  filter(year(date) >= 2020 & year(date) <= 2023) %>% 
+  mutate(year = year(date)) %>% 
+  group_by(year) %>% 
+  summarise(date = as_date(paste0(year, "-07-01")),
+            Actual    = mean(ASMR),
+            Projected = mean(projected),
+            .groups = "drop") %>% 
+  pivot_longer(Actual:Projected, names_to = "series", values_to = "value")
+
+# 5.  Plot
+ggplot(asmr_esp, aes(date)) +
+  geom_line(aes(y = ASMR,      colour = "Actual"),    size = .55) +
+  geom_line(aes(y = projected, colour = "Projected"), linetype = "22", size = .55) +
+  geom_text(data = label_df,
+            aes(date, value,
+                label = scales::label_number(accuracy = 0.1)(value),
+                colour = series),
+            vjust = -0.7, size = 3) +
+  scale_colour_manual(values = c("Actual" = "black", "Projected" = "red")) +
+  scale_x_date(date_breaks = "1 year", date_labels = "%Y") +
+  labs(
+    title    = "All-cause age-standardised mortality rate (ESP2013)",
+    subtitle = "Trend fitted on 2015-2019; projection vs actual, 2020-2023",
+    y        = "ASMR per 100 000 (European Standard Population 2013)",
+    x        = NULL, colour = NULL
+  ) +
+  theme_minimal(base_size = 11) +
+  theme(legend.position = "bottom")
+
+
