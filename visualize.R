@@ -35,23 +35,23 @@ std_pop <- tribble(
   ~age_group_5, ~weight,
   "1",     0.013818,   # <1 year
   "1-4",   0.055317,
-  "5-9",   0.072919,
-  "10-14", 0.073947,
-  "15-19", 0.071759,
-  "20-24", 0.066950,
-  "25-29", 0.064587,
-  "30-34", 0.071142,
-  "35-39", 0.080255,
-  "40-44", 0.081400,
-  "45-49", 0.072105,
-  "50-54", 0.064130,
-  "55-59", 0.054623,
-  "60-64", 0.045284,
-  "65-69", 0.035510,
-  "70-74", 0.026856,
-  "75-79", 0.017303,
-  "80-84", 0.010042,
-  "85+",   0.008551
+  "5-9",   0.072533,
+  "10-14", 0.073032,
+  "15-19", 0.072169,
+  "20-24", 0.066478,
+  "25-29", 0.064529,
+  "30-34", 0.071044,
+  "35-39", 0.080762,
+  "40-44", 0.081851,
+  "45-49", 0.072118,
+  "50-54", 0.062716,
+  "55-59", 0.048454,
+  "60-64", 0.038793,
+  "65-69", 0.034264,
+  "70-74", 0.031773,
+  "75-79", 0.026999,
+  "80-84", 0.017842,
+  "85+",   0.015508
 )
 
 ## ── 4  Age-standardised mortality rate (ASMR) monthly ─
@@ -157,9 +157,12 @@ excess_year <- excess_year %>%
 print(excess_year)
 
 
+#########################################################
+## 7 b  All-cause ASMR with ESP2013 reference (YEARLY) ##
+#########################################################
 ## ── 7b  All-cause ASMR with ESP2013 reference ─────────────────────────
 
-# 1.  ESP2013 weights (19 × 5-year bands; sum = 1.0)
+# ESP2013 weights (19 × 5-year bands; sum = 1.0)
 std_pop_esp2013 <- tribble(
   ~age_group_5, ~weight,
   "1",     0.010,   # <1 y   (1 000 / 100 000)
@@ -183,48 +186,91 @@ std_pop_esp2013 <- tribble(
   "85+",   0.025    # 85-89 + 90 + pooled (1 500 + 1 000)
 )
 
-# 2.  Re-compute monthly ASMR (all causes, ESP2013 standard)
-asmr_esp <- mort %>% 
+
+## ── 7 b-1  Collapse “mort” to YEARLY totals ──────────
+mort_year <- mort %>%                                     # <— uses the monthly file
+  group_by(year, age_group_5) %>% 
+  summarise(
+    deaths     = sum(deaths,     na.rm = TRUE),           # yearly deaths
+    population = mean(population, na.rm = TRUE),          # mid-year proxy
+    .groups    = "drop"
+  ) %>% 
+  mutate(
+    rate = deaths / population * 1e5,                     # refresh rate
+    date = as_date(sprintf("%d-07-01", year))             # mid-year point for plotting
+  )
+print(mort_year, n=100)
+
+## ── 7 b-2  Re-compute YEARLY ASMR (ESP2013 standard) ──
+asmr_esp <- mort_year %>% 
   left_join(std_pop_esp2013, by = "age_group_5") %>% 
   filter(!is.na(weight)) %>% 
-  group_by(date) %>% 
+  group_by(year, date) %>% 
   summarise(ASMR = sum(rate * weight), .groups = "drop") %>% 
-  mutate(t_num = as.numeric(date - as_date("2015-01-01")))
+  mutate(t_num = year - 2015)                             # numeric time for regression
+print(asmr_esp)
 
-# 3.  Fit linear trend 2015-2019 and project to 2023
-trend_esp <- lm(ASMR ~ t_num, data = filter(asmr_esp, date <= as_date("2019-12-31")))
-asmr_esp <- asmr_esp %>% 
+## ── 7 b-3  Fit linear trend 2015-2019 and project ─────
+trend_esp <- lm(ASMR ~ t_num, data = filter(asmr_esp, year <= 2019))
+asmr_esp  <- asmr_esp %>% 
   mutate(projected = predict(trend_esp, newdata = asmr_esp))
 
-# 4.  Year-average labels (2020-2023)
+## ── 7 b-4  Labels: % excess (Actual vs Projected) ─────
 label_df <- asmr_esp %>% 
-  filter(year(date) >= 2020 & year(date) <= 2023) %>% 
-  mutate(year = year(date)) %>% 
-  group_by(year) %>% 
-  summarise(date = as_date(paste0(year, "-07-01")),
-            Actual    = mean(ASMR),
-            Projected = mean(projected),
-            .groups = "drop") %>% 
-  pivot_longer(Actual:Projected, names_to = "series", values_to = "value")
+  filter(year >= 2020 & year <= 2023) %>% 
+  mutate(pct_excess = (ASMR - projected) / projected)     # in proportion
 
-# 5.  Plot
+## ── 7 b-5  Plot ───────────────────────────────────────
 ggplot(asmr_esp, aes(date)) +
-  geom_line(aes(y = ASMR,      colour = "Actual"),    size = .55) +
-  geom_line(aes(y = projected, colour = "Projected"), linetype = "22", size = .55) +
+  geom_line(aes(y = ASMR,      colour = "Actual"),    size = .6) +
+  geom_line(aes(y = projected, colour = "Projected"), linetype = "22", size = .6) +
   geom_text(data = label_df,
-            aes(date, value,
-                label = scales::label_number(accuracy = 0.1)(value),
-                colour = series),
-            vjust = -0.7, size = 3) +
+            aes(date, ASMR,
+                label = scales::label_percent(accuracy = 0.1)(pct_excess)),
+            vjust = -0.8, size = 3) +
   scale_colour_manual(values = c("Actual" = "black", "Projected" = "red")) +
   scale_x_date(date_breaks = "1 year", date_labels = "%Y") +
   labs(
     title    = "All-cause age-standardised mortality rate (ESP2013)",
-    subtitle = "Trend fitted on 2015-2019; projection vs actual, 2020-2023",
-    y        = "ASMR per 100 000 (European Standard Population 2013)",
+    subtitle = "Yearly totals; labels show % excess vs projected (2015-19 trend)",
+    y        = "ASMR per 100 000 (ESP2013)",
     x        = NULL, colour = NULL
   ) +
   theme_minimal(base_size = 11) +
   theme(legend.position = "bottom")
 
+#########################################################
+## 7 b-6  Yearly death totals table  (knitr + kableExtra)
+#########################################################
+
+suppressPackageStartupMessages(library(kableExtra))  # <- new
+
+# Build wide table: one column per 5-year band + Total
+death_table <- mort_year %>%                         # object from §7 b-1
+  select(year, age_group_5, deaths) %>% 
+  pivot_wider(names_from  = age_group_5,
+              values_from = deaths,
+              values_fill = 0) %>% 
+  mutate(Total = rowSums(across(-year))) %>% 
+  arrange(year)
+
+# Helper: span header “Deaths” across all age-group columns + Total
+age_cols <- setdiff(names(death_table), c("year", "Total"))
+header_vec <- c(" " = 1, "Deaths" = length(age_cols) + 1)
+
+# Render with knitr + kableExtra
+death_table %>% 
+  knitr::kable(
+    caption     = "Yearly deaths by 5-year age group and total",
+    format.args = list(big.mark = ","),
+    booktabs    = TRUE,            # nicer horizontal rules (pdf/HTML)
+    align       = "r"
+  ) %>% 
+  kable_styling(
+    full_width   = FALSE,
+    position     = "center",
+    latex_options = c("hold_position"),  # keeps table near code in PDF
+    stripe_color = "rgba(0,0,0,0.04)"    # light zebra striping (HTML)
+  ) %>% 
+  add_header_above(header_vec)            # spanning header
 
