@@ -1,0 +1,946 @@
+"Notes"	"Five-Year Age Groups"	"Five-Year Age Groups Code"	"Year"	"Year Code"	"Month"	"Month Code"	Deaths	Population	Crude Rate
+	"< 1 year"	"1"	"2021"	"2021"	"Jan., 2021"	"2021/01"	1670	Not Applicable	Not Applicable
+	"< 1 year"	"1"	"2021"	"2021"	"Feb., 2021"	"2021/02"	1482	Not Applicable	Not Applicable
+	"< 1 year"	"1"	"2021"	"2021"	"Mar., 2021"	"2021/03"	1660	Not Applicable	Not Applicable
+	"< 1 year"	"1"	"2021"	"2021"	"Apr., 2021"	"2021/04"	1653	Not Applicable	Not Applicable
+	"< 1 year"	"1"	"2021"	"2021"	"May, 2021"	"2021/05"	1709	Not Applicable	Not Applicable
+	"< 1 year"	"1"	"2021"	"2021"	"Jun., 2021"	"2021/06"	1610	Not Applicable	Not Applicable
+	"< 1 year"	"1"	"2021"	"2021"	"Jul., 2021"	"2021/07"	1688	Not Applicable	Not Applicable
+	"< 1 year"	"1"	"2021"	"2021"	"Aug., 2021"	"2021/08"	1702	Not Applicable	Not Applicable
+	"< 1 year"	"1"	"2021"	"2021"	"Sep., 2021"	"2021/09"	1720	Not Applicable	Not Applicable
+	"< 1 year"	"1"	"2021"	"2021"	"Oct., 2021"	"2021/10"	1717	Not Applicable	Not Applicable
+	"< 1 year"	"1"	"2021"	"2021"	"Nov., 2021"	"2021/11"	1589	Not Applicable	Not Applicable
+	"< 1 year"	"1"	"2021"	"2021"	"Dec., 2021"	"2021/12"	1720	Not Applicable	Not Applicable
+"Total"	"< 1 year"	"1"	"2021"	"2021"			19920	Not Applicable	Not Applicable
+	"< 1 year"	"1"	"2022"	"2022"	"Jan., 2022"	"2022/01"	1674	Not Applicable	Not Applicable
+	"< 1 year"	"1"	"2022"	"2022"	"Feb., 2022"	"2022/02"	1508	Not Applicable	Not Applicable
+	"< 1 year"	"1"	"2022"	"2022"	"Mar., 2022"	"2022/03"	1682	Not Applicable	Not Applicable
+	"< 1 year"	"1"	"2022"	"2022"	"Apr., 2022"	"2022/04"	1622	Not Applicable	Not Applicable
+	"< 1 year"	"1"	"2022"	"2022"	"May, 2022"	"2022/05"	1735	Not Applicable	Not Applicable
+	"< 1 year"	"1"	"2022"	"2022"	"Jun., 2022"	"2022/06"	1745	Not Applicable	Not Applicable
+	"< 1 year"	"1"	"2022"	"2022"	"Jul., 2022"	"2022/07"	1771	Not Applicable	Not Applicable
+	"< 1 year"	"1"	"2022"	"2022"	"Aug., 2022"	"2022/08"	1809	Not Applicable	Not Applicable
+	"< 1 year"	"1"	"2022"	"2022"	"Sep., 2022"	"2022/09"	1724	Not Applicable	Not Applicable
+	"< 1 year"	"1"	"2022"	"2022"	"Oct., 2022"	"2022/10"	1810	Not Applicable	Not Applicable
+	"< 1 year"	"1"	"2022"	"2022"	"Nov., 2022"	"2022/11"	1719	Not Applicable	Not Applicable
+	"< 1 year"	"1"	"2022"	"2022"	"Dec., 2022"	"2022/12"	1754	Not Applicable	Not Applicable
+"Total"	"< 1 year"	"1"	"2022"	"2022"			20553	Not Applicable	Not Applicable
+	"< 1 year"	"1"	"2023 "	"2023"	"Jan., 2023 "	"2023/01"	1753	Not Applicable	Not Applicable
+	"< 1 year"	"1"	"2023 "	"2023"	"Feb., 2023 "	"2023/02"	1517	Not Applicable	Not Applicable
+	"< 1 year"	"1"	"2023 "	"2023"	"Mar., 2023 "	"2023/03"	1795	Not Applicable	Not Applicable
+	"< 1 year"	"1"	"2023 "	"2023"	"Apr., 2023 "	"2023/04"	1656	Not Applicable	Not Applicable
+	"< 1 year"	"1"	"2023 "	"2023"	"May, 2023 "	"2023/05"	1675	Not Applicable	Not Applicable
+	"< 1 year"	"1"	"2023 "	"2023"	"Jun., 2023 "	"2023/06"	1670	Not Applicable	Not Applicable
+	"< 1 year"	"1"	"2023 "	"2023"	"Jul., 2023 "	"2023/07"	1673	Not Applicable	Not Applicable
+	"< 1 year"	"1"	"2023 "	"2023"	"Aug., 2023 "	"2023/08"	1710	Not Applicable	Not Applicable
+	"< 1 year"	"1"	"2023 "	"2023"	"Sep., 2023 "	"2023/09"	1645	Not Applicable	Not Applicable
+	"< 1 year"	"1"	"2023 "	"2023"	"Oct., 2023 "	"2023/10"	1691	Not Applicable	Not Applicable
+	"< 1 year"	"1"	"2023 "	"2023"	"Nov., 2023 "	"2023/11"	1606	Not Applicable	Not Applicable
+	"< 1 year"	"1"	"2023 "	"2023"	"Dec., 2023 "	"2023/12"	1754	Not Applicable	Not Applicable
+"Total"	"< 1 year"	"1"	"2023 "	"2023"			20145	Not Applicable	Not Applicable
+"Total"	"< 1 year"	"1"					60618	Not Applicable	Not Applicable
+	"1-4 years"	"1-4"	"2021"	"2021"	"Jan., 2021"	"2021/01"	271	Not Applicable	Not Applicable
+	"1-4 years"	"1-4"	"2021"	"2021"	"Feb., 2021"	"2021/02"	264	Not Applicable	Not Applicable
+	"1-4 years"	"1-4"	"2021"	"2021"	"Mar., 2021"	"2021/03"	264	Not Applicable	Not Applicable
+	"1-4 years"	"1-4"	"2021"	"2021"	"Apr., 2021"	"2021/04"	317	Not Applicable	Not Applicable
+	"1-4 years"	"1-4"	"2021"	"2021"	"May, 2021"	"2021/05"	355	Not Applicable	Not Applicable
+	"1-4 years"	"1-4"	"2021"	"2021"	"Jun., 2021"	"2021/06"	338	Not Applicable	Not Applicable
+	"1-4 years"	"1-4"	"2021"	"2021"	"Jul., 2021"	"2021/07"	353	Not Applicable	Not Applicable
+	"1-4 years"	"1-4"	"2021"	"2021"	"Aug., 2021"	"2021/08"	342	Not Applicable	Not Applicable
+	"1-4 years"	"1-4"	"2021"	"2021"	"Sep., 2021"	"2021/09"	337	Not Applicable	Not Applicable
+	"1-4 years"	"1-4"	"2021"	"2021"	"Oct., 2021"	"2021/10"	323	Not Applicable	Not Applicable
+	"1-4 years"	"1-4"	"2021"	"2021"	"Nov., 2021"	"2021/11"	312	Not Applicable	Not Applicable
+	"1-4 years"	"1-4"	"2021"	"2021"	"Dec., 2021"	"2021/12"	340	Not Applicable	Not Applicable
+"Total"	"1-4 years"	"1-4"	"2021"	"2021"			3816	Not Applicable	Not Applicable
+	"1-4 years"	"1-4"	"2022"	"2022"	"Jan., 2022"	"2022/01"	310	Not Applicable	Not Applicable
+	"1-4 years"	"1-4"	"2022"	"2022"	"Feb., 2022"	"2022/02"	292	Not Applicable	Not Applicable
+	"1-4 years"	"1-4"	"2022"	"2022"	"Mar., 2022"	"2022/03"	320	Not Applicable	Not Applicable
+	"1-4 years"	"1-4"	"2022"	"2022"	"Apr., 2022"	"2022/04"	324	Not Applicable	Not Applicable
+	"1-4 years"	"1-4"	"2022"	"2022"	"May, 2022"	"2022/05"	371	Not Applicable	Not Applicable
+	"1-4 years"	"1-4"	"2022"	"2022"	"Jun., 2022"	"2022/06"	385	Not Applicable	Not Applicable
+	"1-4 years"	"1-4"	"2022"	"2022"	"Jul., 2022"	"2022/07"	416	Not Applicable	Not Applicable
+	"1-4 years"	"1-4"	"2022"	"2022"	"Aug., 2022"	"2022/08"	340	Not Applicable	Not Applicable
+	"1-4 years"	"1-4"	"2022"	"2022"	"Sep., 2022"	"2022/09"	304	Not Applicable	Not Applicable
+	"1-4 years"	"1-4"	"2022"	"2022"	"Oct., 2022"	"2022/10"	340	Not Applicable	Not Applicable
+	"1-4 years"	"1-4"	"2022"	"2022"	"Nov., 2022"	"2022/11"	392	Not Applicable	Not Applicable
+	"1-4 years"	"1-4"	"2022"	"2022"	"Dec., 2022"	"2022/12"	362	Not Applicable	Not Applicable
+"Total"	"1-4 years"	"1-4"	"2022"	"2022"			4156	Not Applicable	Not Applicable
+	"1-4 years"	"1-4"	"2023 "	"2023"	"Jan., 2023 "	"2023/01"	323	Not Applicable	Not Applicable
+	"1-4 years"	"1-4"	"2023 "	"2023"	"Feb., 2023 "	"2023/02"	287	Not Applicable	Not Applicable
+	"1-4 years"	"1-4"	"2023 "	"2023"	"Mar., 2023 "	"2023/03"	363	Not Applicable	Not Applicable
+	"1-4 years"	"1-4"	"2023 "	"2023"	"Apr., 2023 "	"2023/04"	333	Not Applicable	Not Applicable
+	"1-4 years"	"1-4"	"2023 "	"2023"	"May, 2023 "	"2023/05"	365	Not Applicable	Not Applicable
+	"1-4 years"	"1-4"	"2023 "	"2023"	"Jun., 2023 "	"2023/06"	336	Not Applicable	Not Applicable
+	"1-4 years"	"1-4"	"2023 "	"2023"	"Jul., 2023 "	"2023/07"	397	Not Applicable	Not Applicable
+	"1-4 years"	"1-4"	"2023 "	"2023"	"Aug., 2023 "	"2023/08"	359	Not Applicable	Not Applicable
+	"1-4 years"	"1-4"	"2023 "	"2023"	"Sep., 2023 "	"2023/09"	330	Not Applicable	Not Applicable
+	"1-4 years"	"1-4"	"2023 "	"2023"	"Oct., 2023 "	"2023/10"	301	Not Applicable	Not Applicable
+	"1-4 years"	"1-4"	"2023 "	"2023"	"Nov., 2023 "	"2023/11"	297	Not Applicable	Not Applicable
+	"1-4 years"	"1-4"	"2023 "	"2023"	"Dec., 2023 "	"2023/12"	368	Not Applicable	Not Applicable
+"Total"	"1-4 years"	"1-4"	"2023 "	"2023"			4059	Not Applicable	Not Applicable
+"Total"	"1-4 years"	"1-4"					12031	Not Applicable	Not Applicable
+	"5-9 years"	"5-9"	"2021"	"2021"	"Jan., 2021"	"2021/01"	178	Not Applicable	Not Applicable
+	"5-9 years"	"5-9"	"2021"	"2021"	"Feb., 2021"	"2021/02"	165	Not Applicable	Not Applicable
+	"5-9 years"	"5-9"	"2021"	"2021"	"Mar., 2021"	"2021/03"	191	Not Applicable	Not Applicable
+	"5-9 years"	"5-9"	"2021"	"2021"	"Apr., 2021"	"2021/04"	195	Not Applicable	Not Applicable
+	"5-9 years"	"5-9"	"2021"	"2021"	"May, 2021"	"2021/05"	213	Not Applicable	Not Applicable
+	"5-9 years"	"5-9"	"2021"	"2021"	"Jun., 2021"	"2021/06"	210	Not Applicable	Not Applicable
+	"5-9 years"	"5-9"	"2021"	"2021"	"Jul., 2021"	"2021/07"	226	Not Applicable	Not Applicable
+	"5-9 years"	"5-9"	"2021"	"2021"	"Aug., 2021"	"2021/08"	228	Not Applicable	Not Applicable
+	"5-9 years"	"5-9"	"2021"	"2021"	"Sep., 2021"	"2021/09"	184	Not Applicable	Not Applicable
+	"5-9 years"	"5-9"	"2021"	"2021"	"Oct., 2021"	"2021/10"	175	Not Applicable	Not Applicable
+	"5-9 years"	"5-9"	"2021"	"2021"	"Nov., 2021"	"2021/11"	210	Not Applicable	Not Applicable
+	"5-9 years"	"5-9"	"2021"	"2021"	"Dec., 2021"	"2021/12"	231	Not Applicable	Not Applicable
+"Total"	"5-9 years"	"5-9"	"2021"	"2021"			2406	Not Applicable	Not Applicable
+	"5-9 years"	"5-9"	"2022"	"2022"	"Jan., 2022"	"2022/01"	187	Not Applicable	Not Applicable
+	"5-9 years"	"5-9"	"2022"	"2022"	"Feb., 2022"	"2022/02"	188	Not Applicable	Not Applicable
+	"5-9 years"	"5-9"	"2022"	"2022"	"Mar., 2022"	"2022/03"	183	Not Applicable	Not Applicable
+	"5-9 years"	"5-9"	"2022"	"2022"	"Apr., 2022"	"2022/04"	199	Not Applicable	Not Applicable
+	"5-9 years"	"5-9"	"2022"	"2022"	"May, 2022"	"2022/05"	230	Not Applicable	Not Applicable
+	"5-9 years"	"5-9"	"2022"	"2022"	"Jun., 2022"	"2022/06"	236	Not Applicable	Not Applicable
+	"5-9 years"	"5-9"	"2022"	"2022"	"Jul., 2022"	"2022/07"	245	Not Applicable	Not Applicable
+	"5-9 years"	"5-9"	"2022"	"2022"	"Aug., 2022"	"2022/08"	180	Not Applicable	Not Applicable
+	"5-9 years"	"5-9"	"2022"	"2022"	"Sep., 2022"	"2022/09"	226	Not Applicable	Not Applicable
+	"5-9 years"	"5-9"	"2022"	"2022"	"Oct., 2022"	"2022/10"	212	Not Applicable	Not Applicable
+	"5-9 years"	"5-9"	"2022"	"2022"	"Nov., 2022"	"2022/11"	237	Not Applicable	Not Applicable
+	"5-9 years"	"5-9"	"2022"	"2022"	"Dec., 2022"	"2022/12"	244	Not Applicable	Not Applicable
+"Total"	"5-9 years"	"5-9"	"2022"	"2022"			2567	Not Applicable	Not Applicable
+	"5-9 years"	"5-9"	"2023 "	"2023"	"Jan., 2023 "	"2023/01"	212	Not Applicable	Not Applicable
+	"5-9 years"	"5-9"	"2023 "	"2023"	"Feb., 2023 "	"2023/02"	189	Not Applicable	Not Applicable
+	"5-9 years"	"5-9"	"2023 "	"2023"	"Mar., 2023 "	"2023/03"	235	Not Applicable	Not Applicable
+	"5-9 years"	"5-9"	"2023 "	"2023"	"Apr., 2023 "	"2023/04"	221	Not Applicable	Not Applicable
+	"5-9 years"	"5-9"	"2023 "	"2023"	"May, 2023 "	"2023/05"	197	Not Applicable	Not Applicable
+	"5-9 years"	"5-9"	"2023 "	"2023"	"Jun., 2023 "	"2023/06"	219	Not Applicable	Not Applicable
+	"5-9 years"	"5-9"	"2023 "	"2023"	"Jul., 2023 "	"2023/07"	214	Not Applicable	Not Applicable
+	"5-9 years"	"5-9"	"2023 "	"2023"	"Aug., 2023 "	"2023/08"	201	Not Applicable	Not Applicable
+	"5-9 years"	"5-9"	"2023 "	"2023"	"Sep., 2023 "	"2023/09"	178	Not Applicable	Not Applicable
+	"5-9 years"	"5-9"	"2023 "	"2023"	"Oct., 2023 "	"2023/10"	210	Not Applicable	Not Applicable
+	"5-9 years"	"5-9"	"2023 "	"2023"	"Nov., 2023 "	"2023/11"	199	Not Applicable	Not Applicable
+	"5-9 years"	"5-9"	"2023 "	"2023"	"Dec., 2023 "	"2023/12"	227	Not Applicable	Not Applicable
+"Total"	"5-9 years"	"5-9"	"2023 "	"2023"			2502	Not Applicable	Not Applicable
+"Total"	"5-9 years"	"5-9"					7475	Not Applicable	Not Applicable
+	"10-14 years"	"10-14"	"2021"	"2021"	"Jan., 2021"	"2021/01"	256	Not Applicable	Not Applicable
+	"10-14 years"	"10-14"	"2021"	"2021"	"Feb., 2021"	"2021/02"	267	Not Applicable	Not Applicable
+	"10-14 years"	"10-14"	"2021"	"2021"	"Mar., 2021"	"2021/03"	306	Not Applicable	Not Applicable
+	"10-14 years"	"10-14"	"2021"	"2021"	"Apr., 2021"	"2021/04"	260	Not Applicable	Not Applicable
+	"10-14 years"	"10-14"	"2021"	"2021"	"May, 2021"	"2021/05"	304	Not Applicable	Not Applicable
+	"10-14 years"	"10-14"	"2021"	"2021"	"Jun., 2021"	"2021/06"	358	Not Applicable	Not Applicable
+	"10-14 years"	"10-14"	"2021"	"2021"	"Jul., 2021"	"2021/07"	310	Not Applicable	Not Applicable
+	"10-14 years"	"10-14"	"2021"	"2021"	"Aug., 2021"	"2021/08"	308	Not Applicable	Not Applicable
+	"10-14 years"	"10-14"	"2021"	"2021"	"Sep., 2021"	"2021/09"	306	Not Applicable	Not Applicable
+	"10-14 years"	"10-14"	"2021"	"2021"	"Oct., 2021"	"2021/10"	299	Not Applicable	Not Applicable
+	"10-14 years"	"10-14"	"2021"	"2021"	"Nov., 2021"	"2021/11"	282	Not Applicable	Not Applicable
+	"10-14 years"	"10-14"	"2021"	"2021"	"Dec., 2021"	"2021/12"	313	Not Applicable	Not Applicable
+"Total"	"10-14 years"	"10-14"	"2021"	"2021"			3569	Not Applicable	Not Applicable
+	"10-14 years"	"10-14"	"2022"	"2022"	"Jan., 2022"	"2022/01"	300	Not Applicable	Not Applicable
+	"10-14 years"	"10-14"	"2022"	"2022"	"Feb., 2022"	"2022/02"	265	Not Applicable	Not Applicable
+	"10-14 years"	"10-14"	"2022"	"2022"	"Mar., 2022"	"2022/03"	312	Not Applicable	Not Applicable
+	"10-14 years"	"10-14"	"2022"	"2022"	"Apr., 2022"	"2022/04"	289	Not Applicable	Not Applicable
+	"10-14 years"	"10-14"	"2022"	"2022"	"May, 2022"	"2022/05"	316	Not Applicable	Not Applicable
+	"10-14 years"	"10-14"	"2022"	"2022"	"Jun., 2022"	"2022/06"	303	Not Applicable	Not Applicable
+	"10-14 years"	"10-14"	"2022"	"2022"	"Jul., 2022"	"2022/07"	347	Not Applicable	Not Applicable
+	"10-14 years"	"10-14"	"2022"	"2022"	"Aug., 2022"	"2022/08"	329	Not Applicable	Not Applicable
+	"10-14 years"	"10-14"	"2022"	"2022"	"Sep., 2022"	"2022/09"	256	Not Applicable	Not Applicable
+	"10-14 years"	"10-14"	"2022"	"2022"	"Oct., 2022"	"2022/10"	314	Not Applicable	Not Applicable
+	"10-14 years"	"10-14"	"2022"	"2022"	"Nov., 2022"	"2022/11"	308	Not Applicable	Not Applicable
+	"10-14 years"	"10-14"	"2022"	"2022"	"Dec., 2022"	"2022/12"	333	Not Applicable	Not Applicable
+"Total"	"10-14 years"	"10-14"	"2022"	"2022"			3672	Not Applicable	Not Applicable
+	"10-14 years"	"10-14"	"2023 "	"2023"	"Jan., 2023 "	"2023/01"	291	Not Applicable	Not Applicable
+	"10-14 years"	"10-14"	"2023 "	"2023"	"Feb., 2023 "	"2023/02"	295	Not Applicable	Not Applicable
+	"10-14 years"	"10-14"	"2023 "	"2023"	"Mar., 2023 "	"2023/03"	288	Not Applicable	Not Applicable
+	"10-14 years"	"10-14"	"2023 "	"2023"	"Apr., 2023 "	"2023/04"	294	Not Applicable	Not Applicable
+	"10-14 years"	"10-14"	"2023 "	"2023"	"May, 2023 "	"2023/05"	320	Not Applicable	Not Applicable
+	"10-14 years"	"10-14"	"2023 "	"2023"	"Jun., 2023 "	"2023/06"	279	Not Applicable	Not Applicable
+	"10-14 years"	"10-14"	"2023 "	"2023"	"Jul., 2023 "	"2023/07"	315	Not Applicable	Not Applicable
+	"10-14 years"	"10-14"	"2023 "	"2023"	"Aug., 2023 "	"2023/08"	288	Not Applicable	Not Applicable
+	"10-14 years"	"10-14"	"2023 "	"2023"	"Sep., 2023 "	"2023/09"	283	Not Applicable	Not Applicable
+	"10-14 years"	"10-14"	"2023 "	"2023"	"Oct., 2023 "	"2023/10"	271	Not Applicable	Not Applicable
+	"10-14 years"	"10-14"	"2023 "	"2023"	"Nov., 2023 "	"2023/11"	269	Not Applicable	Not Applicable
+	"10-14 years"	"10-14"	"2023 "	"2023"	"Dec., 2023 "	"2023/12"	310	Not Applicable	Not Applicable
+"Total"	"10-14 years"	"10-14"	"2023 "	"2023"			3503	Not Applicable	Not Applicable
+"Total"	"10-14 years"	"10-14"					10744	Not Applicable	Not Applicable
+	"15-19 years"	"15-19"	"2021"	"2021"	"Jan., 2021"	"2021/01"	1047	Not Applicable	Not Applicable
+	"15-19 years"	"15-19"	"2021"	"2021"	"Feb., 2021"	"2021/02"	900	Not Applicable	Not Applicable
+	"15-19 years"	"15-19"	"2021"	"2021"	"Mar., 2021"	"2021/03"	1095	Not Applicable	Not Applicable
+	"15-19 years"	"15-19"	"2021"	"2021"	"Apr., 2021"	"2021/04"	1105	Not Applicable	Not Applicable
+	"15-19 years"	"15-19"	"2021"	"2021"	"May, 2021"	"2021/05"	1161	Not Applicable	Not Applicable
+	"15-19 years"	"15-19"	"2021"	"2021"	"Jun., 2021"	"2021/06"	1218	Not Applicable	Not Applicable
+	"15-19 years"	"15-19"	"2021"	"2021"	"Jul., 2021"	"2021/07"	1181	Not Applicable	Not Applicable
+	"15-19 years"	"15-19"	"2021"	"2021"	"Aug., 2021"	"2021/08"	1149	Not Applicable	Not Applicable
+	"15-19 years"	"15-19"	"2021"	"2021"	"Sep., 2021"	"2021/09"	1168	Not Applicable	Not Applicable
+	"15-19 years"	"15-19"	"2021"	"2021"	"Oct., 2021"	"2021/10"	1218	Not Applicable	Not Applicable
+	"15-19 years"	"15-19"	"2021"	"2021"	"Nov., 2021"	"2021/11"	1075	Not Applicable	Not Applicable
+	"15-19 years"	"15-19"	"2021"	"2021"	"Dec., 2021"	"2021/12"	1090	Not Applicable	Not Applicable
+"Total"	"15-19 years"	"15-19"	"2021"	"2021"			13407	Not Applicable	Not Applicable
+	"15-19 years"	"15-19"	"2022"	"2022"	"Jan., 2022"	"2022/01"	992	Not Applicable	Not Applicable
+	"15-19 years"	"15-19"	"2022"	"2022"	"Feb., 2022"	"2022/02"	984	Not Applicable	Not Applicable
+	"15-19 years"	"15-19"	"2022"	"2022"	"Mar., 2022"	"2022/03"	1033	Not Applicable	Not Applicable
+	"15-19 years"	"15-19"	"2022"	"2022"	"Apr., 2022"	"2022/04"	963	Not Applicable	Not Applicable
+	"15-19 years"	"15-19"	"2022"	"2022"	"May, 2022"	"2022/05"	1093	Not Applicable	Not Applicable
+	"15-19 years"	"15-19"	"2022"	"2022"	"Jun., 2022"	"2022/06"	1084	Not Applicable	Not Applicable
+	"15-19 years"	"15-19"	"2022"	"2022"	"Jul., 2022"	"2022/07"	1126	Not Applicable	Not Applicable
+	"15-19 years"	"15-19"	"2022"	"2022"	"Aug., 2022"	"2022/08"	1154	Not Applicable	Not Applicable
+	"15-19 years"	"15-19"	"2022"	"2022"	"Sep., 2022"	"2022/09"	1059	Not Applicable	Not Applicable
+	"15-19 years"	"15-19"	"2022"	"2022"	"Oct., 2022"	"2022/10"	1121	Not Applicable	Not Applicable
+	"15-19 years"	"15-19"	"2022"	"2022"	"Nov., 2022"	"2022/11"	1085	Not Applicable	Not Applicable
+	"15-19 years"	"15-19"	"2022"	"2022"	"Dec., 2022"	"2022/12"	1051	Not Applicable	Not Applicable
+"Total"	"15-19 years"	"15-19"	"2022"	"2022"			12745	Not Applicable	Not Applicable
+	"15-19 years"	"15-19"	"2023 "	"2023"	"Jan., 2023 "	"2023/01"	1136	Not Applicable	Not Applicable
+	"15-19 years"	"15-19"	"2023 "	"2023"	"Feb., 2023 "	"2023/02"	922	Not Applicable	Not Applicable
+	"15-19 years"	"15-19"	"2023 "	"2023"	"Mar., 2023 "	"2023/03"	1014	Not Applicable	Not Applicable
+	"15-19 years"	"15-19"	"2023 "	"2023"	"Apr., 2023 "	"2023/04"	1085	Not Applicable	Not Applicable
+	"15-19 years"	"15-19"	"2023 "	"2023"	"May, 2023 "	"2023/05"	1140	Not Applicable	Not Applicable
+	"15-19 years"	"15-19"	"2023 "	"2023"	"Jun., 2023 "	"2023/06"	1201	Not Applicable	Not Applicable
+	"15-19 years"	"15-19"	"2023 "	"2023"	"Jul., 2023 "	"2023/07"	1134	Not Applicable	Not Applicable
+	"15-19 years"	"15-19"	"2023 "	"2023"	"Aug., 2023 "	"2023/08"	1132	Not Applicable	Not Applicable
+	"15-19 years"	"15-19"	"2023 "	"2023"	"Sep., 2023 "	"2023/09"	959	Not Applicable	Not Applicable
+	"15-19 years"	"15-19"	"2023 "	"2023"	"Oct., 2023 "	"2023/10"	1094	Not Applicable	Not Applicable
+	"15-19 years"	"15-19"	"2023 "	"2023"	"Nov., 2023 "	"2023/11"	958	Not Applicable	Not Applicable
+	"15-19 years"	"15-19"	"2023 "	"2023"	"Dec., 2023 "	"2023/12"	1002	Not Applicable	Not Applicable
+"Total"	"15-19 years"	"15-19"	"2023 "	"2023"			12777	Not Applicable	Not Applicable
+"Total"	"15-19 years"	"15-19"					38929	Not Applicable	Not Applicable
+	"20-24 years"	"20-24"	"2021"	"2021"	"Jan., 2021"	"2021/01"	2051	Not Applicable	Not Applicable
+	"20-24 years"	"20-24"	"2021"	"2021"	"Feb., 2021"	"2021/02"	1745	Not Applicable	Not Applicable
+	"20-24 years"	"20-24"	"2021"	"2021"	"Mar., 2021"	"2021/03"	2007	Not Applicable	Not Applicable
+	"20-24 years"	"20-24"	"2021"	"2021"	"Apr., 2021"	"2021/04"	2039	Not Applicable	Not Applicable
+	"20-24 years"	"20-24"	"2021"	"2021"	"May, 2021"	"2021/05"	2218	Not Applicable	Not Applicable
+	"20-24 years"	"20-24"	"2021"	"2021"	"Jun., 2021"	"2021/06"	2098	Not Applicable	Not Applicable
+	"20-24 years"	"20-24"	"2021"	"2021"	"Jul., 2021"	"2021/07"	2162	Not Applicable	Not Applicable
+	"20-24 years"	"20-24"	"2021"	"2021"	"Aug., 2021"	"2021/08"	2225	Not Applicable	Not Applicable
+	"20-24 years"	"20-24"	"2021"	"2021"	"Sep., 2021"	"2021/09"	2218	Not Applicable	Not Applicable
+	"20-24 years"	"20-24"	"2021"	"2021"	"Oct., 2021"	"2021/10"	2199	Not Applicable	Not Applicable
+	"20-24 years"	"20-24"	"2021"	"2021"	"Nov., 2021"	"2021/11"	1919	Not Applicable	Not Applicable
+	"20-24 years"	"20-24"	"2021"	"2021"	"Dec., 2021"	"2021/12"	2019	Not Applicable	Not Applicable
+"Total"	"20-24 years"	"20-24"	"2021"	"2021"			24900	Not Applicable	Not Applicable
+	"20-24 years"	"20-24"	"2022"	"2022"	"Jan., 2022"	"2022/01"	2066	Not Applicable	Not Applicable
+	"20-24 years"	"20-24"	"2022"	"2022"	"Feb., 2022"	"2022/02"	1766	Not Applicable	Not Applicable
+	"20-24 years"	"20-24"	"2022"	"2022"	"Mar., 2022"	"2022/03"	1834	Not Applicable	Not Applicable
+	"20-24 years"	"20-24"	"2022"	"2022"	"Apr., 2022"	"2022/04"	1760	Not Applicable	Not Applicable
+	"20-24 years"	"20-24"	"2022"	"2022"	"May, 2022"	"2022/05"	1957	Not Applicable	Not Applicable
+	"20-24 years"	"20-24"	"2022"	"2022"	"Jun., 2022"	"2022/06"	1968	Not Applicable	Not Applicable
+	"20-24 years"	"20-24"	"2022"	"2022"	"Jul., 2022"	"2022/07"	2037	Not Applicable	Not Applicable
+	"20-24 years"	"20-24"	"2022"	"2022"	"Aug., 2022"	"2022/08"	1842	Not Applicable	Not Applicable
+	"20-24 years"	"20-24"	"2022"	"2022"	"Sep., 2022"	"2022/09"	1797	Not Applicable	Not Applicable
+	"20-24 years"	"20-24"	"2022"	"2022"	"Oct., 2022"	"2022/10"	1877	Not Applicable	Not Applicable
+	"20-24 years"	"20-24"	"2022"	"2022"	"Nov., 2022"	"2022/11"	1744	Not Applicable	Not Applicable
+	"20-24 years"	"20-24"	"2022"	"2022"	"Dec., 2022"	"2022/12"	1839	Not Applicable	Not Applicable
+"Total"	"20-24 years"	"20-24"	"2022"	"2022"			22487	Not Applicable	Not Applicable
+	"20-24 years"	"20-24"	"2023 "	"2023"	"Jan., 2023 "	"2023/01"	1776	Not Applicable	Not Applicable
+	"20-24 years"	"20-24"	"2023 "	"2023"	"Feb., 2023 "	"2023/02"	1601	Not Applicable	Not Applicable
+	"20-24 years"	"20-24"	"2023 "	"2023"	"Mar., 2023 "	"2023/03"	1755	Not Applicable	Not Applicable
+	"20-24 years"	"20-24"	"2023 "	"2023"	"Apr., 2023 "	"2023/04"	1837	Not Applicable	Not Applicable
+	"20-24 years"	"20-24"	"2023 "	"2023"	"May, 2023 "	"2023/05"	1886	Not Applicable	Not Applicable
+	"20-24 years"	"20-24"	"2023 "	"2023"	"Jun., 2023 "	"2023/06"	1771	Not Applicable	Not Applicable
+	"20-24 years"	"20-24"	"2023 "	"2023"	"Jul., 2023 "	"2023/07"	1877	Not Applicable	Not Applicable
+	"20-24 years"	"20-24"	"2023 "	"2023"	"Aug., 2023 "	"2023/08"	1852	Not Applicable	Not Applicable
+	"20-24 years"	"20-24"	"2023 "	"2023"	"Sep., 2023 "	"2023/09"	1730	Not Applicable	Not Applicable
+	"20-24 years"	"20-24"	"2023 "	"2023"	"Oct., 2023 "	"2023/10"	1659	Not Applicable	Not Applicable
+	"20-24 years"	"20-24"	"2023 "	"2023"	"Nov., 2023 "	"2023/11"	1599	Not Applicable	Not Applicable
+	"20-24 years"	"20-24"	"2023 "	"2023"	"Dec., 2023 "	"2023/12"	1591	Not Applicable	Not Applicable
+"Total"	"20-24 years"	"20-24"	"2023 "	"2023"			20934	Not Applicable	Not Applicable
+"Total"	"20-24 years"	"20-24"					68321	Not Applicable	Not Applicable
+	"25-29 years"	"25-29"	"2021"	"2021"	"Jan., 2021"	"2021/01"	2993	Not Applicable	Not Applicable
+	"25-29 years"	"25-29"	"2021"	"2021"	"Feb., 2021"	"2021/02"	2490	Not Applicable	Not Applicable
+	"25-29 years"	"25-29"	"2021"	"2021"	"Mar., 2021"	"2021/03"	2807	Not Applicable	Not Applicable
+	"25-29 years"	"25-29"	"2021"	"2021"	"Apr., 2021"	"2021/04"	2776	Not Applicable	Not Applicable
+	"25-29 years"	"25-29"	"2021"	"2021"	"May, 2021"	"2021/05"	2943	Not Applicable	Not Applicable
+	"25-29 years"	"25-29"	"2021"	"2021"	"Jun., 2021"	"2021/06"	2842	Not Applicable	Not Applicable
+	"25-29 years"	"25-29"	"2021"	"2021"	"Jul., 2021"	"2021/07"	2963	Not Applicable	Not Applicable
+	"25-29 years"	"25-29"	"2021"	"2021"	"Aug., 2021"	"2021/08"	3440	Not Applicable	Not Applicable
+	"25-29 years"	"25-29"	"2021"	"2021"	"Sep., 2021"	"2021/09"	3315	Not Applicable	Not Applicable
+	"25-29 years"	"25-29"	"2021"	"2021"	"Oct., 2021"	"2021/10"	3060	Not Applicable	Not Applicable
+	"25-29 years"	"25-29"	"2021"	"2021"	"Nov., 2021"	"2021/11"	2720	Not Applicable	Not Applicable
+	"25-29 years"	"25-29"	"2021"	"2021"	"Dec., 2021"	"2021/12"	2846	Not Applicable	Not Applicable
+"Total"	"25-29 years"	"25-29"	"2021"	"2021"			35195	Not Applicable	Not Applicable
+	"25-29 years"	"25-29"	"2022"	"2022"	"Jan., 2022"	"2022/01"	2916	Not Applicable	Not Applicable
+	"25-29 years"	"25-29"	"2022"	"2022"	"Feb., 2022"	"2022/02"	2478	Not Applicable	Not Applicable
+	"25-29 years"	"25-29"	"2022"	"2022"	"Mar., 2022"	"2022/03"	2671	Not Applicable	Not Applicable
+	"25-29 years"	"25-29"	"2022"	"2022"	"Apr., 2022"	"2022/04"	2500	Not Applicable	Not Applicable
+	"25-29 years"	"25-29"	"2022"	"2022"	"May, 2022"	"2022/05"	2619	Not Applicable	Not Applicable
+	"25-29 years"	"25-29"	"2022"	"2022"	"Jun., 2022"	"2022/06"	2574	Not Applicable	Not Applicable
+	"25-29 years"	"25-29"	"2022"	"2022"	"Jul., 2022"	"2022/07"	2715	Not Applicable	Not Applicable
+	"25-29 years"	"25-29"	"2022"	"2022"	"Aug., 2022"	"2022/08"	2717	Not Applicable	Not Applicable
+	"25-29 years"	"25-29"	"2022"	"2022"	"Sep., 2022"	"2022/09"	2498	Not Applicable	Not Applicable
+	"25-29 years"	"25-29"	"2022"	"2022"	"Oct., 2022"	"2022/10"	2531	Not Applicable	Not Applicable
+	"25-29 years"	"25-29"	"2022"	"2022"	"Nov., 2022"	"2022/11"	2459	Not Applicable	Not Applicable
+	"25-29 years"	"25-29"	"2022"	"2022"	"Dec., 2022"	"2022/12"	2617	Not Applicable	Not Applicable
+"Total"	"25-29 years"	"25-29"	"2022"	"2022"			31295	Not Applicable	Not Applicable
+	"25-29 years"	"25-29"	"2023 "	"2023"	"Jan., 2023 "	"2023/01"	2493	Not Applicable	Not Applicable
+	"25-29 years"	"25-29"	"2023 "	"2023"	"Feb., 2023 "	"2023/02"	2144	Not Applicable	Not Applicable
+	"25-29 years"	"25-29"	"2023 "	"2023"	"Mar., 2023 "	"2023/03"	2355	Not Applicable	Not Applicable
+	"25-29 years"	"25-29"	"2023 "	"2023"	"Apr., 2023 "	"2023/04"	2365	Not Applicable	Not Applicable
+	"25-29 years"	"25-29"	"2023 "	"2023"	"May, 2023 "	"2023/05"	2517	Not Applicable	Not Applicable
+	"25-29 years"	"25-29"	"2023 "	"2023"	"Jun., 2023 "	"2023/06"	2317	Not Applicable	Not Applicable
+	"25-29 years"	"25-29"	"2023 "	"2023"	"Jul., 2023 "	"2023/07"	2489	Not Applicable	Not Applicable
+	"25-29 years"	"25-29"	"2023 "	"2023"	"Aug., 2023 "	"2023/08"	2403	Not Applicable	Not Applicable
+	"25-29 years"	"25-29"	"2023 "	"2023"	"Sep., 2023 "	"2023/09"	2215	Not Applicable	Not Applicable
+	"25-29 years"	"25-29"	"2023 "	"2023"	"Oct., 2023 "	"2023/10"	2215	Not Applicable	Not Applicable
+	"25-29 years"	"25-29"	"2023 "	"2023"	"Nov., 2023 "	"2023/11"	2129	Not Applicable	Not Applicable
+	"25-29 years"	"25-29"	"2023 "	"2023"	"Dec., 2023 "	"2023/12"	2133	Not Applicable	Not Applicable
+"Total"	"25-29 years"	"25-29"	"2023 "	"2023"			27775	Not Applicable	Not Applicable
+"Total"	"25-29 years"	"25-29"					94265	Not Applicable	Not Applicable
+	"30-34 years"	"30-34"	"2021"	"2021"	"Jan., 2021"	"2021/01"	3876	Not Applicable	Not Applicable
+	"30-34 years"	"30-34"	"2021"	"2021"	"Feb., 2021"	"2021/02"	3256	Not Applicable	Not Applicable
+	"30-34 years"	"30-34"	"2021"	"2021"	"Mar., 2021"	"2021/03"	3537	Not Applicable	Not Applicable
+	"30-34 years"	"30-34"	"2021"	"2021"	"Apr., 2021"	"2021/04"	3622	Not Applicable	Not Applicable
+	"30-34 years"	"30-34"	"2021"	"2021"	"May, 2021"	"2021/05"	3799	Not Applicable	Not Applicable
+	"30-34 years"	"30-34"	"2021"	"2021"	"Jun., 2021"	"2021/06"	3708	Not Applicable	Not Applicable
+	"30-34 years"	"30-34"	"2021"	"2021"	"Jul., 2021"	"2021/07"	3957	Not Applicable	Not Applicable
+	"30-34 years"	"30-34"	"2021"	"2021"	"Aug., 2021"	"2021/08"	4639	Not Applicable	Not Applicable
+	"30-34 years"	"30-34"	"2021"	"2021"	"Sep., 2021"	"2021/09"	4644	Not Applicable	Not Applicable
+	"30-34 years"	"30-34"	"2021"	"2021"	"Oct., 2021"	"2021/10"	4219	Not Applicable	Not Applicable
+	"30-34 years"	"30-34"	"2021"	"2021"	"Nov., 2021"	"2021/11"	3756	Not Applicable	Not Applicable
+	"30-34 years"	"30-34"	"2021"	"2021"	"Dec., 2021"	"2021/12"	4066	Not Applicable	Not Applicable
+"Total"	"30-34 years"	"30-34"	"2021"	"2021"			47079	Not Applicable	Not Applicable
+	"30-34 years"	"30-34"	"2022"	"2022"	"Jan., 2022"	"2022/01"	4216	Not Applicable	Not Applicable
+	"30-34 years"	"30-34"	"2022"	"2022"	"Feb., 2022"	"2022/02"	3401	Not Applicable	Not Applicable
+	"30-34 years"	"30-34"	"2022"	"2022"	"Mar., 2022"	"2022/03"	3620	Not Applicable	Not Applicable
+	"30-34 years"	"30-34"	"2022"	"2022"	"Apr., 2022"	"2022/04"	3406	Not Applicable	Not Applicable
+	"30-34 years"	"30-34"	"2022"	"2022"	"May, 2022"	"2022/05"	3443	Not Applicable	Not Applicable
+	"30-34 years"	"30-34"	"2022"	"2022"	"Jun., 2022"	"2022/06"	3514	Not Applicable	Not Applicable
+	"30-34 years"	"30-34"	"2022"	"2022"	"Jul., 2022"	"2022/07"	3763	Not Applicable	Not Applicable
+	"30-34 years"	"30-34"	"2022"	"2022"	"Aug., 2022"	"2022/08"	3632	Not Applicable	Not Applicable
+	"30-34 years"	"30-34"	"2022"	"2022"	"Sep., 2022"	"2022/09"	3495	Not Applicable	Not Applicable
+	"30-34 years"	"30-34"	"2022"	"2022"	"Oct., 2022"	"2022/10"	3533	Not Applicable	Not Applicable
+	"30-34 years"	"30-34"	"2022"	"2022"	"Nov., 2022"	"2022/11"	3361	Not Applicable	Not Applicable
+	"30-34 years"	"30-34"	"2022"	"2022"	"Dec., 2022"	"2022/12"	3690	Not Applicable	Not Applicable
+"Total"	"30-34 years"	"30-34"	"2022"	"2022"			43074	Not Applicable	Not Applicable
+	"30-34 years"	"30-34"	"2023 "	"2023"	"Jan., 2023 "	"2023/01"	3473	Not Applicable	Not Applicable
+	"30-34 years"	"30-34"	"2023 "	"2023"	"Feb., 2023 "	"2023/02"	3090	Not Applicable	Not Applicable
+	"30-34 years"	"30-34"	"2023 "	"2023"	"Mar., 2023 "	"2023/03"	3486	Not Applicable	Not Applicable
+	"30-34 years"	"30-34"	"2023 "	"2023"	"Apr., 2023 "	"2023/04"	3212	Not Applicable	Not Applicable
+	"30-34 years"	"30-34"	"2023 "	"2023"	"May, 2023 "	"2023/05"	3390	Not Applicable	Not Applicable
+	"30-34 years"	"30-34"	"2023 "	"2023"	"Jun., 2023 "	"2023/06"	3284	Not Applicable	Not Applicable
+	"30-34 years"	"30-34"	"2023 "	"2023"	"Jul., 2023 "	"2023/07"	3582	Not Applicable	Not Applicable
+	"30-34 years"	"30-34"	"2023 "	"2023"	"Aug., 2023 "	"2023/08"	3403	Not Applicable	Not Applicable
+	"30-34 years"	"30-34"	"2023 "	"2023"	"Sep., 2023 "	"2023/09"	3210	Not Applicable	Not Applicable
+	"30-34 years"	"30-34"	"2023 "	"2023"	"Oct., 2023 "	"2023/10"	3200	Not Applicable	Not Applicable
+	"30-34 years"	"30-34"	"2023 "	"2023"	"Nov., 2023 "	"2023/11"	3033	Not Applicable	Not Applicable
+	"30-34 years"	"30-34"	"2023 "	"2023"	"Dec., 2023 "	"2023/12"	3311	Not Applicable	Not Applicable
+"Total"	"30-34 years"	"30-34"	"2023 "	"2023"			39674	Not Applicable	Not Applicable
+"Total"	"30-34 years"	"30-34"					129827	Not Applicable	Not Applicable
+	"35-39 years"	"35-39"	"2021"	"2021"	"Jan., 2021"	"2021/01"	4790	Not Applicable	Not Applicable
+	"35-39 years"	"35-39"	"2021"	"2021"	"Feb., 2021"	"2021/02"	3932	Not Applicable	Not Applicable
+	"35-39 years"	"35-39"	"2021"	"2021"	"Mar., 2021"	"2021/03"	4203	Not Applicable	Not Applicable
+	"35-39 years"	"35-39"	"2021"	"2021"	"Apr., 2021"	"2021/04"	4191	Not Applicable	Not Applicable
+	"35-39 years"	"35-39"	"2021"	"2021"	"May, 2021"	"2021/05"	4403	Not Applicable	Not Applicable
+	"35-39 years"	"35-39"	"2021"	"2021"	"Jun., 2021"	"2021/06"	4309	Not Applicable	Not Applicable
+	"35-39 years"	"35-39"	"2021"	"2021"	"Jul., 2021"	"2021/07"	4493	Not Applicable	Not Applicable
+	"35-39 years"	"35-39"	"2021"	"2021"	"Aug., 2021"	"2021/08"	5614	Not Applicable	Not Applicable
+	"35-39 years"	"35-39"	"2021"	"2021"	"Sep., 2021"	"2021/09"	5809	Not Applicable	Not Applicable
+	"35-39 years"	"35-39"	"2021"	"2021"	"Oct., 2021"	"2021/10"	5116	Not Applicable	Not Applicable
+	"35-39 years"	"35-39"	"2021"	"2021"	"Nov., 2021"	"2021/11"	4672	Not Applicable	Not Applicable
+	"35-39 years"	"35-39"	"2021"	"2021"	"Dec., 2021"	"2021/12"	4871	Not Applicable	Not Applicable
+"Total"	"35-39 years"	"35-39"	"2021"	"2021"			56403	Not Applicable	Not Applicable
+	"35-39 years"	"35-39"	"2022"	"2022"	"Jan., 2022"	"2022/01"	5052	Not Applicable	Not Applicable
+	"35-39 years"	"35-39"	"2022"	"2022"	"Feb., 2022"	"2022/02"	4173	Not Applicable	Not Applicable
+	"35-39 years"	"35-39"	"2022"	"2022"	"Mar., 2022"	"2022/03"	4108	Not Applicable	Not Applicable
+	"35-39 years"	"35-39"	"2022"	"2022"	"Apr., 2022"	"2022/04"	3830	Not Applicable	Not Applicable
+	"35-39 years"	"35-39"	"2022"	"2022"	"May, 2022"	"2022/05"	4134	Not Applicable	Not Applicable
+	"35-39 years"	"35-39"	"2022"	"2022"	"Jun., 2022"	"2022/06"	4080	Not Applicable	Not Applicable
+	"35-39 years"	"35-39"	"2022"	"2022"	"Jul., 2022"	"2022/07"	4347	Not Applicable	Not Applicable
+	"35-39 years"	"35-39"	"2022"	"2022"	"Aug., 2022"	"2022/08"	4192	Not Applicable	Not Applicable
+	"35-39 years"	"35-39"	"2022"	"2022"	"Sep., 2022"	"2022/09"	4090	Not Applicable	Not Applicable
+	"35-39 years"	"35-39"	"2022"	"2022"	"Oct., 2022"	"2022/10"	4009	Not Applicable	Not Applicable
+	"35-39 years"	"35-39"	"2022"	"2022"	"Nov., 2022"	"2022/11"	4067	Not Applicable	Not Applicable
+	"35-39 years"	"35-39"	"2022"	"2022"	"Dec., 2022"	"2022/12"	4390	Not Applicable	Not Applicable
+"Total"	"35-39 years"	"35-39"	"2022"	"2022"			50472	Not Applicable	Not Applicable
+	"35-39 years"	"35-39"	"2023 "	"2023"	"Jan., 2023 "	"2023/01"	4055	Not Applicable	Not Applicable
+	"35-39 years"	"35-39"	"2023 "	"2023"	"Feb., 2023 "	"2023/02"	3586	Not Applicable	Not Applicable
+	"35-39 years"	"35-39"	"2023 "	"2023"	"Mar., 2023 "	"2023/03"	4053	Not Applicable	Not Applicable
+	"35-39 years"	"35-39"	"2023 "	"2023"	"Apr., 2023 "	"2023/04"	4001	Not Applicable	Not Applicable
+	"35-39 years"	"35-39"	"2023 "	"2023"	"May, 2023 "	"2023/05"	4022	Not Applicable	Not Applicable
+	"35-39 years"	"35-39"	"2023 "	"2023"	"Jun., 2023 "	"2023/06"	3922	Not Applicable	Not Applicable
+	"35-39 years"	"35-39"	"2023 "	"2023"	"Jul., 2023 "	"2023/07"	4178	Not Applicable	Not Applicable
+	"35-39 years"	"35-39"	"2023 "	"2023"	"Aug., 2023 "	"2023/08"	4022	Not Applicable	Not Applicable
+	"35-39 years"	"35-39"	"2023 "	"2023"	"Sep., 2023 "	"2023/09"	3800	Not Applicable	Not Applicable
+	"35-39 years"	"35-39"	"2023 "	"2023"	"Oct., 2023 "	"2023/10"	3742	Not Applicable	Not Applicable
+	"35-39 years"	"35-39"	"2023 "	"2023"	"Nov., 2023 "	"2023/11"	3733	Not Applicable	Not Applicable
+	"35-39 years"	"35-39"	"2023 "	"2023"	"Dec., 2023 "	"2023/12"	3869	Not Applicable	Not Applicable
+"Total"	"35-39 years"	"35-39"	"2023 "	"2023"			46983	Not Applicable	Not Applicable
+"Total"	"35-39 years"	"35-39"					153858	Not Applicable	Not Applicable
+	"40-44 years"	"40-44"	"2021"	"2021"	"Jan., 2021"	"2021/01"	5776	Not Applicable	Not Applicable
+	"40-44 years"	"40-44"	"2021"	"2021"	"Feb., 2021"	"2021/02"	4697	Not Applicable	Not Applicable
+	"40-44 years"	"40-44"	"2021"	"2021"	"Mar., 2021"	"2021/03"	5092	Not Applicable	Not Applicable
+	"40-44 years"	"40-44"	"2021"	"2021"	"Apr., 2021"	"2021/04"	5131	Not Applicable	Not Applicable
+	"40-44 years"	"40-44"	"2021"	"2021"	"May, 2021"	"2021/05"	5082	Not Applicable	Not Applicable
+	"40-44 years"	"40-44"	"2021"	"2021"	"Jun., 2021"	"2021/06"	5096	Not Applicable	Not Applicable
+	"40-44 years"	"40-44"	"2021"	"2021"	"Jul., 2021"	"2021/07"	5443	Not Applicable	Not Applicable
+	"40-44 years"	"40-44"	"2021"	"2021"	"Aug., 2021"	"2021/08"	7000	Not Applicable	Not Applicable
+	"40-44 years"	"40-44"	"2021"	"2021"	"Sep., 2021"	"2021/09"	7229	Not Applicable	Not Applicable
+	"40-44 years"	"40-44"	"2021"	"2021"	"Oct., 2021"	"2021/10"	6292	Not Applicable	Not Applicable
+	"40-44 years"	"40-44"	"2021"	"2021"	"Nov., 2021"	"2021/11"	5547	Not Applicable	Not Applicable
+	"40-44 years"	"40-44"	"2021"	"2021"	"Dec., 2021"	"2021/12"	6151	Not Applicable	Not Applicable
+"Total"	"40-44 years"	"40-44"	"2021"	"2021"			68536	Not Applicable	Not Applicable
+	"40-44 years"	"40-44"	"2022"	"2022"	"Jan., 2022"	"2022/01"	6540	Not Applicable	Not Applicable
+	"40-44 years"	"40-44"	"2022"	"2022"	"Feb., 2022"	"2022/02"	4975	Not Applicable	Not Applicable
+	"40-44 years"	"40-44"	"2022"	"2022"	"Mar., 2022"	"2022/03"	4997	Not Applicable	Not Applicable
+	"40-44 years"	"40-44"	"2022"	"2022"	"Apr., 2022"	"2022/04"	4705	Not Applicable	Not Applicable
+	"40-44 years"	"40-44"	"2022"	"2022"	"May, 2022"	"2022/05"	4942	Not Applicable	Not Applicable
+	"40-44 years"	"40-44"	"2022"	"2022"	"Jun., 2022"	"2022/06"	4912	Not Applicable	Not Applicable
+	"40-44 years"	"40-44"	"2022"	"2022"	"Jul., 2022"	"2022/07"	5089	Not Applicable	Not Applicable
+	"40-44 years"	"40-44"	"2022"	"2022"	"Aug., 2022"	"2022/08"	5004	Not Applicable	Not Applicable
+	"40-44 years"	"40-44"	"2022"	"2022"	"Sep., 2022"	"2022/09"	4814	Not Applicable	Not Applicable
+	"40-44 years"	"40-44"	"2022"	"2022"	"Oct., 2022"	"2022/10"	4878	Not Applicable	Not Applicable
+	"40-44 years"	"40-44"	"2022"	"2022"	"Nov., 2022"	"2022/11"	4963	Not Applicable	Not Applicable
+	"40-44 years"	"40-44"	"2022"	"2022"	"Dec., 2022"	"2022/12"	5314	Not Applicable	Not Applicable
+"Total"	"40-44 years"	"40-44"	"2022"	"2022"			61133	Not Applicable	Not Applicable
+	"40-44 years"	"40-44"	"2023 "	"2023"	"Jan., 2023 "	"2023/01"	5269	Not Applicable	Not Applicable
+	"40-44 years"	"40-44"	"2023 "	"2023"	"Feb., 2023 "	"2023/02"	4576	Not Applicable	Not Applicable
+	"40-44 years"	"40-44"	"2023 "	"2023"	"Mar., 2023 "	"2023/03"	4945	Not Applicable	Not Applicable
+	"40-44 years"	"40-44"	"2023 "	"2023"	"Apr., 2023 "	"2023/04"	4723	Not Applicable	Not Applicable
+	"40-44 years"	"40-44"	"2023 "	"2023"	"May, 2023 "	"2023/05"	4991	Not Applicable	Not Applicable
+	"40-44 years"	"40-44"	"2023 "	"2023"	"Jun., 2023 "	"2023/06"	4863	Not Applicable	Not Applicable
+	"40-44 years"	"40-44"	"2023 "	"2023"	"Jul., 2023 "	"2023/07"	5029	Not Applicable	Not Applicable
+	"40-44 years"	"40-44"	"2023 "	"2023"	"Aug., 2023 "	"2023/08"	4971	Not Applicable	Not Applicable
+	"40-44 years"	"40-44"	"2023 "	"2023"	"Sep., 2023 "	"2023/09"	4730	Not Applicable	Not Applicable
+	"40-44 years"	"40-44"	"2023 "	"2023"	"Oct., 2023 "	"2023/10"	4706	Not Applicable	Not Applicable
+	"40-44 years"	"40-44"	"2023 "	"2023"	"Nov., 2023 "	"2023/11"	4582	Not Applicable	Not Applicable
+	"40-44 years"	"40-44"	"2023 "	"2023"	"Dec., 2023 "	"2023/12"	4968	Not Applicable	Not Applicable
+"Total"	"40-44 years"	"40-44"	"2023 "	"2023"			58353	Not Applicable	Not Applicable
+"Total"	"40-44 years"	"40-44"					188022	Not Applicable	Not Applicable
+	"45-49 years"	"45-49"	"2021"	"2021"	"Jan., 2021"	"2021/01"	7840	Not Applicable	Not Applicable
+	"45-49 years"	"45-49"	"2021"	"2021"	"Feb., 2021"	"2021/02"	6318	Not Applicable	Not Applicable
+	"45-49 years"	"45-49"	"2021"	"2021"	"Mar., 2021"	"2021/03"	6533	Not Applicable	Not Applicable
+	"45-49 years"	"45-49"	"2021"	"2021"	"Apr., 2021"	"2021/04"	6384	Not Applicable	Not Applicable
+	"45-49 years"	"45-49"	"2021"	"2021"	"May, 2021"	"2021/05"	6407	Not Applicable	Not Applicable
+	"45-49 years"	"45-49"	"2021"	"2021"	"Jun., 2021"	"2021/06"	6024	Not Applicable	Not Applicable
+	"45-49 years"	"45-49"	"2021"	"2021"	"Jul., 2021"	"2021/07"	6602	Not Applicable	Not Applicable
+	"45-49 years"	"45-49"	"2021"	"2021"	"Aug., 2021"	"2021/08"	8562	Not Applicable	Not Applicable
+	"45-49 years"	"45-49"	"2021"	"2021"	"Sep., 2021"	"2021/09"	9072	Not Applicable	Not Applicable
+	"45-49 years"	"45-49"	"2021"	"2021"	"Oct., 2021"	"2021/10"	7915	Not Applicable	Not Applicable
+	"45-49 years"	"45-49"	"2021"	"2021"	"Nov., 2021"	"2021/11"	6817	Not Applicable	Not Applicable
+	"45-49 years"	"45-49"	"2021"	"2021"	"Dec., 2021"	"2021/12"	7670	Not Applicable	Not Applicable
+"Total"	"45-49 years"	"45-49"	"2021"	"2021"			86144	Not Applicable	Not Applicable
+	"45-49 years"	"45-49"	"2022"	"2022"	"Jan., 2022"	"2022/01"	8239	Not Applicable	Not Applicable
+	"45-49 years"	"45-49"	"2022"	"2022"	"Feb., 2022"	"2022/02"	6206	Not Applicable	Not Applicable
+	"45-49 years"	"45-49"	"2022"	"2022"	"Mar., 2022"	"2022/03"	6059	Not Applicable	Not Applicable
+	"45-49 years"	"45-49"	"2022"	"2022"	"Apr., 2022"	"2022/04"	5560	Not Applicable	Not Applicable
+	"45-49 years"	"45-49"	"2022"	"2022"	"May, 2022"	"2022/05"	5738	Not Applicable	Not Applicable
+	"45-49 years"	"45-49"	"2022"	"2022"	"Jun., 2022"	"2022/06"	5692	Not Applicable	Not Applicable
+	"45-49 years"	"45-49"	"2022"	"2022"	"Jul., 2022"	"2022/07"	6091	Not Applicable	Not Applicable
+	"45-49 years"	"45-49"	"2022"	"2022"	"Aug., 2022"	"2022/08"	5758	Not Applicable	Not Applicable
+	"45-49 years"	"45-49"	"2022"	"2022"	"Sep., 2022"	"2022/09"	5745	Not Applicable	Not Applicable
+	"45-49 years"	"45-49"	"2022"	"2022"	"Oct., 2022"	"2022/10"	5810	Not Applicable	Not Applicable
+	"45-49 years"	"45-49"	"2022"	"2022"	"Nov., 2022"	"2022/11"	5965	Not Applicable	Not Applicable
+	"45-49 years"	"45-49"	"2022"	"2022"	"Dec., 2022"	"2022/12"	6280	Not Applicable	Not Applicable
+"Total"	"45-49 years"	"45-49"	"2022"	"2022"			73143	Not Applicable	Not Applicable
+	"45-49 years"	"45-49"	"2023 "	"2023"	"Jan., 2023 "	"2023/01"	6042	Not Applicable	Not Applicable
+	"45-49 years"	"45-49"	"2023 "	"2023"	"Feb., 2023 "	"2023/02"	5349	Not Applicable	Not Applicable
+	"45-49 years"	"45-49"	"2023 "	"2023"	"Mar., 2023 "	"2023/03"	5522	Not Applicable	Not Applicable
+	"45-49 years"	"45-49"	"2023 "	"2023"	"Apr., 2023 "	"2023/04"	5480	Not Applicable	Not Applicable
+	"45-49 years"	"45-49"	"2023 "	"2023"	"May, 2023 "	"2023/05"	5681	Not Applicable	Not Applicable
+	"45-49 years"	"45-49"	"2023 "	"2023"	"Jun., 2023 "	"2023/06"	5471	Not Applicable	Not Applicable
+	"45-49 years"	"45-49"	"2023 "	"2023"	"Jul., 2023 "	"2023/07"	5766	Not Applicable	Not Applicable
+	"45-49 years"	"45-49"	"2023 "	"2023"	"Aug., 2023 "	"2023/08"	5821	Not Applicable	Not Applicable
+	"45-49 years"	"45-49"	"2023 "	"2023"	"Sep., 2023 "	"2023/09"	5411	Not Applicable	Not Applicable
+	"45-49 years"	"45-49"	"2023 "	"2023"	"Oct., 2023 "	"2023/10"	5465	Not Applicable	Not Applicable
+	"45-49 years"	"45-49"	"2023 "	"2023"	"Nov., 2023 "	"2023/11"	5460	Not Applicable	Not Applicable
+	"45-49 years"	"45-49"	"2023 "	"2023"	"Dec., 2023 "	"2023/12"	5803	Not Applicable	Not Applicable
+"Total"	"45-49 years"	"45-49"	"2023 "	"2023"			67271	Not Applicable	Not Applicable
+"Total"	"45-49 years"	"45-49"					226558	Not Applicable	Not Applicable
+	"50-54 years"	"50-54"	"2021"	"2021"	"Jan., 2021"	"2021/01"	12217	Not Applicable	Not Applicable
+	"50-54 years"	"50-54"	"2021"	"2021"	"Feb., 2021"	"2021/02"	9830	Not Applicable	Not Applicable
+	"50-54 years"	"50-54"	"2021"	"2021"	"Mar., 2021"	"2021/03"	9833	Not Applicable	Not Applicable
+	"50-54 years"	"50-54"	"2021"	"2021"	"Apr., 2021"	"2021/04"	9565	Not Applicable	Not Applicable
+	"50-54 years"	"50-54"	"2021"	"2021"	"May, 2021"	"2021/05"	9639	Not Applicable	Not Applicable
+	"50-54 years"	"50-54"	"2021"	"2021"	"Jun., 2021"	"2021/06"	9107	Not Applicable	Not Applicable
+	"50-54 years"	"50-54"	"2021"	"2021"	"Jul., 2021"	"2021/07"	9555	Not Applicable	Not Applicable
+	"50-54 years"	"50-54"	"2021"	"2021"	"Aug., 2021"	"2021/08"	12723	Not Applicable	Not Applicable
+	"50-54 years"	"50-54"	"2021"	"2021"	"Sep., 2021"	"2021/09"	13485	Not Applicable	Not Applicable
+	"50-54 years"	"50-54"	"2021"	"2021"	"Oct., 2021"	"2021/10"	11723	Not Applicable	Not Applicable
+	"50-54 years"	"50-54"	"2021"	"2021"	"Nov., 2021"	"2021/11"	10434	Not Applicable	Not Applicable
+	"50-54 years"	"50-54"	"2021"	"2021"	"Dec., 2021"	"2021/12"	11782	Not Applicable	Not Applicable
+"Total"	"50-54 years"	"50-54"	"2021"	"2021"			129893	Not Applicable	Not Applicable
+	"50-54 years"	"50-54"	"2022"	"2022"	"Jan., 2022"	"2022/01"	12614	Not Applicable	Not Applicable
+	"50-54 years"	"50-54"	"2022"	"2022"	"Feb., 2022"	"2022/02"	9778	Not Applicable	Not Applicable
+	"50-54 years"	"50-54"	"2022"	"2022"	"Mar., 2022"	"2022/03"	9016	Not Applicable	Not Applicable
+	"50-54 years"	"50-54"	"2022"	"2022"	"Apr., 2022"	"2022/04"	8330	Not Applicable	Not Applicable
+	"50-54 years"	"50-54"	"2022"	"2022"	"May, 2022"	"2022/05"	8733	Not Applicable	Not Applicable
+	"50-54 years"	"50-54"	"2022"	"2022"	"Jun., 2022"	"2022/06"	8509	Not Applicable	Not Applicable
+	"50-54 years"	"50-54"	"2022"	"2022"	"Jul., 2022"	"2022/07"	8903	Not Applicable	Not Applicable
+	"50-54 years"	"50-54"	"2022"	"2022"	"Aug., 2022"	"2022/08"	8719	Not Applicable	Not Applicable
+	"50-54 years"	"50-54"	"2022"	"2022"	"Sep., 2022"	"2022/09"	8606	Not Applicable	Not Applicable
+	"50-54 years"	"50-54"	"2022"	"2022"	"Oct., 2022"	"2022/10"	8653	Not Applicable	Not Applicable
+	"50-54 years"	"50-54"	"2022"	"2022"	"Nov., 2022"	"2022/11"	8836	Not Applicable	Not Applicable
+	"50-54 years"	"50-54"	"2022"	"2022"	"Dec., 2022"	"2022/12"	9444	Not Applicable	Not Applicable
+"Total"	"50-54 years"	"50-54"	"2022"	"2022"			110141	Not Applicable	Not Applicable
+	"50-54 years"	"50-54"	"2023 "	"2023"	"Jan., 2023 "	"2023/01"	9043	Not Applicable	Not Applicable
+	"50-54 years"	"50-54"	"2023 "	"2023"	"Feb., 2023 "	"2023/02"	7870	Not Applicable	Not Applicable
+	"50-54 years"	"50-54"	"2023 "	"2023"	"Mar., 2023 "	"2023/03"	8611	Not Applicable	Not Applicable
+	"50-54 years"	"50-54"	"2023 "	"2023"	"Apr., 2023 "	"2023/04"	8383	Not Applicable	Not Applicable
+	"50-54 years"	"50-54"	"2023 "	"2023"	"May, 2023 "	"2023/05"	8399	Not Applicable	Not Applicable
+	"50-54 years"	"50-54"	"2023 "	"2023"	"Jun., 2023 "	"2023/06"	8006	Not Applicable	Not Applicable
+	"50-54 years"	"50-54"	"2023 "	"2023"	"Jul., 2023 "	"2023/07"	8305	Not Applicable	Not Applicable
+	"50-54 years"	"50-54"	"2023 "	"2023"	"Aug., 2023 "	"2023/08"	8148	Not Applicable	Not Applicable
+	"50-54 years"	"50-54"	"2023 "	"2023"	"Sep., 2023 "	"2023/09"	7872	Not Applicable	Not Applicable
+	"50-54 years"	"50-54"	"2023 "	"2023"	"Oct., 2023 "	"2023/10"	8231	Not Applicable	Not Applicable
+	"50-54 years"	"50-54"	"2023 "	"2023"	"Nov., 2023 "	"2023/11"	8016	Not Applicable	Not Applicable
+	"50-54 years"	"50-54"	"2023 "	"2023"	"Dec., 2023 "	"2023/12"	8618	Not Applicable	Not Applicable
+"Total"	"50-54 years"	"50-54"	"2023 "	"2023"			99502	Not Applicable	Not Applicable
+"Total"	"50-54 years"	"50-54"					339536	Not Applicable	Not Applicable
+	"55-59 years"	"55-59"	"2021"	"2021"	"Jan., 2021"	"2021/01"	19362	Not Applicable	Not Applicable
+	"55-59 years"	"55-59"	"2021"	"2021"	"Feb., 2021"	"2021/02"	15314	Not Applicable	Not Applicable
+	"55-59 years"	"55-59"	"2021"	"2021"	"Mar., 2021"	"2021/03"	15104	Not Applicable	Not Applicable
+	"55-59 years"	"55-59"	"2021"	"2021"	"Apr., 2021"	"2021/04"	14846	Not Applicable	Not Applicable
+	"55-59 years"	"55-59"	"2021"	"2021"	"May, 2021"	"2021/05"	14856	Not Applicable	Not Applicable
+	"55-59 years"	"55-59"	"2021"	"2021"	"Jun., 2021"	"2021/06"	14059	Not Applicable	Not Applicable
+	"55-59 years"	"55-59"	"2021"	"2021"	"Jul., 2021"	"2021/07"	14641	Not Applicable	Not Applicable
+	"55-59 years"	"55-59"	"2021"	"2021"	"Aug., 2021"	"2021/08"	18584	Not Applicable	Not Applicable
+	"55-59 years"	"55-59"	"2021"	"2021"	"Sep., 2021"	"2021/09"	19578	Not Applicable	Not Applicable
+	"55-59 years"	"55-59"	"2021"	"2021"	"Oct., 2021"	"2021/10"	17667	Not Applicable	Not Applicable
+	"55-59 years"	"55-59"	"2021"	"2021"	"Nov., 2021"	"2021/11"	15890	Not Applicable	Not Applicable
+	"55-59 years"	"55-59"	"2021"	"2021"	"Dec., 2021"	"2021/12"	17707	Not Applicable	Not Applicable
+"Total"	"55-59 years"	"55-59"	"2021"	"2021"			197608	Not Applicable	Not Applicable
+	"55-59 years"	"55-59"	"2022"	"2022"	"Jan., 2022"	"2022/01"	20007	Not Applicable	Not Applicable
+	"55-59 years"	"55-59"	"2022"	"2022"	"Feb., 2022"	"2022/02"	15159	Not Applicable	Not Applicable
+	"55-59 years"	"55-59"	"2022"	"2022"	"Mar., 2022"	"2022/03"	14074	Not Applicable	Not Applicable
+	"55-59 years"	"55-59"	"2022"	"2022"	"Apr., 2022"	"2022/04"	12802	Not Applicable	Not Applicable
+	"55-59 years"	"55-59"	"2022"	"2022"	"May, 2022"	"2022/05"	13195	Not Applicable	Not Applicable
+	"55-59 years"	"55-59"	"2022"	"2022"	"Jun., 2022"	"2022/06"	12882	Not Applicable	Not Applicable
+	"55-59 years"	"55-59"	"2022"	"2022"	"Jul., 2022"	"2022/07"	13456	Not Applicable	Not Applicable
+	"55-59 years"	"55-59"	"2022"	"2022"	"Aug., 2022"	"2022/08"	12983	Not Applicable	Not Applicable
+	"55-59 years"	"55-59"	"2022"	"2022"	"Sep., 2022"	"2022/09"	12775	Not Applicable	Not Applicable
+	"55-59 years"	"55-59"	"2022"	"2022"	"Oct., 2022"	"2022/10"	13155	Not Applicable	Not Applicable
+	"55-59 years"	"55-59"	"2022"	"2022"	"Nov., 2022"	"2022/11"	13164	Not Applicable	Not Applicable
+	"55-59 years"	"55-59"	"2022"	"2022"	"Dec., 2022"	"2022/12"	14671	Not Applicable	Not Applicable
+"Total"	"55-59 years"	"55-59"	"2022"	"2022"			168323	Not Applicable	Not Applicable
+	"55-59 years"	"55-59"	"2023 "	"2023"	"Jan., 2023 "	"2023/01"	13809	Not Applicable	Not Applicable
+	"55-59 years"	"55-59"	"2023 "	"2023"	"Feb., 2023 "	"2023/02"	12077	Not Applicable	Not Applicable
+	"55-59 years"	"55-59"	"2023 "	"2023"	"Mar., 2023 "	"2023/03"	13010	Not Applicable	Not Applicable
+	"55-59 years"	"55-59"	"2023 "	"2023"	"Apr., 2023 "	"2023/04"	12514	Not Applicable	Not Applicable
+	"55-59 years"	"55-59"	"2023 "	"2023"	"May, 2023 "	"2023/05"	12329	Not Applicable	Not Applicable
+	"55-59 years"	"55-59"	"2023 "	"2023"	"Jun., 2023 "	"2023/06"	11846	Not Applicable	Not Applicable
+	"55-59 years"	"55-59"	"2023 "	"2023"	"Jul., 2023 "	"2023/07"	12453	Not Applicable	Not Applicable
+	"55-59 years"	"55-59"	"2023 "	"2023"	"Aug., 2023 "	"2023/08"	12149	Not Applicable	Not Applicable
+	"55-59 years"	"55-59"	"2023 "	"2023"	"Sep., 2023 "	"2023/09"	11630	Not Applicable	Not Applicable
+	"55-59 years"	"55-59"	"2023 "	"2023"	"Oct., 2023 "	"2023/10"	11849	Not Applicable	Not Applicable
+	"55-59 years"	"55-59"	"2023 "	"2023"	"Nov., 2023 "	"2023/11"	11917	Not Applicable	Not Applicable
+	"55-59 years"	"55-59"	"2023 "	"2023"	"Dec., 2023 "	"2023/12"	13017	Not Applicable	Not Applicable
+"Total"	"55-59 years"	"55-59"	"2023 "	"2023"			148600	Not Applicable	Not Applicable
+"Total"	"55-59 years"	"55-59"					514531	Not Applicable	Not Applicable
+	"60-64 years "	"60-64"	"2021"	"2021"	"Jan., 2021"	"2021/01"	28484	Not Applicable	Not Applicable
+	"60-64 years "	"60-64"	"2021"	"2021"	"Feb., 2021"	"2021/02"	22433	Not Applicable	Not Applicable
+	"60-64 years "	"60-64"	"2021"	"2021"	"Mar., 2021"	"2021/03"	21502	Not Applicable	Not Applicable
+	"60-64 years "	"60-64"	"2021"	"2021"	"Apr., 2021"	"2021/04"	20830	Not Applicable	Not Applicable
+	"60-64 years "	"60-64"	"2021"	"2021"	"May, 2021"	"2021/05"	21030	Not Applicable	Not Applicable
+	"60-64 years "	"60-64"	"2021"	"2021"	"Jun., 2021"	"2021/06"	19814	Not Applicable	Not Applicable
+	"60-64 years "	"60-64"	"2021"	"2021"	"Jul., 2021"	"2021/07"	20660	Not Applicable	Not Applicable
+	"60-64 years "	"60-64"	"2021"	"2021"	"Aug., 2021"	"2021/08"	25458	Not Applicable	Not Applicable
+	"60-64 years "	"60-64"	"2021"	"2021"	"Sep., 2021"	"2021/09"	26929	Not Applicable	Not Applicable
+	"60-64 years "	"60-64"	"2021"	"2021"	"Oct., 2021"	"2021/10"	24383	Not Applicable	Not Applicable
+	"60-64 years "	"60-64"	"2021"	"2021"	"Nov., 2021"	"2021/11"	23167	Not Applicable	Not Applicable
+	"60-64 years "	"60-64"	"2021"	"2021"	"Dec., 2021"	"2021/12"	25873	Not Applicable	Not Applicable
+"Total"	"60-64 years "	"60-64"	"2021"	"2021"			280563	Not Applicable	Not Applicable
+	"60-64 years "	"60-64"	"2022"	"2022"	"Jan., 2022"	"2022/01"	29143	Not Applicable	Not Applicable
+	"60-64 years "	"60-64"	"2022"	"2022"	"Feb., 2022"	"2022/02"	22133	Not Applicable	Not Applicable
+	"60-64 years "	"60-64"	"2022"	"2022"	"Mar., 2022"	"2022/03"	20566	Not Applicable	Not Applicable
+	"60-64 years "	"60-64"	"2022"	"2022"	"Apr., 2022"	"2022/04"	18887	Not Applicable	Not Applicable
+	"60-64 years "	"60-64"	"2022"	"2022"	"May, 2022"	"2022/05"	19275	Not Applicable	Not Applicable
+	"60-64 years "	"60-64"	"2022"	"2022"	"Jun., 2022"	"2022/06"	19088	Not Applicable	Not Applicable
+	"60-64 years "	"60-64"	"2022"	"2022"	"Jul., 2022"	"2022/07"	19794	Not Applicable	Not Applicable
+	"60-64 years "	"60-64"	"2022"	"2022"	"Aug., 2022"	"2022/08"	19471	Not Applicable	Not Applicable
+	"60-64 years "	"60-64"	"2022"	"2022"	"Sep., 2022"	"2022/09"	18830	Not Applicable	Not Applicable
+	"60-64 years "	"60-64"	"2022"	"2022"	"Oct., 2022"	"2022/10"	19698	Not Applicable	Not Applicable
+	"60-64 years "	"60-64"	"2022"	"2022"	"Nov., 2022"	"2022/11"	20142	Not Applicable	Not Applicable
+	"60-64 years "	"60-64"	"2022"	"2022"	"Dec., 2022"	"2022/12"	22191	Not Applicable	Not Applicable
+"Total"	"60-64 years "	"60-64"	"2022"	"2022"			249218	Not Applicable	Not Applicable
+	"60-64 years "	"60-64"	"2023 "	"2023"	"Jan., 2023 "	"2023/01"	21071	Not Applicable	Not Applicable
+	"60-64 years "	"60-64"	"2023 "	"2023"	"Feb., 2023 "	"2023/02"	18266	Not Applicable	Not Applicable
+	"60-64 years "	"60-64"	"2023 "	"2023"	"Mar., 2023 "	"2023/03"	19700	Not Applicable	Not Applicable
+	"60-64 years "	"60-64"	"2023 "	"2023"	"Apr., 2023 "	"2023/04"	18583	Not Applicable	Not Applicable
+	"60-64 years "	"60-64"	"2023 "	"2023"	"May, 2023 "	"2023/05"	18886	Not Applicable	Not Applicable
+	"60-64 years "	"60-64"	"2023 "	"2023"	"Jun., 2023 "	"2023/06"	18131	Not Applicable	Not Applicable
+	"60-64 years "	"60-64"	"2023 "	"2023"	"Jul., 2023 "	"2023/07"	18744	Not Applicable	Not Applicable
+	"60-64 years "	"60-64"	"2023 "	"2023"	"Aug., 2023 "	"2023/08"	18863	Not Applicable	Not Applicable
+	"60-64 years "	"60-64"	"2023 "	"2023"	"Sep., 2023 "	"2023/09"	17987	Not Applicable	Not Applicable
+	"60-64 years "	"60-64"	"2023 "	"2023"	"Oct., 2023 "	"2023/10"	18867	Not Applicable	Not Applicable
+	"60-64 years "	"60-64"	"2023 "	"2023"	"Nov., 2023 "	"2023/11"	18468	Not Applicable	Not Applicable
+	"60-64 years "	"60-64"	"2023 "	"2023"	"Dec., 2023 "	"2023/12"	20368	Not Applicable	Not Applicable
+"Total"	"60-64 years "	"60-64"	"2023 "	"2023"			227934	Not Applicable	Not Applicable
+"Total"	"60-64 years "	"60-64"					757715	Not Applicable	Not Applicable
+	"65-69 years"	"65-69"	"2021"	"2021"	"Jan., 2021"	"2021/01"	34781	Not Applicable	Not Applicable
+	"65-69 years"	"65-69"	"2021"	"2021"	"Feb., 2021"	"2021/02"	26949	Not Applicable	Not Applicable
+	"65-69 years"	"65-69"	"2021"	"2021"	"Mar., 2021"	"2021/03"	25418	Not Applicable	Not Applicable
+	"65-69 years"	"65-69"	"2021"	"2021"	"Apr., 2021"	"2021/04"	24326	Not Applicable	Not Applicable
+	"65-69 years"	"65-69"	"2021"	"2021"	"May, 2021"	"2021/05"	24347	Not Applicable	Not Applicable
+	"65-69 years"	"65-69"	"2021"	"2021"	"Jun., 2021"	"2021/06"	23089	Not Applicable	Not Applicable
+	"65-69 years"	"65-69"	"2021"	"2021"	"Jul., 2021"	"2021/07"	24317	Not Applicable	Not Applicable
+	"65-69 years"	"65-69"	"2021"	"2021"	"Aug., 2021"	"2021/08"	29352	Not Applicable	Not Applicable
+	"65-69 years"	"65-69"	"2021"	"2021"	"Sep., 2021"	"2021/09"	30705	Not Applicable	Not Applicable
+	"65-69 years"	"65-69"	"2021"	"2021"	"Oct., 2021"	"2021/10"	29120	Not Applicable	Not Applicable
+	"65-69 years"	"65-69"	"2021"	"2021"	"Nov., 2021"	"2021/11"	27546	Not Applicable	Not Applicable
+	"65-69 years"	"65-69"	"2021"	"2021"	"Dec., 2021"	"2021/12"	31034	Not Applicable	Not Applicable
+"Total"	"65-69 years"	"65-69"	"2021"	"2021"			330984	Not Applicable	Not Applicable
+	"65-69 years"	"65-69"	"2022"	"2022"	"Jan., 2022"	"2022/01"	35247	Not Applicable	Not Applicable
+	"65-69 years"	"65-69"	"2022"	"2022"	"Feb., 2022"	"2022/02"	27569	Not Applicable	Not Applicable
+	"65-69 years"	"65-69"	"2022"	"2022"	"Mar., 2022"	"2022/03"	25023	Not Applicable	Not Applicable
+	"65-69 years"	"65-69"	"2022"	"2022"	"Apr., 2022"	"2022/04"	22886	Not Applicable	Not Applicable
+	"65-69 years"	"65-69"	"2022"	"2022"	"May, 2022"	"2022/05"	23643	Not Applicable	Not Applicable
+	"65-69 years"	"65-69"	"2022"	"2022"	"Jun., 2022"	"2022/06"	22975	Not Applicable	Not Applicable
+	"65-69 years"	"65-69"	"2022"	"2022"	"Jul., 2022"	"2022/07"	24073	Not Applicable	Not Applicable
+	"65-69 years"	"65-69"	"2022"	"2022"	"Aug., 2022"	"2022/08"	24099	Not Applicable	Not Applicable
+	"65-69 years"	"65-69"	"2022"	"2022"	"Sep., 2022"	"2022/09"	23348	Not Applicable	Not Applicable
+	"65-69 years"	"65-69"	"2022"	"2022"	"Oct., 2022"	"2022/10"	24621	Not Applicable	Not Applicable
+	"65-69 years"	"65-69"	"2022"	"2022"	"Nov., 2022"	"2022/11"	25057	Not Applicable	Not Applicable
+	"65-69 years"	"65-69"	"2022"	"2022"	"Dec., 2022"	"2022/12"	27624	Not Applicable	Not Applicable
+"Total"	"65-69 years"	"65-69"	"2022"	"2022"			306165	Not Applicable	Not Applicable
+	"65-69 years"	"65-69"	"2023 "	"2023"	"Jan., 2023 "	"2023/01"	26595	Not Applicable	Not Applicable
+	"65-69 years"	"65-69"	"2023 "	"2023"	"Feb., 2023 "	"2023/02"	23098	Not Applicable	Not Applicable
+	"65-69 years"	"65-69"	"2023 "	"2023"	"Mar., 2023 "	"2023/03"	25108	Not Applicable	Not Applicable
+	"65-69 years"	"65-69"	"2023 "	"2023"	"Apr., 2023 "	"2023/04"	23264	Not Applicable	Not Applicable
+	"65-69 years"	"65-69"	"2023 "	"2023"	"May, 2023 "	"2023/05"	23550	Not Applicable	Not Applicable
+	"65-69 years"	"65-69"	"2023 "	"2023"	"Jun., 2023 "	"2023/06"	22859	Not Applicable	Not Applicable
+	"65-69 years"	"65-69"	"2023 "	"2023"	"Jul., 2023 "	"2023/07"	23454	Not Applicable	Not Applicable
+	"65-69 years"	"65-69"	"2023 "	"2023"	"Aug., 2023 "	"2023/08"	23469	Not Applicable	Not Applicable
+	"65-69 years"	"65-69"	"2023 "	"2023"	"Sep., 2023 "	"2023/09"	22979	Not Applicable	Not Applicable
+	"65-69 years"	"65-69"	"2023 "	"2023"	"Oct., 2023 "	"2023/10"	24179	Not Applicable	Not Applicable
+	"65-69 years"	"65-69"	"2023 "	"2023"	"Nov., 2023 "	"2023/11"	23996	Not Applicable	Not Applicable
+	"65-69 years"	"65-69"	"2023 "	"2023"	"Dec., 2023 "	"2023/12"	26445	Not Applicable	Not Applicable
+"Total"	"65-69 years"	"65-69"	"2023 "	"2023"			288996	Not Applicable	Not Applicable
+"Total"	"65-69 years"	"65-69"					926145	Not Applicable	Not Applicable
+	"70-74 years"	"70-74"	"2021"	"2021"	"Jan., 2021"	"2021/01"	42837	Not Applicable	Not Applicable
+	"70-74 years"	"70-74"	"2021"	"2021"	"Feb., 2021"	"2021/02"	32839	Not Applicable	Not Applicable
+	"70-74 years"	"70-74"	"2021"	"2021"	"Mar., 2021"	"2021/03"	30746	Not Applicable	Not Applicable
+	"70-74 years"	"70-74"	"2021"	"2021"	"Apr., 2021"	"2021/04"	29151	Not Applicable	Not Applicable
+	"70-74 years"	"70-74"	"2021"	"2021"	"May, 2021"	"2021/05"	29197	Not Applicable	Not Applicable
+	"70-74 years"	"70-74"	"2021"	"2021"	"Jun., 2021"	"2021/06"	27313	Not Applicable	Not Applicable
+	"70-74 years"	"70-74"	"2021"	"2021"	"Jul., 2021"	"2021/07"	28686	Not Applicable	Not Applicable
+	"70-74 years"	"70-74"	"2021"	"2021"	"Aug., 2021"	"2021/08"	34324	Not Applicable	Not Applicable
+	"70-74 years"	"70-74"	"2021"	"2021"	"Sep., 2021"	"2021/09"	35568	Not Applicable	Not Applicable
+	"70-74 years"	"70-74"	"2021"	"2021"	"Oct., 2021"	"2021/10"	33834	Not Applicable	Not Applicable
+	"70-74 years"	"70-74"	"2021"	"2021"	"Nov., 2021"	"2021/11"	32335	Not Applicable	Not Applicable
+	"70-74 years"	"70-74"	"2021"	"2021"	"Dec., 2021"	"2021/12"	36452	Not Applicable	Not Applicable
+"Total"	"70-74 years"	"70-74"	"2021"	"2021"			393282	Not Applicable	Not Applicable
+	"70-74 years"	"70-74"	"2022"	"2022"	"Jan., 2022"	"2022/01"	42010	Not Applicable	Not Applicable
+	"70-74 years"	"70-74"	"2022"	"2022"	"Feb., 2022"	"2022/02"	33260	Not Applicable	Not Applicable
+	"70-74 years"	"70-74"	"2022"	"2022"	"Mar., 2022"	"2022/03"	30053	Not Applicable	Not Applicable
+	"70-74 years"	"70-74"	"2022"	"2022"	"Apr., 2022"	"2022/04"	27038	Not Applicable	Not Applicable
+	"70-74 years"	"70-74"	"2022"	"2022"	"May, 2022"	"2022/05"	27736	Not Applicable	Not Applicable
+	"70-74 years"	"70-74"	"2022"	"2022"	"Jun., 2022"	"2022/06"	26912	Not Applicable	Not Applicable
+	"70-74 years"	"70-74"	"2022"	"2022"	"Jul., 2022"	"2022/07"	28402	Not Applicable	Not Applicable
+	"70-74 years"	"70-74"	"2022"	"2022"	"Aug., 2022"	"2022/08"	28532	Not Applicable	Not Applicable
+	"70-74 years"	"70-74"	"2022"	"2022"	"Sep., 2022"	"2022/09"	27497	Not Applicable	Not Applicable
+	"70-74 years"	"70-74"	"2022"	"2022"	"Oct., 2022"	"2022/10"	28905	Not Applicable	Not Applicable
+	"70-74 years"	"70-74"	"2022"	"2022"	"Nov., 2022"	"2022/11"	29161	Not Applicable	Not Applicable
+	"70-74 years"	"70-74"	"2022"	"2022"	"Dec., 2022"	"2022/12"	32910	Not Applicable	Not Applicable
+"Total"	"70-74 years"	"70-74"	"2022"	"2022"			362416	Not Applicable	Not Applicable
+	"70-74 years"	"70-74"	"2023 "	"2023"	"Jan., 2023 "	"2023/01"	31399	Not Applicable	Not Applicable
+	"70-74 years"	"70-74"	"2023 "	"2023"	"Feb., 2023 "	"2023/02"	26949	Not Applicable	Not Applicable
+	"70-74 years"	"70-74"	"2023 "	"2023"	"Mar., 2023 "	"2023/03"	29456	Not Applicable	Not Applicable
+	"70-74 years"	"70-74"	"2023 "	"2023"	"Apr., 2023 "	"2023/04"	27604	Not Applicable	Not Applicable
+	"70-74 years"	"70-74"	"2023 "	"2023"	"May, 2023 "	"2023/05"	27702	Not Applicable	Not Applicable
+	"70-74 years"	"70-74"	"2023 "	"2023"	"Jun., 2023 "	"2023/06"	26268	Not Applicable	Not Applicable
+	"70-74 years"	"70-74"	"2023 "	"2023"	"Jul., 2023 "	"2023/07"	27079	Not Applicable	Not Applicable
+	"70-74 years"	"70-74"	"2023 "	"2023"	"Aug., 2023 "	"2023/08"	27552	Not Applicable	Not Applicable
+	"70-74 years"	"70-74"	"2023 "	"2023"	"Sep., 2023 "	"2023/09"	26912	Not Applicable	Not Applicable
+	"70-74 years"	"70-74"	"2023 "	"2023"	"Oct., 2023 "	"2023/10"	28289	Not Applicable	Not Applicable
+	"70-74 years"	"70-74"	"2023 "	"2023"	"Nov., 2023 "	"2023/11"	28314	Not Applicable	Not Applicable
+	"70-74 years"	"70-74"	"2023 "	"2023"	"Dec., 2023 "	"2023/12"	31160	Not Applicable	Not Applicable
+"Total"	"70-74 years"	"70-74"	"2023 "	"2023"			338684	Not Applicable	Not Applicable
+"Total"	"70-74 years"	"70-74"					1094382	Not Applicable	Not Applicable
+	"75-79 years"	"75-79"	"2021"	"2021"	"Jan., 2021"	"2021/01"	45731	Not Applicable	Not Applicable
+	"75-79 years"	"75-79"	"2021"	"2021"	"Feb., 2021"	"2021/02"	34084	Not Applicable	Not Applicable
+	"75-79 years"	"75-79"	"2021"	"2021"	"Mar., 2021"	"2021/03"	32044	Not Applicable	Not Applicable
+	"75-79 years"	"75-79"	"2021"	"2021"	"Apr., 2021"	"2021/04"	29850	Not Applicable	Not Applicable
+	"75-79 years"	"75-79"	"2021"	"2021"	"May, 2021"	"2021/05"	29900	Not Applicable	Not Applicable
+	"75-79 years"	"75-79"	"2021"	"2021"	"Jun., 2021"	"2021/06"	28285	Not Applicable	Not Applicable
+	"75-79 years"	"75-79"	"2021"	"2021"	"Jul., 2021"	"2021/07"	29805	Not Applicable	Not Applicable
+	"75-79 years"	"75-79"	"2021"	"2021"	"Aug., 2021"	"2021/08"	34905	Not Applicable	Not Applicable
+	"75-79 years"	"75-79"	"2021"	"2021"	"Sep., 2021"	"2021/09"	35862	Not Applicable	Not Applicable
+	"75-79 years"	"75-79"	"2021"	"2021"	"Oct., 2021"	"2021/10"	35016	Not Applicable	Not Applicable
+	"75-79 years"	"75-79"	"2021"	"2021"	"Nov., 2021"	"2021/11"	34803	Not Applicable	Not Applicable
+	"75-79 years"	"75-79"	"2021"	"2021"	"Dec., 2021"	"2021/12"	38582	Not Applicable	Not Applicable
+"Total"	"75-79 years"	"75-79"	"2021"	"2021"			408867	Not Applicable	Not Applicable
+	"75-79 years"	"75-79"	"2022"	"2022"	"Jan., 2022"	"2022/01"	45825	Not Applicable	Not Applicable
+	"75-79 years"	"75-79"	"2022"	"2022"	"Feb., 2022"	"2022/02"	36617	Not Applicable	Not Applicable
+	"75-79 years"	"75-79"	"2022"	"2022"	"Mar., 2022"	"2022/03"	33038	Not Applicable	Not Applicable
+	"75-79 years"	"75-79"	"2022"	"2022"	"Apr., 2022"	"2022/04"	30475	Not Applicable	Not Applicable
+	"75-79 years"	"75-79"	"2022"	"2022"	"May, 2022"	"2022/05"	31343	Not Applicable	Not Applicable
+	"75-79 years"	"75-79"	"2022"	"2022"	"Jun., 2022"	"2022/06"	30550	Not Applicable	Not Applicable
+	"75-79 years"	"75-79"	"2022"	"2022"	"Jul., 2022"	"2022/07"	31905	Not Applicable	Not Applicable
+	"75-79 years"	"75-79"	"2022"	"2022"	"Aug., 2022"	"2022/08"	32254	Not Applicable	Not Applicable
+	"75-79 years"	"75-79"	"2022"	"2022"	"Sep., 2022"	"2022/09"	31247	Not Applicable	Not Applicable
+	"75-79 years"	"75-79"	"2022"	"2022"	"Oct., 2022"	"2022/10"	32984	Not Applicable	Not Applicable
+	"75-79 years"	"75-79"	"2022"	"2022"	"Nov., 2022"	"2022/11"	33712	Not Applicable	Not Applicable
+	"75-79 years"	"75-79"	"2022"	"2022"	"Dec., 2022"	"2022/12"	37642	Not Applicable	Not Applicable
+"Total"	"75-79 years"	"75-79"	"2022"	"2022"			407592	Not Applicable	Not Applicable
+	"75-79 years"	"75-79"	"2023 "	"2023"	"Jan., 2023 "	"2023/01"	36094	Not Applicable	Not Applicable
+	"75-79 years"	"75-79"	"2023 "	"2023"	"Feb., 2023 "	"2023/02"	31518	Not Applicable	Not Applicable
+	"75-79 years"	"75-79"	"2023 "	"2023"	"Mar., 2023 "	"2023/03"	33631	Not Applicable	Not Applicable
+	"75-79 years"	"75-79"	"2023 "	"2023"	"Apr., 2023 "	"2023/04"	31556	Not Applicable	Not Applicable
+	"75-79 years"	"75-79"	"2023 "	"2023"	"May, 2023 "	"2023/05"	31600	Not Applicable	Not Applicable
+	"75-79 years"	"75-79"	"2023 "	"2023"	"Jun., 2023 "	"2023/06"	30105	Not Applicable	Not Applicable
+	"75-79 years"	"75-79"	"2023 "	"2023"	"Jul., 2023 "	"2023/07"	30683	Not Applicable	Not Applicable
+	"75-79 years"	"75-79"	"2023 "	"2023"	"Aug., 2023 "	"2023/08"	31481	Not Applicable	Not Applicable
+	"75-79 years"	"75-79"	"2023 "	"2023"	"Sep., 2023 "	"2023/09"	30796	Not Applicable	Not Applicable
+	"75-79 years"	"75-79"	"2023 "	"2023"	"Oct., 2023 "	"2023/10"	33162	Not Applicable	Not Applicable
+	"75-79 years"	"75-79"	"2023 "	"2023"	"Nov., 2023 "	"2023/11"	32900	Not Applicable	Not Applicable
+	"75-79 years"	"75-79"	"2023 "	"2023"	"Dec., 2023 "	"2023/12"	36265	Not Applicable	Not Applicable
+"Total"	"75-79 years"	"75-79"	"2023 "	"2023"			389791	Not Applicable	Not Applicable
+"Total"	"75-79 years"	"75-79"					1206250	Not Applicable	Not Applicable
+	"80-84 years"	"80-84"	"2021"	"2021"	"Jan., 2021"	"2021/01"	48312	Not Applicable	Not Applicable
+	"80-84 years"	"80-84"	"2021"	"2021"	"Feb., 2021"	"2021/02"	35318	Not Applicable	Not Applicable
+	"80-84 years"	"80-84"	"2021"	"2021"	"Mar., 2021"	"2021/03"	33379	Not Applicable	Not Applicable
+	"80-84 years"	"80-84"	"2021"	"2021"	"Apr., 2021"	"2021/04"	30876	Not Applicable	Not Applicable
+	"80-84 years"	"80-84"	"2021"	"2021"	"May, 2021"	"2021/05"	30787	Not Applicable	Not Applicable
+	"80-84 years"	"80-84"	"2021"	"2021"	"Jun., 2021"	"2021/06"	29390	Not Applicable	Not Applicable
+	"80-84 years"	"80-84"	"2021"	"2021"	"Jul., 2021"	"2021/07"	30842	Not Applicable	Not Applicable
+	"80-84 years"	"80-84"	"2021"	"2021"	"Aug., 2021"	"2021/08"	35187	Not Applicable	Not Applicable
+	"80-84 years"	"80-84"	"2021"	"2021"	"Sep., 2021"	"2021/09"	35837	Not Applicable	Not Applicable
+	"80-84 years"	"80-84"	"2021"	"2021"	"Oct., 2021"	"2021/10"	35785	Not Applicable	Not Applicable
+	"80-84 years"	"80-84"	"2021"	"2021"	"Nov., 2021"	"2021/11"	35620	Not Applicable	Not Applicable
+	"80-84 years"	"80-84"	"2021"	"2021"	"Dec., 2021"	"2021/12"	39453	Not Applicable	Not Applicable
+"Total"	"80-84 years"	"80-84"	"2021"	"2021"			420786	Not Applicable	Not Applicable
+	"80-84 years"	"80-84"	"2022"	"2022"	"Jan., 2022"	"2022/01"	46801	Not Applicable	Not Applicable
+	"80-84 years"	"80-84"	"2022"	"2022"	"Feb., 2022"	"2022/02"	37301	Not Applicable	Not Applicable
+	"80-84 years"	"80-84"	"2022"	"2022"	"Mar., 2022"	"2022/03"	34033	Not Applicable	Not Applicable
+	"80-84 years"	"80-84"	"2022"	"2022"	"Apr., 2022"	"2022/04"	31036	Not Applicable	Not Applicable
+	"80-84 years"	"80-84"	"2022"	"2022"	"May, 2022"	"2022/05"	32002	Not Applicable	Not Applicable
+	"80-84 years"	"80-84"	"2022"	"2022"	"Jun., 2022"	"2022/06"	31032	Not Applicable	Not Applicable
+	"80-84 years"	"80-84"	"2022"	"2022"	"Jul., 2022"	"2022/07"	32453	Not Applicable	Not Applicable
+	"80-84 years"	"80-84"	"2022"	"2022"	"Aug., 2022"	"2022/08"	32833	Not Applicable	Not Applicable
+	"80-84 years"	"80-84"	"2022"	"2022"	"Sep., 2022"	"2022/09"	31718	Not Applicable	Not Applicable
+	"80-84 years"	"80-84"	"2022"	"2022"	"Oct., 2022"	"2022/10"	33888	Not Applicable	Not Applicable
+	"80-84 years"	"80-84"	"2022"	"2022"	"Nov., 2022"	"2022/11"	34679	Not Applicable	Not Applicable
+	"80-84 years"	"80-84"	"2022"	"2022"	"Dec., 2022"	"2022/12"	39535	Not Applicable	Not Applicable
+"Total"	"80-84 years"	"80-84"	"2022"	"2022"			417311	Not Applicable	Not Applicable
+	"80-84 years"	"80-84"	"2023 "	"2023"	"Jan., 2023 "	"2023/01"	38148	Not Applicable	Not Applicable
+	"80-84 years"	"80-84"	"2023 "	"2023"	"Feb., 2023 "	"2023/02"	32863	Not Applicable	Not Applicable
+	"80-84 years"	"80-84"	"2023 "	"2023"	"Mar., 2023 "	"2023/03"	35205	Not Applicable	Not Applicable
+	"80-84 years"	"80-84"	"2023 "	"2023"	"Apr., 2023 "	"2023/04"	32688	Not Applicable	Not Applicable
+	"80-84 years"	"80-84"	"2023 "	"2023"	"May, 2023 "	"2023/05"	32891	Not Applicable	Not Applicable
+	"80-84 years"	"80-84"	"2023 "	"2023"	"Jun., 2023 "	"2023/06"	31293	Not Applicable	Not Applicable
+	"80-84 years"	"80-84"	"2023 "	"2023"	"Jul., 2023 "	"2023/07"	31587	Not Applicable	Not Applicable
+	"80-84 years"	"80-84"	"2023 "	"2023"	"Aug., 2023 "	"2023/08"	32778	Not Applicable	Not Applicable
+	"80-84 years"	"80-84"	"2023 "	"2023"	"Sep., 2023 "	"2023/09"	32563	Not Applicable	Not Applicable
+	"80-84 years"	"80-84"	"2023 "	"2023"	"Oct., 2023 "	"2023/10"	34734	Not Applicable	Not Applicable
+	"80-84 years"	"80-84"	"2023 "	"2023"	"Nov., 2023 "	"2023/11"	34846	Not Applicable	Not Applicable
+	"80-84 years"	"80-84"	"2023 "	"2023"	"Dec., 2023 "	"2023/12"	38801	Not Applicable	Not Applicable
+"Total"	"80-84 years"	"80-84"	"2023 "	"2023"			408397	Not Applicable	Not Applicable
+"Total"	"80-84 years"	"80-84"					1246494	Not Applicable	Not Applicable
+	"85-89 years"	"85-89"	"2021"	"2021"	"Jan., 2021"	"2021/01"	48762	Not Applicable	Not Applicable
+	"85-89 years"	"85-89"	"2021"	"2021"	"Feb., 2021"	"2021/02"	35291	Not Applicable	Not Applicable
+	"85-89 years"	"85-89"	"2021"	"2021"	"Mar., 2021"	"2021/03"	33163	Not Applicable	Not Applicable
+	"85-89 years"	"85-89"	"2021"	"2021"	"Apr., 2021"	"2021/04"	30775	Not Applicable	Not Applicable
+	"85-89 years"	"85-89"	"2021"	"2021"	"May, 2021"	"2021/05"	30319	Not Applicable	Not Applicable
+	"85-89 years"	"85-89"	"2021"	"2021"	"Jun., 2021"	"2021/06"	28901	Not Applicable	Not Applicable
+	"85-89 years"	"85-89"	"2021"	"2021"	"Jul., 2021"	"2021/07"	30405	Not Applicable	Not Applicable
+	"85-89 years"	"85-89"	"2021"	"2021"	"Aug., 2021"	"2021/08"	34492	Not Applicable	Not Applicable
+	"85-89 years"	"85-89"	"2021"	"2021"	"Sep., 2021"	"2021/09"	34516	Not Applicable	Not Applicable
+	"85-89 years"	"85-89"	"2021"	"2021"	"Oct., 2021"	"2021/10"	35068	Not Applicable	Not Applicable
+	"85-89 years"	"85-89"	"2021"	"2021"	"Nov., 2021"	"2021/11"	34964	Not Applicable	Not Applicable
+	"85-89 years"	"85-89"	"2021"	"2021"	"Dec., 2021"	"2021/12"	38244	Not Applicable	Not Applicable
+"Total"	"85-89 years"	"85-89"	"2021"	"2021"			414900	Not Applicable	Not Applicable
+	"85-89 years"	"85-89"	"2022"	"2022"	"Jan., 2022"	"2022/01"	46183	Not Applicable	Not Applicable
+	"85-89 years"	"85-89"	"2022"	"2022"	"Feb., 2022"	"2022/02"	36570	Not Applicable	Not Applicable
+	"85-89 years"	"85-89"	"2022"	"2022"	"Mar., 2022"	"2022/03"	33726	Not Applicable	Not Applicable
+	"85-89 years"	"85-89"	"2022"	"2022"	"Apr., 2022"	"2022/04"	30325	Not Applicable	Not Applicable
+	"85-89 years"	"85-89"	"2022"	"2022"	"May, 2022"	"2022/05"	31314	Not Applicable	Not Applicable
+	"85-89 years"	"85-89"	"2022"	"2022"	"Jun., 2022"	"2022/06"	30317	Not Applicable	Not Applicable
+	"85-89 years"	"85-89"	"2022"	"2022"	"Jul., 2022"	"2022/07"	31956	Not Applicable	Not Applicable
+	"85-89 years"	"85-89"	"2022"	"2022"	"Aug., 2022"	"2022/08"	32018	Not Applicable	Not Applicable
+	"85-89 years"	"85-89"	"2022"	"2022"	"Sep., 2022"	"2022/09"	30767	Not Applicable	Not Applicable
+	"85-89 years"	"85-89"	"2022"	"2022"	"Oct., 2022"	"2022/10"	33360	Not Applicable	Not Applicable
+	"85-89 years"	"85-89"	"2022"	"2022"	"Nov., 2022"	"2022/11"	33481	Not Applicable	Not Applicable
+	"85-89 years"	"85-89"	"2022"	"2022"	"Dec., 2022"	"2022/12"	38417	Not Applicable	Not Applicable
+"Total"	"85-89 years"	"85-89"	"2022"	"2022"			408434	Not Applicable	Not Applicable
+	"85-89 years"	"85-89"	"2023 "	"2023"	"Jan., 2023 "	"2023/01"	37173	Not Applicable	Not Applicable
+	"85-89 years"	"85-89"	"2023 "	"2023"	"Feb., 2023 "	"2023/02"	31313	Not Applicable	Not Applicable
+	"85-89 years"	"85-89"	"2023 "	"2023"	"Mar., 2023 "	"2023/03"	34143	Not Applicable	Not Applicable
+	"85-89 years"	"85-89"	"2023 "	"2023"	"Apr., 2023 "	"2023/04"	31901	Not Applicable	Not Applicable
+	"85-89 years"	"85-89"	"2023 "	"2023"	"May, 2023 "	"2023/05"	30987	Not Applicable	Not Applicable
+	"85-89 years"	"85-89"	"2023 "	"2023"	"Jun., 2023 "	"2023/06"	29711	Not Applicable	Not Applicable
+	"85-89 years"	"85-89"	"2023 "	"2023"	"Jul., 2023 "	"2023/07"	30092	Not Applicable	Not Applicable
+	"85-89 years"	"85-89"	"2023 "	"2023"	"Aug., 2023 "	"2023/08"	30738	Not Applicable	Not Applicable
+	"85-89 years"	"85-89"	"2023 "	"2023"	"Sep., 2023 "	"2023/09"	30643	Not Applicable	Not Applicable
+	"85-89 years"	"85-89"	"2023 "	"2023"	"Oct., 2023 "	"2023/10"	32898	Not Applicable	Not Applicable
+	"85-89 years"	"85-89"	"2023 "	"2023"	"Nov., 2023 "	"2023/11"	33320	Not Applicable	Not Applicable
+	"85-89 years"	"85-89"	"2023 "	"2023"	"Dec., 2023 "	"2023/12"	37000	Not Applicable	Not Applicable
+"Total"	"85-89 years"	"85-89"	"2023 "	"2023"			389919	Not Applicable	Not Applicable
+"Total"	"85-89 years"	"85-89"					1213253	Not Applicable	Not Applicable
+	"90-94 years"	"90-94"	"2021"	"2021"	"Jan., 2021"	"2021/01"	39615	Not Applicable	Not Applicable
+	"90-94 years"	"90-94"	"2021"	"2021"	"Feb., 2021"	"2021/02"	28482	Not Applicable	Not Applicable
+	"90-94 years"	"90-94"	"2021"	"2021"	"Mar., 2021"	"2021/03"	26819	Not Applicable	Not Applicable
+	"90-94 years"	"90-94"	"2021"	"2021"	"Apr., 2021"	"2021/04"	24781	Not Applicable	Not Applicable
+	"90-94 years"	"90-94"	"2021"	"2021"	"May, 2021"	"2021/05"	25082	Not Applicable	Not Applicable
+	"90-94 years"	"90-94"	"2021"	"2021"	"Jun., 2021"	"2021/06"	23547	Not Applicable	Not Applicable
+	"90-94 years"	"90-94"	"2021"	"2021"	"Jul., 2021"	"2021/07"	25019	Not Applicable	Not Applicable
+	"90-94 years"	"90-94"	"2021"	"2021"	"Aug., 2021"	"2021/08"	27381	Not Applicable	Not Applicable
+	"90-94 years"	"90-94"	"2021"	"2021"	"Sep., 2021"	"2021/09"	27926	Not Applicable	Not Applicable
+	"90-94 years"	"90-94"	"2021"	"2021"	"Oct., 2021"	"2021/10"	28469	Not Applicable	Not Applicable
+	"90-94 years"	"90-94"	"2021"	"2021"	"Nov., 2021"	"2021/11"	28511	Not Applicable	Not Applicable
+	"90-94 years"	"90-94"	"2021"	"2021"	"Dec., 2021"	"2021/12"	31293	Not Applicable	Not Applicable
+"Total"	"90-94 years"	"90-94"	"2021"	"2021"			336925	Not Applicable	Not Applicable
+	"90-94 years"	"90-94"	"2022"	"2022"	"Jan., 2022"	"2022/01"	37314	Not Applicable	Not Applicable
+	"90-94 years"	"90-94"	"2022"	"2022"	"Feb., 2022"	"2022/02"	28923	Not Applicable	Not Applicable
+	"90-94 years"	"90-94"	"2022"	"2022"	"Mar., 2022"	"2022/03"	26833	Not Applicable	Not Applicable
+	"90-94 years"	"90-94"	"2022"	"2022"	"Apr., 2022"	"2022/04"	24809	Not Applicable	Not Applicable
+	"90-94 years"	"90-94"	"2022"	"2022"	"May, 2022"	"2022/05"	25720	Not Applicable	Not Applicable
+	"90-94 years"	"90-94"	"2022"	"2022"	"Jun., 2022"	"2022/06"	24917	Not Applicable	Not Applicable
+	"90-94 years"	"90-94"	"2022"	"2022"	"Jul., 2022"	"2022/07"	26275	Not Applicable	Not Applicable
+	"90-94 years"	"90-94"	"2022"	"2022"	"Aug., 2022"	"2022/08"	25889	Not Applicable	Not Applicable
+	"90-94 years"	"90-94"	"2022"	"2022"	"Sep., 2022"	"2022/09"	25356	Not Applicable	Not Applicable
+	"90-94 years"	"90-94"	"2022"	"2022"	"Oct., 2022"	"2022/10"	27294	Not Applicable	Not Applicable
+	"90-94 years"	"90-94"	"2022"	"2022"	"Nov., 2022"	"2022/11"	27271	Not Applicable	Not Applicable
+	"90-94 years"	"90-94"	"2022"	"2022"	"Dec., 2022"	"2022/12"	31415	Not Applicable	Not Applicable
+"Total"	"90-94 years"	"90-94"	"2022"	"2022"			332016	Not Applicable	Not Applicable
+	"90-94 years"	"90-94"	"2023 "	"2023"	"Jan., 2023 "	"2023/01"	30566	Not Applicable	Not Applicable
+	"90-94 years"	"90-94"	"2023 "	"2023"	"Feb., 2023 "	"2023/02"	25925	Not Applicable	Not Applicable
+	"90-94 years"	"90-94"	"2023 "	"2023"	"Mar., 2023 "	"2023/03"	27818	Not Applicable	Not Applicable
+	"90-94 years"	"90-94"	"2023 "	"2023"	"Apr., 2023 "	"2023/04"	25376	Not Applicable	Not Applicable
+	"90-94 years"	"90-94"	"2023 "	"2023"	"May, 2023 "	"2023/05"	24960	Not Applicable	Not Applicable
+	"90-94 years"	"90-94"	"2023 "	"2023"	"Jun., 2023 "	"2023/06"	23660	Not Applicable	Not Applicable
+	"90-94 years"	"90-94"	"2023 "	"2023"	"Jul., 2023 "	"2023/07"	23657	Not Applicable	Not Applicable
+	"90-94 years"	"90-94"	"2023 "	"2023"	"Aug., 2023 "	"2023/08"	24416	Not Applicable	Not Applicable
+	"90-94 years"	"90-94"	"2023 "	"2023"	"Sep., 2023 "	"2023/09"	24261	Not Applicable	Not Applicable
+	"90-94 years"	"90-94"	"2023 "	"2023"	"Oct., 2023 "	"2023/10"	25966	Not Applicable	Not Applicable
+	"90-94 years"	"90-94"	"2023 "	"2023"	"Nov., 2023 "	"2023/11"	26159	Not Applicable	Not Applicable
+	"90-94 years"	"90-94"	"2023 "	"2023"	"Dec., 2023 "	"2023/12"	29270	Not Applicable	Not Applicable
+"Total"	"90-94 years"	"90-94"	"2023 "	"2023"			312034	Not Applicable	Not Applicable
+"Total"	"90-94 years"	"90-94"					980975	Not Applicable	Not Applicable
+	"95-99 years"	"95-99"	"2021"	"2021"	"Jan., 2021"	"2021/01"	18251	Not Applicable	Not Applicable
+	"95-99 years"	"95-99"	"2021"	"2021"	"Feb., 2021"	"2021/02"	13198	Not Applicable	Not Applicable
+	"95-99 years"	"95-99"	"2021"	"2021"	"Mar., 2021"	"2021/03"	12168	Not Applicable	Not Applicable
+	"95-99 years"	"95-99"	"2021"	"2021"	"Apr., 2021"	"2021/04"	11402	Not Applicable	Not Applicable
+	"95-99 years"	"95-99"	"2021"	"2021"	"May, 2021"	"2021/05"	11659	Not Applicable	Not Applicable
+	"95-99 years"	"95-99"	"2021"	"2021"	"Jun., 2021"	"2021/06"	10927	Not Applicable	Not Applicable
+	"95-99 years"	"95-99"	"2021"	"2021"	"Jul., 2021"	"2021/07"	11520	Not Applicable	Not Applicable
+	"95-99 years"	"95-99"	"2021"	"2021"	"Aug., 2021"	"2021/08"	12867	Not Applicable	Not Applicable
+	"95-99 years"	"95-99"	"2021"	"2021"	"Sep., 2021"	"2021/09"	12688	Not Applicable	Not Applicable
+	"95-99 years"	"95-99"	"2021"	"2021"	"Oct., 2021"	"2021/10"	13068	Not Applicable	Not Applicable
+	"95-99 years"	"95-99"	"2021"	"2021"	"Nov., 2021"	"2021/11"	13361	Not Applicable	Not Applicable
+	"95-99 years"	"95-99"	"2021"	"2021"	"Dec., 2021"	"2021/12"	14350	Not Applicable	Not Applicable
+"Total"	"95-99 years"	"95-99"	"2021"	"2021"			155459	Not Applicable	Not Applicable
+	"95-99 years"	"95-99"	"2022"	"2022"	"Jan., 2022"	"2022/01"	17782	Not Applicable	Not Applicable
+	"95-99 years"	"95-99"	"2022"	"2022"	"Feb., 2022"	"2022/02"	13760	Not Applicable	Not Applicable
+	"95-99 years"	"95-99"	"2022"	"2022"	"Mar., 2022"	"2022/03"	12320	Not Applicable	Not Applicable
+	"95-99 years"	"95-99"	"2022"	"2022"	"Apr., 2022"	"2022/04"	11673	Not Applicable	Not Applicable
+	"95-99 years"	"95-99"	"2022"	"2022"	"May, 2022"	"2022/05"	12025	Not Applicable	Not Applicable
+	"95-99 years"	"95-99"	"2022"	"2022"	"Jun., 2022"	"2022/06"	11795	Not Applicable	Not Applicable
+	"95-99 years"	"95-99"	"2022"	"2022"	"Jul., 2022"	"2022/07"	12231	Not Applicable	Not Applicable
+	"95-99 years"	"95-99"	"2022"	"2022"	"Aug., 2022"	"2022/08"	12445	Not Applicable	Not Applicable
+	"95-99 years"	"95-99"	"2022"	"2022"	"Sep., 2022"	"2022/09"	12032	Not Applicable	Not Applicable
+	"95-99 years"	"95-99"	"2022"	"2022"	"Oct., 2022"	"2022/10"	13051	Not Applicable	Not Applicable
+	"95-99 years"	"95-99"	"2022"	"2022"	"Nov., 2022"	"2022/11"	13159	Not Applicable	Not Applicable
+	"95-99 years"	"95-99"	"2022"	"2022"	"Dec., 2022"	"2022/12"	15123	Not Applicable	Not Applicable
+"Total"	"95-99 years"	"95-99"	"2022"	"2022"			157396	Not Applicable	Not Applicable
+	"95-99 years"	"95-99"	"2023 "	"2023"	"Jan., 2023 "	"2023/01"	14746	Not Applicable	Not Applicable
+	"95-99 years"	"95-99"	"2023 "	"2023"	"Feb., 2023 "	"2023/02"	12367	Not Applicable	Not Applicable
+	"95-99 years"	"95-99"	"2023 "	"2023"	"Mar., 2023 "	"2023/03"	13333	Not Applicable	Not Applicable
+	"95-99 years"	"95-99"	"2023 "	"2023"	"Apr., 2023 "	"2023/04"	12026	Not Applicable	Not Applicable
+	"95-99 years"	"95-99"	"2023 "	"2023"	"May, 2023 "	"2023/05"	11984	Not Applicable	Not Applicable
+	"95-99 years"	"95-99"	"2023 "	"2023"	"Jun., 2023 "	"2023/06"	11110	Not Applicable	Not Applicable
+	"95-99 years"	"95-99"	"2023 "	"2023"	"Jul., 2023 "	"2023/07"	11302	Not Applicable	Not Applicable
+	"95-99 years"	"95-99"	"2023 "	"2023"	"Aug., 2023 "	"2023/08"	11481	Not Applicable	Not Applicable
+	"95-99 years"	"95-99"	"2023 "	"2023"	"Sep., 2023 "	"2023/09"	11734	Not Applicable	Not Applicable
+	"95-99 years"	"95-99"	"2023 "	"2023"	"Oct., 2023 "	"2023/10"	12635	Not Applicable	Not Applicable
+	"95-99 years"	"95-99"	"2023 "	"2023"	"Nov., 2023 "	"2023/11"	12725	Not Applicable	Not Applicable
+	"95-99 years"	"95-99"	"2023 "	"2023"	"Dec., 2023 "	"2023/12"	13921	Not Applicable	Not Applicable
+"Total"	"95-99 years"	"95-99"	"2023 "	"2023"			149364	Not Applicable	Not Applicable
+"Total"	"95-99 years"	"95-99"					462219	Not Applicable	Not Applicable
+	"100+ years"	"100+"	"2021"	"2021"	"Jan., 2021"	"2021/01"	3802	Not Applicable	Not Applicable
+	"100+ years"	"100+"	"2021"	"2021"	"Feb., 2021"	"2021/02"	2761	Not Applicable	Not Applicable
+	"100+ years"	"100+"	"2021"	"2021"	"Mar., 2021"	"2021/03"	2649	Not Applicable	Not Applicable
+	"100+ years"	"100+"	"2021"	"2021"	"Apr., 2021"	"2021/04"	2439	Not Applicable	Not Applicable
+	"100+ years"	"100+"	"2021"	"2021"	"May, 2021"	"2021/05"	2384	Not Applicable	Not Applicable
+	"100+ years"	"100+"	"2021"	"2021"	"Jun., 2021"	"2021/06"	2418	Not Applicable	Not Applicable
+	"100+ years"	"100+"	"2021"	"2021"	"Jul., 2021"	"2021/07"	2490	Not Applicable	Not Applicable
+	"100+ years"	"100+"	"2021"	"2021"	"Aug., 2021"	"2021/08"	2771	Not Applicable	Not Applicable
+	"100+ years"	"100+"	"2021"	"2021"	"Sep., 2021"	"2021/09"	2722	Not Applicable	Not Applicable
+	"100+ years"	"100+"	"2021"	"2021"	"Oct., 2021"	"2021/10"	2920	Not Applicable	Not Applicable
+	"100+ years"	"100+"	"2021"	"2021"	"Nov., 2021"	"2021/11"	2949	Not Applicable	Not Applicable
+	"100+ years"	"100+"	"2021"	"2021"	"Dec., 2021"	"2021/12"	3191	Not Applicable	Not Applicable
+"Total"	"100+ years"	"100+"	"2021"	"2021"			33496	Not Applicable	Not Applicable
+	"100+ years"	"100+"	"2022"	"2022"	"Jan., 2022"	"2022/01"	4022	Not Applicable	Not Applicable
+	"100+ years"	"100+"	"2022"	"2022"	"Feb., 2022"	"2022/02"	2992	Not Applicable	Not Applicable
+	"100+ years"	"100+"	"2022"	"2022"	"Mar., 2022"	"2022/03"	2735	Not Applicable	Not Applicable
+	"100+ years"	"100+"	"2022"	"2022"	"Apr., 2022"	"2022/04"	2658	Not Applicable	Not Applicable
+	"100+ years"	"100+"	"2022"	"2022"	"May, 2022"	"2022/05"	2827	Not Applicable	Not Applicable
+	"100+ years"	"100+"	"2022"	"2022"	"Jun., 2022"	"2022/06"	2604	Not Applicable	Not Applicable
+	"100+ years"	"100+"	"2022"	"2022"	"Jul., 2022"	"2022/07"	2724	Not Applicable	Not Applicable
+	"100+ years"	"100+"	"2022"	"2022"	"Aug., 2022"	"2022/08"	2716	Not Applicable	Not Applicable
+	"100+ years"	"100+"	"2022"	"2022"	"Sep., 2022"	"2022/09"	2700	Not Applicable	Not Applicable
+	"100+ years"	"100+"	"2022"	"2022"	"Oct., 2022"	"2022/10"	2905	Not Applicable	Not Applicable
+	"100+ years"	"100+"	"2022"	"2022"	"Nov., 2022"	"2022/11"	3037	Not Applicable	Not Applicable
+	"100+ years"	"100+"	"2022"	"2022"	"Dec., 2022"	"2022/12"	3525	Not Applicable	Not Applicable
+"Total"	"100+ years"	"100+"	"2022"	"2022"			35445	Not Applicable	Not Applicable
+	"100+ years"	"100+"	"2023 "	"2023"	"Jan., 2023 "	"2023/01"	3281	Not Applicable	Not Applicable
+	"100+ years"	"100+"	"2023 "	"2023"	"Feb., 2023 "	"2023/02"	2858	Not Applicable	Not Applicable
+	"100+ years"	"100+"	"2023 "	"2023"	"Mar., 2023 "	"2023/03"	2940	Not Applicable	Not Applicable
+	"100+ years"	"100+"	"2023 "	"2023"	"Apr., 2023 "	"2023/04"	2723	Not Applicable	Not Applicable
+	"100+ years"	"100+"	"2023 "	"2023"	"May, 2023 "	"2023/05"	2683	Not Applicable	Not Applicable
+	"100+ years"	"100+"	"2023 "	"2023"	"Jun., 2023 "	"2023/06"	2481	Not Applicable	Not Applicable
+	"100+ years"	"100+"	"2023 "	"2023"	"Jul., 2023 "	"2023/07"	2568	Not Applicable	Not Applicable
+	"100+ years"	"100+"	"2023 "	"2023"	"Aug., 2023 "	"2023/08"	2686	Not Applicable	Not Applicable
+	"100+ years"	"100+"	"2023 "	"2023"	"Sep., 2023 "	"2023/09"	2600	Not Applicable	Not Applicable
+	"100+ years"	"100+"	"2023 "	"2023"	"Oct., 2023 "	"2023/10"	2789	Not Applicable	Not Applicable
+	"100+ years"	"100+"	"2023 "	"2023"	"Nov., 2023 "	"2023/11"	2909	Not Applicable	Not Applicable
+	"100+ years"	"100+"	"2023 "	"2023"	"Dec., 2023 "	"2023/12"	3169	Not Applicable	Not Applicable
+"Total"	"100+ years"	"100+"	"2023 "	"2023"			33687	Not Applicable	Not Applicable
+"Total"	"100+ years"	"100+"					102628	Not Applicable	Not Applicable
+	"Not Stated"	"NS"	"2021"	"2021"	"Jan., 2021"	"2021/01"	14	Not Applicable	Not Applicable
+	"Not Stated"	"NS"	"2021"	"2021"	"Jun., 2021"	"2021/06"	10	Not Applicable	Not Applicable
+	"Not Stated"	"NS"	"2021"	"2021"	"Jul., 2021"	"2021/07"	10	Not Applicable	Not Applicable
+	"Not Stated"	"NS"	"2021"	"2021"	"Sep., 2021"	"2021/09"	12	Not Applicable	Not Applicable
+	"Not Stated"	"NS"	"2021"	"2021"	"Dec., 2021"	"2021/12"	10	Not Applicable	Not Applicable
+"Total"	"Not Stated"	"NS"	"2021"	"2021"			93	Not Applicable	Not Applicable
+	"Not Stated"	"NS"	"2022"	"2022"	"Jan., 2022"	"2022/01"	19	Not Applicable	Not Applicable
+	"Not Stated"	"NS"	"2022"	"2022"	"Feb., 2022"	"2022/02"	11	Not Applicable	Not Applicable
+	"Not Stated"	"NS"	"2022"	"2022"	"Mar., 2022"	"2022/03"	10	Not Applicable	Not Applicable
+	"Not Stated"	"NS"	"2022"	"2022"	"Jul., 2022"	"2022/07"	10	Not Applicable	Not Applicable
+	"Not Stated"	"NS"	"2022"	"2022"	"Aug., 2022"	"2022/08"	10	Not Applicable	Not Applicable
+"Total"	"Not Stated"	"NS"	"2022"	"2022"			103	Not Applicable	Not Applicable
+	"Not Stated"	"NS"	"2023 "	"2023"	"May, 2023 "	"2023/05"	12	Not Applicable	Not Applicable
+	"Not Stated"	"NS"	"2023 "	"2023"	"Sep., 2023 "	"2023/09"	10	Not Applicable	Not Applicable
+"Total"	"Not Stated"	"NS"	"2023 "	"2023"			80	Not Applicable	Not Applicable
+"Total"	"Not Stated"	"NS"					276	Not Applicable	Not Applicable
+"Total"							9835052	Not Applicable	Not Applicable
+"---"
+"Dataset: Underlying Cause of Death, 2018-2023, Single Race"
+"Query Parameters:"
+"Year/Month: 2021; 2022; 2023"
+"Group By: Five-Year Age Groups; Year; Month"
+"Show Totals: True"
+"Show Zero Values: False"
+"Show Suppressed: False"
+"Calculate Rates Per: 100,000"
+"Rate Options: Default intercensal populations for years 2001-2009 (except Infant Age Groups)"
+"---"
+"Help: See http://wonder.cdc.gov/wonder/help/ucd-expanded.html for more information."
+"---"
+"Query Date: Jun 2, 2025 12:57:14 AM"
+"---"
+"Suggested Citation: Centers for Disease Control and Prevention, National Center for Health Statistics. National Vital Statistics"
+"System, Mortality 2018-2023 on CDC WONDER Online Database, released in 2024. Data are from the Multiple Cause of Death Files,"
+"2018-2023, as compiled from data provided by the 57 vital statistics jurisdictions through the Vital Statistics Cooperative"
+"Program. Accessed at http://wonder.cdc.gov/ucd-icd10-expanded.html on Jun 2, 2025 12:57:14 AM"
+"---"
+Messages:
+"1. Rows with zero Deaths are hidden, but the Population values in those rows are included in the totals. Use Quick Options above"
+"to show zero rows."
+"2. Rows with suppressed Deaths are hidden, but the Deaths and Population values in those rows are included in the totals. Use"
+"Quick Options above to show suppressed rows."
+"---"
+Caveats:
+"1. Population and rates are labeled 'Not Applicable' when Autopsy, Place of Death, Education, Industry, Usual Occupation,"
+"Weekday or Month are grouped by or limited, due to lack of a valid population. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd-expanded.html#NotApplicableRates."
+"2. Data are Suppressed when the data meet the criteria for confidentiality constraints. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd-expanded.html#Assurance of Confidentiality."
+"3. Death rates are flagged as Unreliable when the rate is calculated with a numerator of 20 or less. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd-expanded.html#Unreliable."
+"4. Deaths of persons with Age ""Not Stated"" are included in ""All"" counts and rates, but are not distributed among age groups,"
+"so are not included in age-specific counts, age-specific rates or in any age-adjusted rates. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd-expanded.html#Not Stated."
+"5. Connecticut population estimates for 2022 and later years are reported for 9 planning regions as county equivalent areas,"
+"instead of the former 8 legacy counties in the Vintage 2022 postcensal series released by the Census Bureau on June 22, 2023,"
+"and in the Vintage 2023 postcensal series released by the Census Bureau on June 27, 2024. Populations estimates for the former"
+"counties are not available for 2022 and later years. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd-expanded.html#Connecticut-2022."
+"6. After the creation of the final 2023 dataset, North Carolina updated the cause of death information for over 900 death"
+"certificates to include a cause of death code indicating drug overdose (ICD-10 underlying cause-of-death codes: X40-X44,"
+"X60-X64, X85, and Y10-Y14). Jurisdictions can continue to update death certificates after the closing of the mortality file. As"
+"a result, users should consider that the actual death count for drug overdose deaths for North Carolina in 2023 is over 4,400"
+"deaths, with a crude rate of approximately 41.0 per 100,000 population, and an age-adjusted rate of approximately 42.1 per"
+"100,000 population. These deaths will not be updated on the final mortality datasets."
