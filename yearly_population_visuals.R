@@ -4,7 +4,7 @@ library(tidyverse)
 library(scales)
 
 # ---------- 1) Load data ----------
-pop <- read_csv("data/merged_yearly_population_by_age.csv", show_col_types = FALSE) %>%
+pop <- read_csv("data/merged_yearly_population_by_age.csv", show_col_types = FALSE) %>% # Census data, merged by merge_yearly_pop_est.R
   mutate(
     Year = as.integer(Year),
     Age  = as.integer(Age),
