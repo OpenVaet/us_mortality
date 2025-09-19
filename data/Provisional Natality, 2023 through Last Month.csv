@@ -1,0 +1,62 @@
+"Notes","Year","Year Code","Month","Month Code",Births
+,"2023 (Final)","2023","January","1",299465
+,"2023 (Final)","2023","February","2",270845
+,"2023 (Final)","2023","March","3",299355
+,"2023 (Final)","2023","April","4",278630
+,"2023 (Final)","2023","May","5",299545
+,"2023 (Final)","2023","June","6",303322
+,"2023 (Final)","2023","July","7",311597
+,"2023 (Final)","2023","August","8",322361
+,"2023 (Final)","2023","September","9",305509
+,"2023 (Final)","2023","October","10",309117
+,"2023 (Final)","2023","November","11",298228
+,"2023 (Final)","2023","December","12",298043
+"Total","2023 (Final)","2023",,,3596017
+,"2024 (Provisional)","2024","January","1",296972
+,"2024 (Provisional)","2024","February","2",283064
+,"2024 (Provisional)","2024","March","3",297920
+,"2024 (Provisional)","2024","April","4",289378
+,"2024 (Provisional)","2024","May","5",303032
+,"2024 (Provisional)","2024","June","6",292996
+,"2024 (Provisional)","2024","July","7",318871
+,"2024 (Provisional)","2024","August","8",325394
+,"2024 (Provisional)","2024","September","9",307983
+,"2024 (Provisional)","2024","October","10",313559
+,"2024 (Provisional)","2024","November","11",290760
+,"2024 (Provisional)","2024","December","12",298338
+"Total","2024 (Provisional)","2024",,,3618267
+,"2025 (Provisional)","2025","January","1",303499
+,"2025 (Provisional)","2025","February","2",274971
+,"2025 (Provisional)","2025","March","3",297305
+,"2025 (Provisional)","2025","April","4",289090
+,"2025 (Provisional)","2025","May","5",303337
+,"2025 (Provisional)","2025","June","6",297354
+,"2025 (Provisional)","2025","July","7",317228
+"Total","2025 (Provisional)","2025",,,2082784
+"Total",,,,,9297068
+"---"
+"Dataset: Provisional Natality, 2023 through Last Month"
+"Query Parameters:"
+"Year: 2023 (Final); 2024 (Provisional); 2025 (Provisional)"
+"Group By: Year; Month"
+"Show Totals: True"
+"Show Zero Values: False"
+"Show Suppressed: False"
+"Calculate Rates Per: 1,000"
+"---"
+"Help: See http://wonder.cdc.gov/wonder/help/natality-provisional.html for more information."
+"---"
+"Query Date: Sep 19, 2025 10:06:05 AM"
+"---"
+"Suggested Citation: Centers for Disease Control and Prevention, National Center for Health Statistics. National Vital Statistics"
+"System, Provisional Natality on CDC WONDER Online Database. Data are from the Natality Records 2023 through Last Month, as"
+"compiled from data provided by the 57 vital statistics jurisdictions through the Vital Statistics Cooperative Program. Accessed"
+"at http://wonder.cdc.gov/natality-expanded-provisional.html on Sep 19, 2025 10:06:05 AM"
+"---"
+Messages:
+"1. Rows with zero Births are hidden. Use Quick Options above to show zero rows."
+"---"
+Caveats:
+"1. Each birth record represents one liveborn infant."
+"2. 2024 and 2025 data are provisional and subject to change. 2023 data are final."
+"3. Births occurring through July 31, 2025 as of August 27, 2025."
