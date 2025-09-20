@@ -1,0 +1,94 @@
+"Notes","Year","Year Code","Ten-Year Age Groups","Ten-Year Age Groups Code",Deaths,Population,Crude Rate
+,"2010","2010","15-24 years","15-24",1697,43626342,3.9
+,"2010","2010","25-34 years","25-34",3782,41063948,9.2
+,"2010","2010","35-44 years","35-44",12088,41070606,29.4
+"Total","2010","2010",,,68529,170767612,40.1
+,"2011","2011","15-24 years","15-24",1710,43797875,3.9
+,"2011","2011","25-34 years","25-34",3663,41790498,8.8
+,"2011","2011","35-44 years","35-44",11963,40627954,29.4
+"Total","2011","2011",,,66901,170934530,39.1
+,"2012","2012","15-24 years","15-24",1656,43943905,3.8
+,"2012","2012","25-34 years","25-34",3806,42309321,9.0
+,"2012","2012","35-44 years","35-44",11592,40516420,28.6
+"Total","2012","2012",,,65724,171038384,38.4
+,"2013","2013","15-24 years","15-24",1576,43954402,3.6
+,"2013","2013","25-34 years","25-34",3812,42844587,8.9
+,"2013","2013","35-44 years","35-44",11613,40452690,28.7
+"Total","2013","2013",,,63836,171019211,37.3
+,"2014","2014","15-24 years","15-24",1645,43979821,3.7
+,"2014","2014","25-34 years","25-34",3764,43516504,8.6
+,"2014","2014","35-44 years","35-44",11517,40513133,28.4
+"Total","2014","2014",,,62407,171468309,36.4
+,"2015","2015","15-24 years","15-24",1552,43848216,3.5
+,"2015","2015","25-34 years","25-34",3851,44137202,8.7
+,"2015","2015","35-44 years","35-44",11170,40589783,27.5
+"Total","2015","2015",,,60302,171763362,35.1
+,"2016","2016","15-24 years","15-24",1501,43511027,3.4
+,"2016","2016","25-34 years","25-34",3901,44677243,8.7
+,"2016","2016","35-44 years","35-44",11146,40470156,27.5
+"Total","2016","2016",,,58417,171445105,34.1
+,"2017","2017","15-24 years","15-24",1454,43250295,3.4
+,"2017","2017","25-34 years","25-34",3759,45342672,8.3
+,"2017","2017","35-44 years","35-44",11104,40875370,27.2
+"Total","2017","2017",,,56150,171843289,32.7
+,"2018","2018","15-24 years","15-24",1452,42970800,3.4
+,"2018","2018","25-34 years","25-34",3807,45697774,8.3
+,"2018","2018","35-44 years","35-44",10853,41277888,26.3
+"Total","2018","2018",,,53950,171578161,31.4
+,"2019","2019","15-24 years","15-24",1454,42687510,3.4
+,"2019","2019","25-34 years","25-34",3689,45940321,8.0
+,"2019","2019","35-44 years","35-44",10922,41659144,26.2
+"Total","2019","2019",,,52185,171161877,30.5
+,"2020","2020","15-24 years","15-24",1371,42555684,3.2
+,"2020","2020","25-34 years","25-34",3704,46069646,8.0
+,"2020","2020","35-44 years","35-44",10981,42136192,26.1
+"Total","2020","2020",,,51136,171127655,29.9
+"Total",,,,,659537,1884147495,35.0
+"---"
+"Dataset: Underlying Cause of Death, 1999-2020"
+"Query Parameters:"
+"ICD-10 Codes: C00-D48 (Neoplasms)"
+"Ten-Year Age Groups: 15-24 years; 25-34 years; 35-44 years"
+"Year/Month: 2010; 2011; 2012; 2013; 2014; 2015; 2016; 2017; 2018; 2019; 2020"
+"Group By: Year; Ten-Year Age Groups"
+"Show Totals: True"
+"Show Zero Values: False"
+"Show Suppressed: False"
+"Calculate Rates Per: 100,000"
+"Rate Options: Default intercensal populations for years 2001-2009 (except Infant Age Groups)"
+"---"
+"Help: See http://wonder.cdc.gov/wonder/help/ucd.html for more information."
+"---"
+"Query Date: Sep 20, 2025 10:20:58 AM"
+"---"
+"Suggested Citation: Centers for Disease Control and Prevention, National Center for Health Statistics. National Vital Statistics"
+"System, Mortality 1999-2020 on CDC WONDER Online Database, released in 2021. Data are from the Multiple Cause of Death Files,"
+"1999-2020, as compiled from data provided by the 57 vital statistics jurisdictions through the Vital Statistics Cooperative"
+"Program. Accessed at http://wonder.cdc.gov/ucd-icd10.html on Sep 20, 2025 10:20:58 AM"
+"---"
+Caveats:
+"1. As of April 3, 2017, the underlying cause of death has been revised for 125 deaths in 2014. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#2014-Revision."
+"2. Deaths of persons with Age ""Not Stated"" are included in ""All"" counts and rates, but are not distributed among age groups,"
+"so are not included in age-specific counts, age-specific rates or in any age-adjusted rates. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Not Stated."
+"3. The population figures for year 2020 are bridged-race estimates of the July 1 resident population, from the Vintage 2020"
+"postcensal series released by NCHS on September 22, 2021. The population figures for year 2019 are bridged-race estimates of the"
+"July 1 resident population, from the Vintage 2019 postcensal series released by NCHS on July 9, 2020. The population figures for"
+"year 2018 are bridged-race estimates of the July 1 resident population, from the Vintage 2018 postcensal series released by NCHS"
+"on June 25, 2019. The population figures for year 2017 are bridged-race estimates of the July 1 resident population, from the"
+"Vintage 2017 postcensal series released by NCHS on June 27, 2018. The population figures for year 2016 are bridged-race"
+"estimates of the July 1 resident population, from the Vintage 2016 postcensal series released by NCHS on June 26, 2017. The"
+"population figures for year 2015 are bridged-race estimates of the July 1 resident population, from the Vintage 2015 postcensal"
+"series released by NCHS on June 28, 2016. The population figures for year 2014 are bridged-race estimates of the July 1 resident"
+"population, from the Vintage 2014 postcensal series released by NCHS on June 30, 2015. The population figures for year 2013 are"
+"bridged-race estimates of the July 1 resident population, from the Vintage 2013 postcensal series released by NCHS on June 26,"
+"2014. The population figures for year 2012 are bridged-race estimates of the July 1 resident population, from the Vintage 2012"
+"postcensal series released by NCHS on June 13, 2013. The population figures for year 2011 are bridged-race estimates of the July"
+"1 resident population, from the Vintage 2011 postcensal series released by NCHS on July 18, 2012. Population figures for 2010"
+"are April 1 Census counts. The population figures for years 2001 - 2009 are bridged-race estimates of the July 1 resident"
+"population, from the revised intercensal county-level 2000 - 2009 series released by NCHS on October 26, 2012. Population"
+"figures for 2000 are April 1 Census counts. Population figures for 1999 are from the 1990-1999 intercensal series of July 1"
+"estimates. Population figures for the infant age groups are the number of live births. <br/><b>Note:</b> Rates and population"
+"figures for years 2001 - 2009 differ slightly from previously published reports, due to use of the population estimates which"
+"were available at the time of release."

@@ -76,6 +76,9 @@ age_lookup <- pop %>%
 
 age_levels <- age_lookup$AgeGroup  # consistent levels (youngest -> oldest)
 
+# Display-only relabel: "100–100" (or "100-100") -> "100+"
+label_hundred_plus <- function(x) sub("^100[–-]100$", "100+", x)
+
 # Aggregate, then "complete" missing Year x AgeGroup combos with Population = 0
 pop_grp <- pop %>%
   mutate(
@@ -149,6 +152,7 @@ for (yr in years) {
       breaks = x_breaks,
       expand = c(0, 0)
     ) +
+    scale_y_discrete(labels = label_hundred_plus) +  # <- show "100+"
     labs(
       title = paste0("Population by 10-year age groups — ", yr),
       x = "Population", y = "Age group"
