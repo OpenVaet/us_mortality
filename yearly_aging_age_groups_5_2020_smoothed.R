@@ -13,7 +13,7 @@ suppressPackageStartupMessages({
 HIGHLIGHT_THRESHOLD <- 250000L  # highlight when |Δ| > 50,000
 
 # ---- Load ----
-pop <- read_csv("data/merged_yearly_population_by_age.csv", show_col_types = FALSE) %>%
+pop <- read_csv("data/merged_yearly_population_by_age_2020_smoothed.csv", show_col_types = FALSE) %>%
   mutate(
     Year = as.integer(Year),
     Age  = as.integer(Age),
@@ -24,32 +24,40 @@ pop <- read_csv("data/merged_yearly_population_by_age.csv", show_col_types = FAL
 yrs     <- sort(unique(pop$Year))
 max_age <- max(pop$Age, na.rm = TRUE)
 
-# ---- Cohort deltas at single ages: Δ(N,A) = Pop(N,A) - Pop(N-1,A-1) ----
-delta_long <- pop %>%
-  mutate(Year_prev = Year - 1, Age_prev = Age - 1) %>%
-  left_join(pop %>% select(Year, Age, Population) %>%
-              rename(Year_prev = Year, Age_prev = Age, Pop_prev = Population),
-            by = c("Year_prev", "Age_prev")) %>%
-  transmute(Year, Age, delta = Population - Pop_prev)  # NA for first year or Age==0
+# ---- Collapse ages BEFORE deltas: top-code at 85 (≥85 -> 85) ----
+AGE_TOP <- 85L  # *** was 89L ***
 
-# ---- Build 5-year age groups (00–04, 05–09, …) ----
-mk_group5 <- function(A) {
+pop_cap <- pop %>%
+  mutate(Age = pmin(Age, AGE_TOP)) %>%
+  group_by(Year, Age) %>%
+  summarise(Population = sum(Population, na.rm = TRUE), .groups = "drop")
+
+# ---- Cohort deltas on the COLLAPSED series ----
+delta_long <- pop_cap %>%
+  mutate(Year_prev = Year - 1L, Age_prev = pmax(Age - 1L, 0L)) %>%
+  left_join(
+    pop_cap %>% transmute(Year_prev = Year, Age_prev = Age, Pop_prev = Population),
+    by = c("Year_prev", "Age_prev")
+  ) %>%
+  transmute(Year, Age, delta = Population - Pop_prev)
+
+# ---- 5-year groups with top bin fixed to 85+ (label it clearly) ----
+mk_group5_capped <- function(A) {
   gs <- (A %/% 5) * 5
-  ge <- pmin(gs + 4, max_age)
-  sprintf("%02d–%02d", gs, ge)
+  gs <- ifelse(gs >= 85, 85, gs)   # force top bin start to 85
+  ge <- ifelse(gs == 85, 89, gs + 4)
+  sprintf("%02d–%02d", gs, ge)     # this is effectively "85+" when gs==85
 }
 
-# Grouped population by Year x AgeGroup5
-pop_group_year <- pop %>%
-  mutate(AgeGroup5 = mk_group5(Age),
-         grp_start = (Age %/% 5) * 5) %>%
+pop_group_year <- pop_cap %>%
+  mutate(grp_start = ifelse(Age >= 85, 85L, (Age %/% 5) * 5L),
+         AgeGroup5 = mk_group5_capped(Age)) %>%
   group_by(AgeGroup5, grp_start, Year) %>%
   summarise(Population = sum(Population, na.rm = TRUE), .groups = "drop")
 
-# Grouped cohort deltas by Year x AgeGroup5 (sum single-age deltas in the group)
 delta_group_year <- delta_long %>%
-  mutate(AgeGroup5 = mk_group5(Age),
-         grp_start  = (Age %/% 5) * 5) %>%
+  mutate(grp_start = ifelse(Age >= 85, 85L, (Age %/% 5) * 5L),
+         AgeGroup5 = mk_group5_capped(Age)) %>%
   group_by(AgeGroup5, grp_start, Year) %>%
   summarise(Delta = sum(delta, na.rm = TRUE), .groups = "drop")
 

@@ -4,7 +4,8 @@ library(tidyverse)
 library(scales)
 
 # ---------- 1) Load data ----------
-pop <- read_csv("data/merged_yearly_population_by_age.csv", show_col_types = FALSE) %>% # Census data, merged by merge_yearly_pop_est.R
+ # Census data, merged by merge_yearly_pop_est.R
+pop <- read_csv("data/merged_yearly_population_by_age.csv", show_col_types = FALSE) %>%
   mutate(
     Year = as.integer(Year),
     Age  = as.integer(Age),
@@ -113,13 +114,33 @@ for (yr in years) {
   # Fixed height based on total number of groups so frames are consistent
   h <- max(6, n_groups * 0.35)
 
+  # --- label logic ---
+  thr_prop     <- 0.06          # bars smaller than 6% of x_max get outside labels
+  label_offset <- 0.01 * x_max  # gap to the right of the bar for outside labels
+
+  df_inside  <- df_y %>%
+    filter(Population > 0, Population >= thr_prop * x_max) %>%
+    mutate(label = scales::comma(Population),
+           x_lab = Population / 2)
+
+  df_outside <- df_y %>%
+    filter(Population > 0, Population <  thr_prop * x_max) %>%
+    mutate(label = scales::comma(Population),
+           x_lab = pmin(Population + label_offset, x_max))  # keep inside axis range
+
   p_pyr <- ggplot(df_y, aes(y = AgeGroup, x = Population, fill = AgeGroup)) +
     geom_col(width = 0.8) +
-    # center the value; hide label for zero-length bars
+    # Labels with enough room: centered, white
     geom_text(
-      aes(label = ifelse(Population > 0, scales::comma(Population), ""),
-          x = Population / 2),
-      color = "white", size = 3.8
+      data = df_inside,
+      aes(x = x_lab, label = label),
+      color = "white", size = 3.8, vjust = 0.5
+    ) +
+    # Labels with not enough room: to the right of the bar, black
+    geom_text(
+      data = df_outside,
+      aes(x = x_lab, label = label),
+      color = "black", size = 3.8, hjust = 0, vjust = 0.5
     ) +
     scale_fill_manual(values = pal, limits = age_levels, drop = FALSE) +
     scale_x_continuous(
@@ -144,6 +165,7 @@ for (yr in years) {
   ggsave(file.path("visual/pop_pyramide", sprintf("pyramide_%d.png", yr)),
          p_pyr, width = 9, height = h, dpi = 300)
 }
+
 
 
 cat("Saved:\n - visual/pop_total_evolution.png\n -", length(years), "horizontal bar pyramids in visual/pop_pyramide/\n")
