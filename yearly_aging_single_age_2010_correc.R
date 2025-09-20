@@ -2,6 +2,7 @@
 ## Cohort aging table by single age with 85+ capping
 ## Δ at (Year N, Age A) = Pop_cap[N, A] − Pop_cap[N−1, A−1]
 ## Source: data/merged_yearly_population_by_age_2010_correction.csv
+## Requires : merge_yearly_pop_est_2010_correc.R to run first
 #########################################################
 
 suppressPackageStartupMessages({

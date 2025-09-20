@@ -6,7 +6,7 @@ library(tidyverse)
 v19 <- read_csv("data/nc-est2019-agesex-res.csv", show_col_types = FALSE)
 v24 <- read_csv("data/nc-est2024-agesex-res.csv", show_col_types = FALSE)
 
-# 2000–2009 single-year-of-age (Year,Age,Population) - assumes that get_2000_2009_data.R has been executed first.
+# 2000–2009 single-year-of-age (Year,Age,Population) - assumes that get_alt_2010_data.R has been executed first.
 pop_2000_2009 <- read_csv("data/us_intercensal_2000_2010_single_year.csv",
                           show_col_types = FALSE) %>%
   transmute(

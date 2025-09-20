@@ -1,7 +1,8 @@
 ###############################################################
 ## Cohort aging by 5-year age groups (keeps Age 0)
 ## Δ at year N for a group = sum_A_in_group [ Pop(N,A) - Pop(N-1,A-1) ]
-## Source: data/merged_yearly_population_by_age.csv
+## Source: data/merged_yearly_population_by_age_2010_correction.csv
+## Requires : merge_yearly_pop_est_2010_correc.R to run first
 ###############################################################
 
 suppressPackageStartupMessages({
