@@ -17,8 +17,8 @@ read_clean <- function(path, source_label) {
     select(Year, Month, month_num, Deaths, source)
 }
 
-final_df <- read_clean("data/Infants Monthly Underlying Cause of Death, 1999-2020.csv", "final") %>%
-  bind_rows(read_clean("data/Infants Monthly Underlying Cause of Death, 2018-2023, Single Race.csv", "provisional")) %>%
+final_df <- read_clean("data/Infants Monthly Multiple Cause of Death, 1999-2020.csv", "final") %>%
+  bind_rows(read_clean("data/Infants Monthly Provisional Mortality Statistics, 2018 through Last Week.csv", "provisional")) %>%
   # Keep only the target years
   filter(!is.na(Year), Year >= 2007, Year <= 2025, !is.na(month_num), month_num >= 1, month_num <= 12) %>%
   # Prefer provisional where both sources provide the same Year/Month
