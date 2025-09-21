@@ -1,0 +1,55 @@
+"Notes","Year","Year Code","Age of Mother 9","Age of Mother 9 Code",Births
+,"2023 (Final)","2023","Under 15 years","15",1766
+,"2023 (Final)","2023","15-19 years","15-19",140977
+,"2023 (Final)","2023","20-24 years","20-24",616970
+,"2023 (Final)","2023","25-29 years","25-29",986567
+,"2023 (Final)","2023","30-34 years","30-34",1098052
+,"2023 (Final)","2023","35-39 years","35-39",604631
+,"2023 (Final)","2023","40-44 years","40-44",136333
+,"2023 (Final)","2023","45-49 years","45-49",9504
+,"2023 (Final)","2023","50 years and over","50+",1217
+"Total","2023 (Final)","2023",,,3596017
+,"2024 (Provisional)","2024","Under 15 years","15",1725
+,"2024 (Provisional)","2024","15-19 years","15-19",136831
+,"2024 (Provisional)","2024","20-24 years","20-24",609738
+,"2024 (Provisional)","2024","25-29 years","25-29",987902
+,"2024 (Provisional)","2024","30-34 years","30-34",1109390
+,"2024 (Provisional)","2024","35-39 years","35-39",620749
+,"2024 (Provisional)","2024","40-44 years","40-44",141006
+,"2024 (Provisional)","2024","45-49 years","45-49",9675
+,"2024 (Provisional)","2024","50 years and over","50+",1251
+"Total","2024 (Provisional)","2024",,,3618267
+,"2025 (Provisional)","2025","Under 15 years","15",818
+,"2025 (Provisional)","2025","15-19 years","15-19",73816
+,"2025 (Provisional)","2025","20-24 years","20-24",340138
+,"2025 (Provisional)","2025","25-29 years","25-29",571177
+,"2025 (Provisional)","2025","30-34 years","30-34",643288
+,"2025 (Provisional)","2025","35-39 years","35-39",365270
+,"2025 (Provisional)","2025","40-44 years","40-44",81739
+,"2025 (Provisional)","2025","45-49 years","45-49",5819
+,"2025 (Provisional)","2025","50 years and over","50+",719
+"Total","2025 (Provisional)","2025",,,2082784
+"Total",,,,,9297068
+"---"
+"Dataset: Provisional Natality, 2023 through Last Month"
+"Query Parameters:"
+"Year: 2023 (Final); 2024 (Provisional); 2025 (Provisional)"
+"Group By: Year; Age of Mother 9"
+"Show Totals: True"
+"Show Zero Values: False"
+"Show Suppressed: False"
+"Calculate Rates Per: 1,000"
+"---"
+"Help: See http://wonder.cdc.gov/wonder/help/natality-provisional.html for more information."
+"---"
+"Query Date: Sep 20, 2025 3:16:59 PM"
+"---"
+"Suggested Citation: Centers for Disease Control and Prevention, National Center for Health Statistics. National Vital Statistics"
+"System, Provisional Natality on CDC WONDER Online Database. Data are from the Natality Records 2023 through Last Month, as"
+"compiled from data provided by the 57 vital statistics jurisdictions through the Vital Statistics Cooperative Program. Accessed"
+"at http://wonder.cdc.gov/natality-expanded-provisional.html on Sep 20, 2025 3:16:59 PM"
+"---"
+Caveats:
+"1. Each birth record represents one liveborn infant."
+"2. 2024 and 2025 data are provisional and subject to change. 2023 data are final."
+"3. Births occurring through July 31, 2025 as of August 27, 2025."
