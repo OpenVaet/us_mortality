@@ -1,5 +1,4 @@
 # Total population evolution + horizontal bar "pyramids" by 10-year age groups
-# PRETTY BLUE EDITION (no compression, soft blues only)
 
 library(tidyverse)
 library(scales)
@@ -166,7 +165,7 @@ for (yr in years) {
     ) +
     scale_y_discrete(labels = label_hundred_plus) +
     labs(
-      title = paste0("Population by 10-year age groups — ", yr),
+      title = paste0("Population by 10-year age groups - ", yr),
       x = "Population", y = "Age group"
     ) +
     theme_soft_blue(base_size = 16) +                                                     # <<<
