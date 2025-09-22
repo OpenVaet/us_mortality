@@ -62,72 +62,117 @@ delta_group_year <- delta_long %>%
   group_by(AgeGroup5, grp_start, Year) %>%
   summarise(Delta = sum(delta, na.rm = TRUE), .groups = "drop")
 
-# ---- Wide-style table with Δ shown under totals in the same cell ----
+suppressPackageStartupMessages({ library(tidyverse) })
 
-# 1) Keep long forms for Year x AgeGroup5 (totals and cohort deltas)
-pop_long_5y <- pop_group_year %>% select(AgeGroup5, grp_start, Year, Population)
-delta_long_5y <- delta_group_year %>% select(AgeGroup5, grp_start, Year, Delta)
+# ---- Display params (no math changes) ----
+OUT_DIR  <- "visual/pop_aging"
+dir.create(OUT_DIR, recursive = TRUE, showWarnings = FALSE)
 
-# 2) Build a per-cell HTML with:
-#    - Row 1: total population (black)
-#    - Row 2: Δ vs prior-year cohort (colored; bg highlight if |Δ| > threshold)
-combined_cells <- pop_long_5y %>%
-  left_join(delta_long_5y, by = c("AgeGroup5", "grp_start", "Year")) %>%
+YEAR_MIN <- min(pop_cap$Year, na.rm = TRUE)
+YEAR_MAX <- max(pop_cap$Year, na.rm = TRUE)
+year_span <- paste0(YEAR_MIN, "-", YEAR_MAX)
+
+# Merge totals + Δ (keep first year even if Δ is NA)
+df5 <- pop_group_year %>%
+  left_join(delta_group_year, by = c("AgeGroup5","grp_start","Year")) %>%
+  filter(Year >= YEAR_MIN, Year <= YEAR_MAX)
+
+# Order groups youngest → oldest; optionally relabel top bin to "85+"
+group_levels <- df5 %>% distinct(AgeGroup5, grp_start) %>% arrange(grp_start) %>% pull(AgeGroup5)
+df5 <- df5 %>% mutate(AgeGroup5 = factor(AgeGroup5, levels = group_levels))
+levels(df5$AgeGroup5)[levels(df5$AgeGroup5) == "85–89"] <- "85+"
+
+# Compact label formatters (SI suffixes)
+fmt_si     <- scales::label_number(accuracy = 0.1, scale_cut = scales::cut_si(""))
+fmt_si_int <- scales::label_number(accuracy = 1,   scale_cut = scales::cut_si(""))
+
+# Two-line labels: Population (line 1) + Δ (line 2, signed if present)
+df5 <- df5 %>%
   mutate(
-    pop_txt = ifelse(is.na(Population), "", scales::comma(round(Population))),
-    # Style Δ line
-    delta_color = case_when(
-      is.na(Delta)        ~ "black",
-      Delta > 0           ~ "#006400",  # dark green
-      TRUE                ~ "#8B0000"   # dark red
+    pop_lbl   = fmt_si(Population),
+    delta_lbl = ifelse(is.na(Delta), "", paste0(ifelse(Delta > 0, "+", ""), fmt_si_int(Delta))),
+    label     = ifelse(delta_lbl == "", pop_lbl, paste0(pop_lbl, "\nΔ ", delta_lbl))
+  )
+
+# Clamp for color mapping only (labels use true values)
+q98   <- stats::quantile(abs(df5$Delta), 0.98, na.rm = TRUE)
+limit <- max(HIGHLIGHT_THRESHOLD, q98, na.rm = TRUE)
+df5 <- df5 %>%
+  mutate(
+    delta_clamped = pmax(pmin(Delta, limit), -limit),
+    extreme       = !is.na(Delta) & abs(Delta) > HIGHLIGHT_THRESHOLD
+  )
+
+# Legend limits & readable text color per cell
+lim <- max(abs(df5$delta_clamped), na.rm = TRUE)
+df5 <- df5 %>%
+  mutate(text_col = dplyr::case_when(
+    is.na(delta_clamped) ~ "black",
+    abs(delta_clamped) > 0.55 * lim ~ "white",
+    TRUE ~ "black"
+  ))
+
+# ---- Plot (legend bottom, white background) ----
+p5 <- ggplot(df5, aes(x = Year, y = AgeGroup5, fill = delta_clamped)) +
+  geom_tile(color = "grey80", linewidth = 0.25, na.rm = FALSE) +
+  geom_tile(
+    data = subset(df5, extreme),
+    aes(x = Year, y = AgeGroup5),
+    fill = NA, color = "black", linewidth = 0.45
+  ) +
+  geom_text(
+    aes(label = label, color = text_col),
+    size = 3.2, lineheight = 0.92
+    # , family = "Arial Narrow"  # uncomment if installed to fit more text
+  ) +
+  scale_color_identity() +
+  scale_x_continuous(breaks = seq(YEAR_MIN, YEAR_MAX, by = 2)) +
+  scale_fill_gradient2(
+    name = "Δ (sum over ages in group of Pop[N,A] – Pop[N−1,A−1])",
+    low = "#b30000", mid = "#f2f2f2", high = "#007a1f",
+    midpoint = 0, limits = c(-lim, lim),
+    labels = scales::label_number(scale_cut = scales::cut_si("")),
+    na.value = "grey95"
+  ) +
+  labs(
+    title = "Cohort Aging — 2020 Smoothed - 5-Year Age Groups (Population & Δ in cells)",
+    subtitle = paste0(
+      "Top-coded at 85+ (capped before deltas). Cells outlined when |Δ| > ",
+      scales::comma(HIGHLIGHT_THRESHOLD),
+      ". Red = negative Δ, Green = positive Δ."
     ),
-    delta_bg = case_when(
-      is.na(Delta)                    ~ "transparent",
-      Delta >  HIGHLIGHT_THRESHOLD    ~ "#d8f3dc",  # light green for large positive
-      Delta < -HIGHLIGHT_THRESHOLD    ~ "#ffcccc",  # light red for large negative
-      TRUE                            ~ "transparent"
-    ),
-    delta_txt_raw = ifelse(is.na(Delta), "", scales::comma(round(Delta))),
-    delta_html = ifelse(
-      delta_txt_raw == "",
-      "",
-      kableExtra::cell_spec(
-        delta_txt_raw,
-        color = delta_color,
-        background = delta_bg,
-        escape = FALSE,
-        extra_css = "font-size:0.9em;"
-      )
-    ),
-    cell_html = ifelse(
-      pop_txt == "",
-      "",
-      paste0(pop_txt, ifelse(delta_html == "", "", "<br/>"), delta_html)
+    x = NULL, y = "Age Group (5y)"
+  ) +
+  guides(
+    fill = guide_colorbar(
+      direction = "horizontal",
+      title.position = "top",
+      barwidth = grid::unit(6, "in"),
+      barheight = grid::unit(0.25, "in")
     )
-  ) %>%
-  select(AgeGroup5, grp_start, Year, cell_html)
+  ) +
+  theme_minimal(base_size = 14) +
+  theme(
+    panel.grid = element_blank(),
+    plot.title = element_text(face = "bold", size = 18),
+    plot.subtitle = element_text(size = 13),
+    axis.text.x = element_text(size = 12),
+    axis.text.y = element_text(size = 13),
+    legend.position = "bottom",
+    legend.direction = "horizontal",
+    legend.title = element_text(size = 15, face = "bold"),
+    legend.text  = element_text(size = 14),
+    legend.key.height = grid::unit(0.9, "cm"),
+    legend.key.width  = grid::unit(0.7, "cm"),
+    legend.background     = element_rect(fill = "white", color = NA),
+    legend.box.background = element_rect(fill = "white", color = NA),
+    panel.background      = element_rect(fill = "white", color = NA),
+    plot.background       = element_rect(fill = "white", color = NA),
+    plot.margin = margin(12, 16, 12, 16)
+  )
 
-# 3) Pivot to wide: one column per Year, rows ordered youngest -> oldest
-out <- combined_cells %>%
-  tidyr::pivot_wider(
-    id_cols = c(AgeGroup5, grp_start),
-    names_from = Year, values_from = cell_html
-  ) %>%
-  arrange(grp_start) %>%
-  select(-grp_start) %>%
-  rename(`Age Group (5y)` = AgeGroup5)
-
-# 4) Render (HTML)
-kbl(out,
-    format  = "html",
-    escape  = FALSE,
-    caption = paste0(
-      "Cohort aging by 5-year groups: totals with Δ below each year. ",
-      "Δ(N) sums [Pop(N,A) − Pop(N−1,A−1)] over ages in group. ",
-      "Δ colored dark green/red; highlighted when |Δ| > ",
-      scales::comma(HIGHLIGHT_THRESHOLD)
-    ),
-    align   = c("l", rep("r", ncol(out) - 1))
-) |>
-  kable_styling(full_width = FALSE, position = "center") |>
-  row_spec(0, bold = TRUE)
+# ---- Save (wide, print-friendly; white background) ----
+ggsave(file.path(OUT_DIR, paste0("cohort_5y_groups_2020smoothed_pop_plus_delta_", year_span, "_wide16x8.pdf")),
+       p5, width = 16, height = 8, units = "in", bg = "white")
+ggsave(file.path(OUT_DIR, paste0("cohort_5y_groups_2020smoothed_pop_plus_delta_", year_span, "_wide16x8.png")),
+       p5, width = 16, height = 8, units = "in", dpi = 300, bg = "white")

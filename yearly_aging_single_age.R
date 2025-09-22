@@ -52,121 +52,122 @@ CLR_NEG_BG   <- "#ffcccc"  # light red
 # Threshold for highlight (set this near your Parameters section if you prefer)
 HIGHLIGHT_THRESHOLD <- 50000L
 
-# Build per-cell HTML: first line = population (black); second line = Δ (colored + optional bg)
-combined_cells <- pop %>%
+# ---- PRINT-FRIENDLY HEAT MAPS (single ages, same scope) ----
+suppressPackageStartupMessages({ library(tidyverse) })
+
+OUT_DIR <- "visual/pop_aging"
+dir.create(file.path(OUT_DIR, "heatmaps"), recursive = TRUE, showWarnings = FALSE)
+
+YEAR_MIN <- min(yrs, na.rm = TRUE)
+YEAR_MAX <- max(yrs, na.rm = TRUE)
+year_span <- paste0(YEAR_MIN, "-", YEAR_MAX)
+
+# Compact formatters (SI suffixes)
+fmt_si     <- scales::label_number(accuracy = 0.1, scale_cut = scales::cut_si(""))
+fmt_si_int <- scales::label_number(accuracy = 1,   scale_cut = scales::cut_si(""))
+
+# Build per-cell values + labels (same data scope: Age >= 1; all years in `yrs`)
+df <- pop %>%
   filter(Age >= 1) %>%
-  left_join(delta_long, by = c("Year", "Age")) %>%
+  left_join(delta_long, by = c("Year","Age")) %>%
   mutate(
-    pop_txt = ifelse(is.na(Population), "", scales::comma(round(Population))),
-    delta_txt_raw = ifelse(is.na(delta), "", scales::comma(round(delta))),
-    delta_color = case_when(
-      is.na(delta) ~ "black",
-      delta > 0    ~ CLR_POS_TEXT,
-      TRUE         ~ CLR_NEG_TEXT
-    ),
-    delta_bg = case_when(
-      is.na(delta)                ~ "transparent",
-      delta >  HIGHLIGHT_THRESHOLD ~ CLR_POS_BG,
-      delta < -HIGHLIGHT_THRESHOLD ~ CLR_NEG_BG,
-      TRUE                         ~ "transparent"
-    ),
-    delta_html = ifelse(
-      delta_txt_raw == "",
-      "",
-      kableExtra::cell_spec(
-        delta_txt_raw,
-        color = delta_color,
-        background = delta_bg,
-        escape = FALSE,
-        extra_css = "font-size:0.9em;"
+    pop_lbl   = fmt_si(Population),
+    delta_lbl = ifelse(is.na(delta), "", paste0(ifelse(delta > 0, "+", ""), fmt_si_int(delta))),
+    label     = ifelse(delta_lbl == "", pop_lbl, paste0(pop_lbl, "\nΔ ", delta_lbl))
+  )
+
+# Clamp only for color mapping (labels use true values)
+q98   <- stats::quantile(abs(df$delta), 0.98, na.rm = TRUE)
+limit <- max(HIGHLIGHT_THRESHOLD, q98, na.rm = TRUE)
+df <- df %>%
+  mutate(
+    delta_clamped = pmax(pmin(delta, limit), -limit),
+    extreme       = !is.na(delta) & abs(delta) > HIGHLIGHT_THRESHOLD
+  )
+
+# Render in the SAME 20-age blocks (no scope change)
+AGES_PER_PLOT <- 20L
+ages_all      <- sort(unique(df$Age))
+starts_hm     <- seq(1, length(ages_all), by = AGES_PER_PLOT)
+
+for (i in seq_along(starts_hm)) {
+  a_start <- ages_all[starts_hm[i]]
+  a_end   <- ages_all[min(starts_hm[i] + AGES_PER_PLOT - 1, length(ages_all))]
+
+  df_block <- df %>% filter(Age >= a_start, Age <= a_end)
+
+  # Per-block color center & readable text color
+  lim <- max(abs(df_block$delta_clamped), na.rm = TRUE)
+  df_block <- df_block %>%
+    mutate(text_col = dplyr::case_when(
+      is.na(delta_clamped) ~ "black",
+      abs(delta_clamped) > 0.55 * lim ~ "white",
+      TRUE ~ "black"
+    ))
+
+  p <- ggplot(df_block, aes(x = Year, y = Age, fill = delta_clamped)) +
+    geom_tile(color = "grey80", linewidth = 0.25) +
+    geom_tile(
+      data = subset(df_block, extreme),
+      aes(x = Year, y = Age),
+      fill = NA, color = "black", linewidth = 0.45
+    ) +
+    geom_text(
+      aes(label = label, color = text_col),
+      size = 3.0, lineheight = 0.92
+      # , family = "Arial Narrow"  # uncomment if available to fit more text
+    ) +
+    scale_color_identity() +
+    scale_y_continuous(breaks = a_start:a_end) +   # same orientation as your tables (no reverse)
+    scale_x_continuous(breaks = seq(YEAR_MIN, YEAR_MAX, by = 2)) +
+    scale_fill_gradient2(
+      name = "Δ (Pop[N,A] – Pop[N−1,A−1])",
+      low = "#b30000", mid = "#f2f2f2", high = "#007a1f",
+      midpoint = 0, limits = c(-lim, lim),
+      labels = scales::label_number(scale_cut = scales::cut_si("")),
+      na.value = "grey95"
+    ) +
+    labs(
+      title = paste0("Cohort Aging — Single Ages ", a_start, "–", a_end),
+      subtitle = paste0("Years ", year_span, ". Cells outlined up to |Δ| > ",
+                        scales::comma(HIGHLIGHT_THRESHOLD),
+                        ". Red = negative Δ, Green = positive Δ."),
+      x = NULL, y = "Age"
+    ) +
+    # ⬇⬇ NEW: horizontal legend at bottom
+    guides(
+      fill = guide_colorbar(
+        direction = "horizontal",
+        title.position = "top",
+        barwidth = grid::unit(6, "in"),
+        barheight = grid::unit(0.25, "in")
       )
-    ),
-    cell_html = ifelse(
-      pop_txt == "",
-      "",
-      paste0(pop_txt, ifelse(delta_html == "", "", "<br/>"), delta_html)
+    ) +
+    theme_minimal(base_size = 14) +
+    theme(
+      panel.grid = element_blank(),
+      plot.title = element_text(face = "bold", size = 18),
+      plot.subtitle = element_text(size = 13),
+      axis.text.x = element_text(size = 12),
+      axis.text.y = element_text(size = 12),
+      legend.position = "bottom",              # ⬅ bottom legend
+      legend.direction = "horizontal",
+      legend.title = element_text(size = 15, face = "bold"),
+      legend.text  = element_text(size = 14),
+      legend.key.height = grid::unit(0.9, "cm"),
+      legend.key.width  = grid::unit(0.7, "cm"),
+      legend.background = element_rect(fill = "white", color = NA), # ⬅ white legend bg
+      legend.box.background = element_rect(fill = "white", color = NA),
+      plot.background  = element_rect(fill = "white", color = NA),   # ⬅ white plot bg
+      panel.background = element_rect(fill = "white", color = NA),   # ⬅ white panel bg
+      plot.margin = margin(12, 16, 12, 16)
     )
-  ) %>%
-  select(Age, Year, cell_html)
 
-# Pivot to wide (Age rows, Year columns ordered by yrs)
-out <- combined_cells %>%
-  tidyr::pivot_wider(id_cols = Age, names_from = Year, values_from = cell_html) %>%
-  arrange(Age) %>%
-  select(Age, all_of(as.character(yrs)))
 
-# ---- Render in 20-age blocks (all years as columns) ----
-AGES_PER_TABLE <- 20
-
-ages_vec <- out$Age
-n_ages   <- length(ages_vec)
-starts   <- seq(1, n_ages, by = AGES_PER_TABLE)
-
-# ---- Render to files in visual/pop_aging (20 ages per table; all years as columns) ----
-AGES_PER_TABLE <- 20
-out_dir <- "visual/pop_aging"
-dir.create(out_dir, recursive = TRUE, showWarnings = FALSE)
-
-ages_vec <- out$Age
-n_ages   <- length(ages_vec)
-starts   <- seq(1, n_ages, by = AGES_PER_TABLE)
-
-# collect HTML fragments to build a single index.html too
-html_fragments <- character(length(starts))
-
-for (i in seq_along(starts)) {
-  idx_start <- starts[i]
-  idx_end   <- min(idx_start + AGES_PER_TABLE - 1, n_ages)
-  
-  out_block <- out %>% dplyr::slice(idx_start:idx_end)
-  
-  caption_txt <- paste0(
-    "Cohort aging by single age: totals with Δ (below). ",
-    "Δ at (N,A) = Pop[N,A] − Pop[N−1,A−1]. ",
-    "Δ colored dark green/red; highlighted when |Δ| > ",
-    scales::comma(HIGHLIGHT_THRESHOLD), ". ",
-    "Ages ", ages_vec[idx_start], "–", ages_vec[idx_end],
-    " (Table ", i, " of ", length(starts), ")"
-  )
-  
-  kobj <- kableExtra::kbl(
-    out_block,
-    format  = "html",
-    escape  = FALSE,
-    caption = caption_txt,
-    align   = c("r", rep("r", ncol(out_block) - 1))
-  ) |>
-    kableExtra::kable_styling(full_width = FALSE, position = "center") |>
-    kableExtra::row_spec(0, bold = TRUE)
-  
-  # save per-block HTML
-  file_html <- file.path(
-    out_dir,
-    sprintf("cohort_aging_ages_%02d-%02d.html", ages_vec[idx_start], ages_vec[idx_end])
-  )
-  kableExtra::save_kable(kobj, file = file_html)
-  
-  # keep as a fragment for an index page (with a page break after each, except last)
-  html_fragments[i] <- paste0(
-    "<section>", as.character(kobj), "</section>",
-    if (i < length(starts)) "<div class='pagebreak'></div>" else ""
-  )
+  # Export (wide) — matches your 5-year figures
+  fn_base <- sprintf("single_age_heatmap_%02d-%02d_%s_wide16x8", a_start, a_end, year_span)
+  ggsave(file.path(OUT_DIR, "heatmaps", paste0(fn_base, ".pdf")),
+         p, width = 16, height = 8, units = "in")
+  ggsave(file.path(OUT_DIR, "heatmaps", paste0(fn_base, ".png")),
+         p, width = 16, height = 8, units = "in", dpi = 300)
 }
-
-# write a single combined HTML with page breaks, good for printing/exporting to PDF
-index_html <- paste0(
-  "<!DOCTYPE html><html><head><meta charset='utf-8'>",
-  "<title>Cohort aging by single age — all years</title>",
-  "<style>",
-  "body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;margin:24px}",
-  ".pagebreak{page-break-after: always;}",
-  "table{margin-left:auto;margin-right:auto}",
-  "</style></head><body>",
-  paste0(html_fragments, collapse = "\n"),
-  "</body></html>"
-)
-writeLines(index_html, file.path(out_dir, "index.html"))
-
-message("Wrote ", length(starts), " tables to ", out_dir, " and a combined index.html")
-
-

@@ -123,12 +123,12 @@ pred_dt |>
 cat("Residuals written to:", out_resid, "\n")
 
 # -------- Plot --------
-cols <- c("TES (file)"="#00B050","Model"="#ff7f0e","Real"="#6a7cff")
+cols <- c("TES (fake)"="#00B050","Model"="#ff7f0e","Real"="#6a7cff")
 g <- ggplot(pred_dt, aes(Date)) +
-  geom_hline(yintercept = 0, color = "gray85", linewidth = 0.4) +
-  geom_line(aes(y = RealExcess, color = "Real"), linewidth = 0.5, alpha = 0.65) +
-  geom_line(aes(y = TESFakeExcess, color = "TES (file)"), linewidth = 0.9) +
-  geom_line(aes(y = TES_Model, color = "Model"), linewidth = 0.9, linetype = 2) +
+  geom_hline(yintercept = 0, color = "gray75", linewidth = 0.6) +  # slightly darker & thicker
+  geom_line(aes(y = RealExcess, color = "Real"), linewidth = 0.9, alpha = 0.7) +
+  geom_line(aes(y = TESFakeExcess, color = "TES (fake)"), linewidth = 1.3) +
+  geom_line(aes(y = TES_Model, color = "Model"), linewidth = 1.3, linetype = 2) +
   annotate("segment", x = as.Date("2020-01-01"), xend = as.Date("2020-01-01"),
            y = -Inf, yend = Inf, linetype = "dotted", alpha = 0.4) +
   labs(
@@ -137,10 +137,22 @@ g <- ggplot(pred_dt, aes(Date)) +
     x = NULL, y = "Weekly Excess Deaths", color = NULL
   ) +
   scale_color_manual(values = cols) +
-  theme_minimal(base_size = 12) +
-  theme(legend.position = "top")
+  theme_minimal(base_size = 16) +  # larger base font size
+  theme(
+    legend.position = "top",
+    legend.text = element_text(size = 14),
+    legend.spacing.x = unit(0.6, "cm"),
+    plot.title = element_text(size = 20, face = "bold"),
+    plot.subtitle = element_text(size = 14, margin = margin(b = 10)),
+    axis.text = element_text(size = 14),
+    axis.title.y = element_text(size = 16)
+  )
 
 g
+
+ggsave(out_plot, g, width = 14, height = 7, dpi = 250)  # slightly bigger output
+cat("Saved plot:", out_plot, "\n")
+
 
 ggsave(out_plot, g, width = 12, height = 6, dpi = 200)
 cat("Saved plot:", out_plot, "\n")
