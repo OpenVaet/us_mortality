@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plot Noise Remover</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            border-bottom: 2px solid #4472c4;
+            padding-bottom: 10px;
+        }
+        .controls {
+            margin: 20px 0;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 5px;
+        }
+        .control-group {
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        label {
+            min-width: 150px;
+            font-weight: bold;
+        }
+        input[type="range"] {
+            width: 200px;
+        }
+        input[type="file"] {
+            padding: 5px;
+        }
+        input[type="color"], input[type="text"] {
+            padding: 5px;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+        }
+        input[type="text"] {
+            width: 100px;
+            font-family: monospace;
+        }
+        .color-input-group {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .color-preview {
+            width: 30px;
+            height: 30px;
+            border: 2px solid #333;
+            border-radius: 3px;
+        }
+        button {
+            background: #4472c4;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 5px;
+        }
+        button:hover {
+            background: #365ba0;
+        }
+        button.secondary {
+            background: #6c757d;
+        }
+        button.secondary:hover {
+            background: #545b62;
+        }
+        .preset-colors {
+            display: flex;
+            gap: 5px;
+            flex-wrap: wrap;
+            margin-top: 5px;
+        }
+        .preset-btn {
+            padding: 5px 10px;
+            font-size: 12px;
+            background: #e9ecef;
+            color: #333;
+            border: 1px solid #dee2e6;
+        }
+        .preset-btn:hover {
+            background: #dee2e6;
+        }
+        .canvas-container {
+            display: flex;
+            gap: 20px;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+        .canvas-wrapper {
+            flex: 1;
+            min-width: 300px;
+        }
+        canvas {
+            max-width: 100%;
+            border: 1px solid #ddd;
+            display: block;
+        }
+        .info {
+            background: #e7f3ff;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+        #status {
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+            display: none;
+        }
+        #status.success {
+            background: #d4edda;
+            color: #155724;
+            display: block;
+        }
+        #status.error {
+            background: #f8d7da;
+            color: #721c24;
+            display: block;
+        }
+        #status.info {
+            background: #d1ecf1;
+            color: #0c5460;
+            display: block;
+        }
+        .advanced-options {
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid #dee2e6;
+        }
+        .option-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #495057;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Plot Noise Remover - Custom Color Data Line Extractor</h1>
+        
+        <div class="info">
+            <strong>Instructions:</strong> Upload your plot image, set the target color of your data line, and adjust the tolerance to isolate it. 
+            The tool will remove noise and keep only the data points matching the specified color range.
+        </div>
+
+        <div class="controls">
+            <div class="control-group">
+                <label for="fileInput">Select Image:</label>
+                <input type="file" id="fileInput" accept="image/*">
+            </div>
+            
+            <div class="control-group">
+                <label for="targetColor">Target Color:</label>
+                <div class="color-input-group">
+                    <input type="color" id="colorPicker" value="#4472c4">
+                    <input type="text" id="colorHex" value="#4472c4" placeholder="#000000">
+                    <div class="color-preview" id="colorPreview" style="background: #4472c4;"></div>
+                </div>
+            </div>
+            
+            <div class="control-group">
+                <label>Preset Colors:</label>
+                <div class="preset-colors">
+                    <button class="preset-btn" onclick="setColor('#4472c4')">Blue (#4472c4)</button>
+                    <button class="preset-btn" onclick="setColor('#ff0000')">Red</button>
+                    <button class="preset-btn" onclick="setColor('#00ff00')">Green</button>
+                    <button class="preset-btn" onclick="setColor('#ffa500')">Orange</button>
+                    <button class="preset-btn" onclick="setColor('#800080')">Purple</button>
+                    <button class="preset-btn" onclick="setColor('#000000')">Black</button>
+                </div>
+            </div>
+            
+            <div class="control-group">
+                <label for="tolerance">Color Tolerance:</label>
+                <input type="range" id="tolerance" min="0" max="100" value="30">
+                <span id="toleranceValue">30</span>
+                <small>(Higher = more lenient matching)</small>
+            </div>
+            
+            <div class="advanced-options">
+                <div class="option-title">Advanced Options</div>
+                
+                <div class="control-group">
+                    <label for="minCluster">Min Cluster Size:</label>
+                    <input type="range" id="minCluster" min="1" max="20" value="3">
+                    <span id="minClusterValue">3</span>
+                    <small>(Removes isolated pixels)</small>
+                </div>
+                
+                <div class="control-group">
+                    <label for="autoVariations">Auto-detect variations:</label>
+                    <input type="checkbox" id="autoVariations" checked>
+                    <small>(Includes slight color variations)</small>
+                </div>
+            </div>
+            
+            <div class="control-group">
+                <button onclick="processImage()">Process Image</button>
+                <button onclick="downloadResult()">Download Result</button>
+                <button onclick="resetImage()" class="secondary">Reset</button>
+                <button onclick="pickColorFromImage()" class="secondary">Pick Color from Image</button>
+            </div>
+        </div>
+
+        <div id="status"></div>
+
+        <div class="canvas-container">
+            <div class="canvas-wrapper">
+                <h3>Original Image</h3>
+                <canvas id="originalCanvas"></canvas>
+            </div>
+            <div class="canvas-wrapper">
+                <h3>Processed Image (Noise Removed)</h3>
+                <canvas id="processedCanvas"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let originalImageData = null;
+        let processedImageData = null;
+        let isPickingColor = false;
+        
+        // Parse URL parameters
+        const urlParams = new URLSearchParams(window.location.search);
+        const initialColor = urlParams.get('color') || '#4472c4';
+        
+        // Set initial color from URL parameter
+        window.addEventListener('DOMContentLoaded', () => {
+            setColor(initialColor);
+        });
+
+        // Hex to RGB conversion
+        function hexToRgb(hex) {
+            // Remove # if present
+            hex = hex.replace('#', '');
+            
+            // Handle 3-digit hex codes
+            if (hex.length === 3) {
+                hex = hex.split('').map(char => char + char).join('');
+            }
+            
+            const r = parseInt(hex.substr(0, 2), 16);
+            const g = parseInt(hex.substr(2, 2), 16);
+            const b = parseInt(hex.substr(4, 2), 16);
+            
+            return { r, g, b };
+        }
+        
+        // RGB to Hex conversion
+        function rgbToHex(r, g, b) {
+            return '#' + [r, g, b].map(x => {
+                const hex = x.toString(16);
+                return hex.length === 1 ? '0' + hex : hex;
+            }).join('');
+        }
+        
+        // Generate color variations
+        function generateColorVariations(baseColor, variationAmount = 15) {
+            const variations = [baseColor];
+            
+            // Generate lighter and darker variations
+            for (let i = 1; i <= 2; i++) {
+                const lighter = {
+                    r: Math.min(255, baseColor.r + i * variationAmount),
+                    g: Math.min(255, baseColor.g + i * variationAmount),
+                    b: Math.min(255, baseColor.b + i * variationAmount)
+                };
+                const darker = {
+                    r: Math.max(0, baseColor.r - i * variationAmount),
+                    g: Math.max(0, baseColor.g - i * variationAmount),
+                    b: Math.max(0, baseColor.b - i * variationAmount)
+                };
+                variations.push(lighter, darker);
+            }
+            
+            return variations;
+        }
+
+        // Set color from preset or input
+        function setColor(hex) {
+            document.getElementById('colorPicker').value = hex;
+            document.getElementById('colorHex').value = hex;
+            document.getElementById('colorPreview').style.background = hex;
+            
+            // Update URL parameter
+            const url = new URL(window.location);
+            url.searchParams.set('color', hex);
+            window.history.replaceState({}, '', url);
+            
+            // Auto-process if image is loaded
+            if (originalImageData) {
+                processImage();
+            }
+        }
+
+        // Event listeners for color inputs
+        document.getElementById('colorPicker').addEventListener('change', function() {
+            setColor(this.value);
+        });
+
+        document.getElementById('colorHex').addEventListener('input', function() {
+            if (/^#[0-9A-Fa-f]{6}$/.test(this.value)) {
+                setColor(this.value);
+            }
+        });
+
+        document.getElementById('tolerance').addEventListener('input', function() {
+            document.getElementById('toleranceValue').textContent = this.value;
+            if (originalImageData) {
+                processImage();
+            }
+        });
+
+        document.getElementById('minCluster').addEventListener('input', function() {
+            document.getElementById('minClusterValue').textContent = this.value;
+            if (originalImageData) {
+                processImage();
+            }
+        });
+
+        document.getElementById('autoVariations').addEventListener('change', function() {
+            if (originalImageData) {
+                processImage();
+            }
+        });
+
+        document.getElementById('fileInput').addEventListener('change', function(e) {
+            const file = e.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(event) {
+                    const img = new Image();
+                    img.onload = function() {
+                        displayOriginal(img);
+                        processImage();
+                    };
+                    img.src = event.target.result;
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+
+        // Color picker from image
+        function pickColorFromImage() {
+            if (!originalImageData) {
+                showStatus('Please load an image first!', 'error');
+                return;
+            }
+            
+            isPickingColor = true;
+            showStatus('Click on the image to pick a color from the data line', 'info');
+            
+            const canvas = document.getElementById('originalCanvas');
+            canvas.style.cursor = 'crosshair';
+            
+            canvas.onclick = function(e) {
+                if (!isPickingColor) return;
+                
+                const rect = canvas.getBoundingClientRect();
+                const scaleX = canvas.width / rect.width;
+                const scaleY = canvas.height / rect.height;
+                
+                const x = Math.floor((e.clientX - rect.left) * scaleX);
+                const y = Math.floor((e.clientY - rect.top) * scaleY);
+                
+                const ctx = canvas.getContext('2d');
+                const pixel = ctx.getImageData(x, y, 1, 1).data;
+                
+                const hex = rgbToHex(pixel[0], pixel[1], pixel[2]);
+                setColor(hex);
+                
+                isPickingColor = false;
+                canvas.style.cursor = 'default';
+                canvas.onclick = null;
+                
+                showStatus(`Color picked: ${hex}`, 'success');
+            };
+        }
+
+        function displayOriginal(img) {
+            const canvas = document.getElementById('originalCanvas');
+            const ctx = canvas.getContext('2d');
+            
+            canvas.width = img.width;
+            canvas.height = img.height;
+            ctx.drawImage(img, 0, 0);
+            
+            originalImageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+        }
+
+        function isColorMatch(r, g, b, targetColor, tolerance) {
+            const dr = Math.abs(r - targetColor.r);
+            const dg = Math.abs(g - targetColor.g);
+            const db = Math.abs(b - targetColor.b);
+            
+            const distance = Math.sqrt(dr*dr + dg*dg + db*db);
+            const maxDistance = tolerance * 2.55; // Scale tolerance to 0-255 range
+            
+            return distance <= maxDistance;
+        }
+
+        function removeIsolatedPixels(imageData, minClusterSize) {
+            const width = imageData.width;
+            const height = imageData.height;
+            const data = imageData.data;
+            const visited = new Array(width * height).fill(false);
+            const output = new Uint8ClampedArray(data);
+            
+            // Function to check if a pixel is not white (part of data line)
+            function isDataPixel(x, y) {
+                const idx = (y * width + x) * 4;
+                return data[idx] !== 255 || data[idx + 1] !== 255 || data[idx + 2] !== 255;
+            }
+            
+            // BFS to find cluster size
+            function getClusterSize(startX, startY) {
+                const queue = [{x: startX, y: startY}];
+                const cluster = [];
+                const idx = startY * width + startX;
+                
+                if (visited[idx] || !isDataPixel(startX, startY)) return [];
+                
+                visited[idx] = true;
+                
+                while (queue.length > 0) {
+                    const {x, y} = queue.shift();
+                    cluster.push({x, y});
+                    
+                    // Check 8 neighbors
+                    for (let dx = -1; dx <= 1; dx++) {
+                        for (let dy = -1; dy <= 1; dy++) {
+                            if (dx === 0 && dy === 0) continue;
+                            
+                            const nx = x + dx;
+                            const ny = y + dy;
+                            
+                            if (nx >= 0 && nx < width && ny >= 0 && ny < height) {
+                                const nIdx = ny * width + nx;
+                                if (!visited[nIdx] && isDataPixel(nx, ny)) {
+                                    visited[nIdx] = true;
+                                    queue.push({x: nx, y: ny});
+                                }
+                            }
+                        }
+                    }
+                }
+                
+                return cluster;
+            }
+            
+            // First pass: identify small clusters
+            const smallClusters = [];
+            for (let y = 0; y < height; y++) {
+                for (let x = 0; x < width; x++) {
+                    if (!visited[y * width + x] && isDataPixel(x, y)) {
+                        const cluster = getClusterSize(x, y);
+                        if (cluster.length < minClusterSize) {
+                            smallClusters.push(cluster);
+                        }
+                    }
+                }
+            }
+            
+            // Second pass: remove small clusters (make them white)
+            for (const cluster of smallClusters) {
+                for (const {x, y} of cluster) {
+                    const idx = (y * width + x) * 4;
+                    output[idx] = 255;
+                    output[idx + 1] = 255;
+                    output[idx + 2] = 255;
+                    output[idx + 3] = 255;
+                }
+            }
+            
+            return new ImageData(output, width, height);
+        }
+
+        function processImage() {
+            if (!originalImageData) return;
+            
+            const tolerance = parseFloat(document.getElementById('tolerance').value);
+            const minClusterSize = parseInt(document.getElementById('minCluster').value);
+            const useVariations = document.getElementById('autoVariations').checked;
+            const targetHex = document.getElementById('colorHex').value;
+            
+            const baseColor = hexToRgb(targetHex);
+            const colorTargets = useVariations ? generateColorVariations(baseColor) : [baseColor];
+            
+            const canvas = document.getElementById('processedCanvas');
+            const ctx = canvas.getContext('2d');
+            
+            canvas.width = originalImageData.width;
+            canvas.height = originalImageData.height;
+            
+            // Create a copy of the image data
+            const imageData = new ImageData(
+                new Uint8ClampedArray(originalImageData.data),
+                originalImageData.width,
+                originalImageData.height
+            );
+            
+            const data = imageData.data;
+            let pixelsKept = 0;
+            let pixelsRemoved = 0;
+            
+            // Process each pixel
+            for (let i = 0; i < data.length; i += 4) {
+                const r = data[i];
+                const g = data[i + 1];
+                const b = data[i + 2];
+                
+                let matchFound = false;
+                
+                // Check against target colors
+                for (const targetColor of colorTargets) {
+                    if (isColorMatch(r, g, b, targetColor, tolerance)) {
+                        matchFound = true;
+                        break;
+                    }
+                }
+                
+                if (!matchFound) {
+                    // Make non-matching pixels white
+                    data[i] = 255;     // R
+                    data[i + 1] = 255; // G
+                    data[i + 2] = 255; // B
+                    data[i + 3] = 255; // A
+                    pixelsRemoved++;
+                } else {
+                    pixelsKept++;
+                }
+            }
+            
+            // Remove isolated pixels
+            const cleanedData = removeIsolatedPixels(imageData, minClusterSize);
+            
+            ctx.putImageData(cleanedData, 0, 0);
+            processedImageData = cleanedData;
+            
+            showStatus(`Processed! Target: ${targetHex} | Kept ${pixelsKept.toLocaleString()} pixels, removed ${pixelsRemoved.toLocaleString()} noise pixels.`, 'success');
+        }
+
+        function downloadResult() {
+            if (!processedImageData) {
+                showStatus('Please process an image first!', 'error');
+                return;
+            }
+            
+            const canvas = document.getElementById('processedCanvas');
+            const link = document.createElement('a');
+            const targetColor = document.getElementById('colorHex').value.replace('#', '');
+            link.download = `cleaned_plot_${targetColor}.png`;
+            link.href = canvas.toDataURL();
+            link.click();
+            
+            showStatus('Image downloaded!', 'success');
+        }
+
+        function resetImage() {
+            if (originalImageData) {
+                const canvas = document.getElementById('processedCanvas');
+                const ctx = canvas.getContext('2d');
+                ctx.putImageData(originalImageData, 0, 0);
+                processedImageData = new ImageData(
+                    new Uint8ClampedArray(originalImageData.data),
+                    originalImageData.width,
+                    originalImageData.height
+                );
+                showStatus('Reset to original image', 'success');
+            }
+        }
+
+        function showStatus(message, type) {
+            const status = document.getElementById('status');
+            status.textContent = message;
+            status.className = type;
+            setTimeout(() => {
+                if (!isPickingColor || type !== 'info') {
+                    status.className = '';
+                    status.style.display = 'none';
+                }
+            }, 3000);
+        }
+    </script>
+</body>
+</html>
