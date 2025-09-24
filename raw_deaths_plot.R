@@ -38,13 +38,53 @@ deaths_weekly <- d[!is.na(Date) & !is.na(get(nm_deaths)),
                    .(Date, Deaths = as.integer(get(nm_deaths)))][order(Date)]
 deaths_weekly <- deaths_weekly[1:(.N - 5)]   # drop last 5 rows
 
-# ---- 3) plot raw weekly deaths ----
-op <- par(mar = c(4, 4, 2, 1))
-plot(deaths_weekly$Date, deaths_weekly$Deaths,
-     type = "l",
-     xlab = "Week ending (MMWR, Saturday)",
-     ylab = "Deaths (0–4 years)",
-     main = "Raw Weekly Deaths (0–4) — Last 3 Weeks Removed",
-     ylim = c(200, 550))
-grid()
+# ---- 3) plot ----
+op <- par(
+  mar = c(6, 5, 3, 2),
+  cex = 1.0
+)
+
+# Choose every 10th point for markers/labels
+idx <- seq(1, nrow(deaths_weekly), by = 10)
+
+# Explicit weeks to mark on X axis
+special_weeks <- data.table(
+  Year = c(2018, 2019, 2020, 2020, 2021, 2022, 2023, 2024),
+  Week = c(  1,    1,    1,   53,   52,   52,   52,   52)
+)
+special_weeks[, Date := MMWRweek2Date(Year, Week, 7)]  # Saturday ending date
+
+plot(
+  deaths_weekly$Date, deaths_weekly$Deaths,
+  type = "l",
+  xlab = "Week ending (MMWR, Saturday)",
+  ylab = "Deaths (0–4 years)",
+  main = "Raw Weekly Deaths (0–4) — Last 3 Weeks Removed",
+  ylim = c(200, 550),
+  lwd = 2.4,
+  cex.lab = 1.3,
+  cex.main = 1.4,
+  cex.axis = 1.0,
+  xaxt = "n"  # we'll add custom X axis
+)
+
+grid(nx = NA, ny = NULL, lty = "dotted")
+
+# Custom X axis with chosen weeks, vertical labels
+axis(1,
+     at = special_weeks$Date,
+     labels = paste0(special_weeks$Year, "/", sprintf("%02d", special_weeks$Week)),
+     las = 2, cex.axis = 0.9)
+
+# Add markers every 10 points
+points(deaths_weekly$Date[idx], deaths_weekly$Deaths[idx],
+       pch = 16, col = "black", cex = 0.8)
+
+# Add numeric labels slightly above each marker
+text(deaths_weekly$Date[idx], deaths_weekly$Deaths[idx] + 5,
+     labels = deaths_weekly$Deaths[idx],
+     cex = 0.7, col = "black", pos = 3)
+
 par(op)
+
+
