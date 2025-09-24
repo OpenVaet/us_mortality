@@ -122,7 +122,7 @@ plot(
   deaths_weekly$Date, deaths_weekly$Deaths,
   type = "l",
   xlab = "", ylab = "Deaths (0–4 years)",
-  main = "Weekly Deaths (0–4): CDC vs TES Fake Values",
+  main = "Weekly Deaths (0–4): CDC vs TES Raw Deaths",
   ylim = range(c(deaths_weekly$Deaths, new_weekly$Deaths_new), na.rm = TRUE),
   xlim = range(all_dates),
   col = "black", lwd = 2.4, xaxt = "n",
@@ -159,7 +159,7 @@ if (length(pts_new)) {
 # Legend on the RIGHT
 legend(
   "topright",
-  legend = c("CDC weekly deaths (0–4)", "TES Fake Values"),
+  legend = c("CDC weekly deaths (0–4)", "TES Raw Deaths"),
   lty = c(1, 3), col = c("black", "red"),
   lwd = 2.4, pch = c(16, 16), pt.cex = 0.9,
   bty = "n", cex = 1.0, inset = 0.01
