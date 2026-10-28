@@ -1,6 +1,6 @@
 # Infant mortality rates from monthly deaths & births
-# Annual rates per 1,000 births (2010–2025), trend on 2010–2019 + projection 2020–2025
-# Monthly rates per 1,000 births, month-specific trend on 2010–2019 + projection 2020–2025
+# Annual rates per 1,000 births (2010–2025), trend on 2010–2020 + projection 2021–2025
+# Monthly rates per 1,000 births, month-specific trend on 2010–2020 + projection 2021–2025
 
 suppressPackageStartupMessages({
   library(readr)
@@ -61,23 +61,51 @@ annual <- full_join(annual_deaths, annual_births, by = "Year") %>%
 write_csv(annual %>% select(Year, Deaths, Births, Rate, months_used),
           file.path(out_dir_d, "infant_annual_rate_per_100k_births.csv"))
 
-# Fit trend on complete pre-2020 years (use only years with 12 months in both series)
-train_years <- 2010:2019
+# Fit trend on complete pre-2021 years (use only years with 12 months in both series)
+train_years <- 2014:2020
 annual_train <- annual %>%
   filter(Year %in% train_years, months_used == 12, !is.na(Rate))
 
-if (nrow(annual_train) < 2) stop("Not enough complete years 2010–2019 to fit annual trend.")
+if (nrow(annual_train) < 2) stop("Not enough complete years 2014–2020 to fit annual trend.")
 
 annual_model <- lm(Rate ~ Year, data = annual_train)
 
-years_all <- tibble(Year = 2010:2024)
+years_all <- tibble(Year = 2014:2024)
 annual_pred <- as.data.frame(
   predict(annual_model, newdata = years_all, interval = "prediction", level = 0.95)
 )
 annual_pred$Year <- years_all$Year
 
 annual_pred_train <- annual_pred %>% filter(Year %in% train_years)
-annual_pred_proj  <- annual_pred %>% filter(Year >= 2020)
+annual_pred_proj  <- annual_pred %>% filter(Year >= 2021)
+
+# ---------- Add: % variation vs linear trend (2021–2024) ----------
+annual_with_trend <- annual %>%
+  left_join(
+    annual_pred %>% select(Year, trend_fit = fit),
+    by = "Year"
+  ) %>%
+  mutate(
+    pct_vs_trend = 100 * (Rate - trend_fit) / trend_fit
+  )
+
+annual_var_21_24 <- annual_with_trend %>%
+  filter(Year >= 2021, Year <= 2024) %>%
+  select(Year, Rate, trend_fit, pct_vs_trend)
+
+print(annual_var_21_24)
+
+# (optional) Save as a separate CSV
+write_csv(
+  annual_var_21_24,
+  file.path(out_dir_d, "infant_annual_pct_vs_trend_2021_2024.csv")
+)
+
+# (optional) Also include in the main annual output
+write_csv(
+  annual_with_trend %>% select(Year, Deaths, Births, Rate, trend_fit, pct_vs_trend, months_used),
+  file.path(out_dir_d, "infant_annual_rate_per_100k_births_with_trend.csv")
+)
 
 # Plot annual
 col_actual <- "#222222"
@@ -89,7 +117,7 @@ ymax_proj <- suppressWarnings(max(annual_pred_proj$upr, na.rm = TRUE))
 y_max     <- max(ymax_obs, ymax_proj, na.rm = TRUE)
 pad       <- max(0.06 * y_max, 0.2)
 
-p_year <- ggplot(annual, aes(Year, Rate)) +
+p_year <- ggplot(annual_with_trend, aes(Year, Rate)) +
   geom_ribbon(
     data = annual_pred_proj, aes(ymin = lwr, ymax = upr, x = Year),
     inherit.aes = FALSE, fill = col_ribbon, alpha = 0.12
@@ -99,16 +127,26 @@ p_year <- ggplot(annual, aes(Year, Rate)) +
             linewidth = 1.7, linetype = "dashed", lineend = "round") +
   geom_line(color = col_actual, linewidth = 1.9) +
   geom_point(color = col_actual, size = 3.3) +
-  geom_text(aes(label = number(Rate, accuracy = 0.1)),
-            vjust = -1.5, size = 5.4, color = col_actual) +
-  geom_vline(xintercept = 2019.5, linetype = "dashed", color = "grey60") +
+  geom_text(
+    aes(label = if_else(
+      Year >= 2021 & Year <= 2024 & !is.na(pct_vs_trend),
+      paste0(
+        number(Rate, accuracy = 0.1),
+        " (", if_else(pct_vs_trend >= 0, "+", ""),
+        number(pct_vs_trend, accuracy = 0.1), "%)"
+      ),
+      number(Rate, accuracy = 0.1)
+    )),
+    vjust = -1.5, size = 5.0, color = col_actual
+  ) +
+  geom_vline(xintercept = 2020.5, linetype = "dashed", color = "grey60") +
   scale_x_continuous(breaks = 2010:2024) +
   scale_y_continuous(labels = label_number(accuracy = 0.1),
                      limits = c(NA, y_max + pad),
                      expand = expansion(mult = c(0, 0))) +
   labs(
     title    = "Infant deaths per 1,000 births — Annual",
-    subtitle = "Observed vs 2010–2019 linear trend and 2020–2024 projection (95% prediction band)\nNote: years with <12 months reflect partial-year data",
+    subtitle = "Observed vs 2014–2020 linear trend and 2021–2024 projection (95% prediction band)\nLabels show % deviation from trend for 2021–2024",
     x = NULL, y = "Deaths per 1,000 births"
   ) +
   theme_minimal(base_size = 18) +
@@ -142,12 +180,12 @@ write_csv(monthly %>% mutate(Month = as.character(Month)),
 
 max_year <- max(monthly$Year, na.rm = TRUE)
 
-# Fit per-month linear trends on 2010–2019, then project 2020–2024
+# Fit per-month linear trends on 2014–2020, then project 2021–2024
 monthly_pred <- monthly %>%
   group_by(Month) %>%
   do({
     df <- .
-    train <- df %>% filter(Year %in% 2010:2019)
+    train <- df %>% filter(Year %in% 2010:2020)
     if (nrow(train) < 2) return(tibble(Year = integer(), fit = numeric(), lwr = numeric(), upr = numeric()))
     m <- lm(Rate ~ Year, data = train)
     yrs <- tibble(Year = 2010:2024)
@@ -156,8 +194,8 @@ monthly_pred <- monthly %>%
   }) %>%
   ungroup()
 
-monthly_pred_train <- monthly_pred %>% filter(Year %in% 2010:2019)
-monthly_pred_proj  <- monthly_pred %>% filter(Year >= 2020)
+monthly_pred_train <- monthly_pred %>% filter(Year %in% 2010:2020)
+monthly_pred_proj  <- monthly_pred %>% filter(Year >= 2021)
 
 # Plot monthly (faceted by month)
 ymax_obs_m  <- max(monthly$Rate, na.rm = TRUE)
@@ -176,14 +214,14 @@ p_month <- ggplot(monthly, aes(Year, Rate)) +
             linewidth = 1.1, linetype = "dashed") +
   geom_line(color = col_actual, linewidth = 1.1) +
   geom_point(color = col_actual, size = 1.7) +
-  geom_vline(xintercept = 2019.5, linetype = "dashed", color = "grey60") +
+  geom_vline(xintercept = 2020.5, linetype = "dashed", color = "grey60") +
   scale_x_continuous(breaks = 2010:2024) +
   scale_y_continuous(labels = label_number(accuracy = 0.1),
                      limits = c(NA, y_max_m + pad_m),
                      expand = expansion(mult = c(0, 0))) +
   labs(
     title    = "Infant deaths per 1,000 births — Monthly by month-of-year",
-    subtitle = "Observed vs 2010–2019 month-specific linear trends and 2020–2024 projections (95% prediction bands)",
+    subtitle = "Observed vs 2014–2020 month-specific linear trends and 2021–2024 projections (95% prediction bands)",
     x = NULL, y = "Deaths per 1,000 births"
   ) +
   theme_minimal(base_size = 16) +
